@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Барбершоп Бородинский</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" type="text/javascript"></script>
+</head>
+<body>
+	<header class="main-header main-header-non_index">
+		<div class="container">	
+			<nav class="main_nav">
+				<a href="index.html">
+					<img class="nav-logo-non_index" src="img/logo-non_index.png" alt="Барбершоп Бородинский">
+				</a>	
+				<div class="main_nav-site main_nav-non_index">
+					<ul>
+						<li class="main_nav-list">
+							<a href="index.html">Информация</a>
+						</li>
+						<li class="main_nav-list">
+							<a href="news.html">Новости</a>
+						</li>
+						<li class="main_nav-list">
+							<a href="price-list.html">Прайс-лист</a>
+						</li>
+						<li class="main_nav-list">
+							<a href="shop.html">Магазин</a>
+						</li>
+						<li class="main_nav-list selected-non_index_2var">
+							<a>Контакты</a>
+						</li>
+					</ul>
+				</div>
+				<div class="main_nav-user">
+					<button class="main_nav-user-button" onclick="popUpShow()">Вход</button>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<div class="non_index-bg">
+		<div class="container">
+			<h1 class="header-content">Контакты</h1>
+			<ul class="crumbs">
+				<li class="crumbs-item crumbs-square">
+					<a href="index.html">Главная</a>
+				</li>
+				<li class="crumbs-item crumbs-selected">
+					<a href="#">Контакты</a>
+				</li>
+			</ul>
+			<section class="contacts-map">
+					<div class="content contacts-content">
+						<div class="contacts">
+							<h2 class="subheader-non_index subheader-contacts">Адрес и время работы</h2>
+							<p class="info-text">Барбершоп «бородинский»<br> адрес: г. Бородино, ул. Кутузова, д. 19/8<br> телефон: +1 (555) 777-02-77
+							</p>
+							<p class="info-text">Время работы:<br>пн—пт: с 10:00 до 22:00<br>сб—вс: с 10:00 до 19:00
+							</p>
+							<div class="button-wrap">
+								<button class="button" onclick="feedBackShow()">Обратная связь</button>
+							</div>
+						</div>
+						<div class="map-info">
+							<h2 class="subheader-non_index subheader-contacts">Как проехать</h2>
+							
+							<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22051.69565715911!2d29.225397381183857!3d46.30066231300764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c82e26c7dcb4ed%3A0xb12db00aae997506!2z0JHQvtGA0L7QtNC40L3Qviwg0J7QtNC10YHRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNjg1NDA!5e0!3m2!1sru!2sua!4v1564426538968!5m2!1sru!2sua" width="360" height="290" frameborder="0" style="border:0" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>	
+			</section>
+		</div>
+	</div>		
+	<footer class="footer-main">
+		<div class="container">
+			<div class="footer-content">
+				<p class="footer-contact footer-text">Барбершоп «бородинский»<br>адрес: г. Бородино, ул. Кутузова, д. 19/8<br><a href="contacts.html"><span class="footer-find">Как нас найти?</span></a><br>Телефон: +1 (555) 777-02-77
+				</p>
+				<div class="footer-social">
+					<p class="footer-text">Давайте дружить!</p>
+					<div class="social-link">
+						<a onclick="socialMessageShow()" class="social-link-net" href="#">
+							<img src="img/vk.png" alt="Vkontakte">
+						</a>
+						<a onclick="socialMessageShow()" class="social-link-net" href="#">
+							<img src="img/fb.png" alt="Facebook">
+						</a>
+						<a onclick="socialMessageShow()" class="social-link-net" href="#">
+							<img src="img/inst.png" alt="Instagram">
+						</a>
+					</div>
+				</div>
+				<div class="footer-copyright">
+					<p class="footer-text">Разработано:</p>
+					<button class="button footer-button"><a target="_blank" href="https://htmlacademy.ru/">Html Academy</a></button>
+				</div>
+			</div>	
+		</div>
+	</footer>
+	<div id="overlay_start" class="pup_up-overlay">
+		<div id="js-popup" class="pop_up-personal_account" >
+			<button id="js-close" class="button_close button_close_popup" title="Закрыть" onclick="popUpClose()"></button>
+			<h2 class="subheader">Личный кабинет</h2>
+			<p class="info-text info-text-pop_up">Введите пожалуйста свой логин и пароль</p>
+			<form class="pop_up-form-data" method="POST" action="#">
+				<span class="pop_up-form-data">
+					<input class="pop_up-form-login" type="text" name="login" placeholder="логин" required>
+				</span>
+				<span class="pop_up-form-data">
+					<input class="pop_up-form-password" type="password" name="password" placeholder="пароль" required>
+				</span>
+				<div class="pop_up-sub_form">
+					<label class="pop_up-sub_form-remember">
+						<span class="pop_up-sub_form-text">Запомнить меня</span>
+						<input class="visually_hidden" type="checkbox" name="remember_me">
+						<span class="icon-check_box"></span>
+					</label>
+					<p onclick="updateSiteShow()" class="pop_up-forget">Я забыл пароль!</p>
+					<button class="button button-form pop_up-button" onclick="updateSiteShow()">Войти</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div id="js-updating_site" class="updating_site-overlay">
+		<div class="message-updating_site">
+			<p>Сайт сейчас на "стрижке". Попробуйте позже</p>
+			<p class="message-ps">P.S. Он тоже хочет быть красивым</p>
+			<button class="button_close" title="Закрыть" onclick="updateSiteClose()"></button>
+			<button class="button button-message" onclick="updateSiteClose()">Хорошо</button>
+		</div>
+	</div>
+	<!--<div id="js-got_feedback" class="message-feedback">
+		<p>Спасибо за обратную связь. Мы обязательно вам ответим</p>
+		<p class="message-ps">P.S. Для нас клиент прежде всего</p>
+		<button class="button_close" title="Закрыть" onclick="gotFeedbackClose()"></button>
+		<button class="button button-message" onclick="gotFeedbackClose()">Хорошо</button>
+	</div>!-->
+	<div id="js-socialUpdate" class="social_update-overlay">
+		<div class="message-updating_social">
+			<p>Наши группы засияют по новому. Чуть-чуть потерпите</p>
+			<p class="message-ps">P.S. Красота требует жертв</p>
+			<button class="button_close" title="Закрыть" onclick="socialMessageClose()"></button>
+			<button class="button button-message" onclick="socialMessageClose()">Хорошо</button>
+		</div>
+	</div>	
+	<div id="js-feedback" class="feedback-overlay">
+		<div  class="pop_up-feedback">
+			<form method="POST" action="#">
+				<p class="pop_up-sub_form-text feedback-text">Ваше имя:
+					<input class="pop_up-form-login" type="text" name="name_feedback" placeholder="БОРОДАЧ">
+				</p>
+				<p class="pop_up-sub_form-text feedback-text">Ваш e-mail:
+				<input class="pop_up-form-email" type="email" name="email_feedback" placeholder="borodach@yahoo.com">
+				</p>
+				<textarea class="pop_up-form-textarea pop_up-text_area" placeholder="Здесь можно оставить обратную связь" required></textarea>
+				<input class="button button-feedback" type="submit" value="Отправить" onclick="updateSiteShow()">
+			</form>
+			<button class="button_close" title="Закрыть" onclick="feedBackClose()"></button>
+		</div>
+	</div>	
+</body>
+</html>

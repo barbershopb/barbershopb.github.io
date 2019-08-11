@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Барбершоп Бородинский</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="../style.css">
+	<script src="../script.js" type="text/javascript"></script> 
+</head>
+<body>
+	<header class="main-header main-header-non_index">
+		<div class="container">	
+			<nav class="main_nav">
+				<a href="../index.html">
+					<img class="nav-logo-non_index" src="../img/logo-non_index.png" alt="Барбершоп Бородинский">
+				</a>
+				<div class="main_nav-site main_nav-non_index">
+					<ul>
+						<li class="main_nav-list">
+							<a href="../index.html">Информация</a>
+						</li>
+						<li class="main_nav-list selected-non_index">
+							<a href="../news.html">Новости</a>
+						</li>
+						<li class="main_nav-list">
+							<a href="../price-list.html">Прайс-лист</a>
+						</li>
+						<li class="main_nav-list">
+							<a href="../shop.html">Магазин</a>
+						</li>
+						<li class="main_nav-list">
+							<a href="../contacts.html">Контакты</a>
+						</li>
+					</ul>
+				</div>
+				<div class="main_nav-user">
+					<button class="main_nav-user-button" onclick="popUpShow()">Вход</button>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<div class="non_index-bg">
+		<div class="container">
+			<h1 class="header-content">Новости</h1>
+			<ul class="crumbs">
+				<li class="crumbs-item crumbs-square">
+					<a href="../index.html">Главная</a>
+				</li>
+				<li class="crumbs-item crumbs-square">
+					<a href="../news.html">Новости</a>
+				</li>
+				<li class="crumbs-item crumbs-selected">
+					<a href="#">Дельные советы по уходу за волосами</a>
+				</li>
+			</ul>
+			<section class="aricle">
+				<img class="article-img" src="../img/news/hair_care.jpg" alt="Дельные советы по уходу за волосами">
+				<h2 class=".subheader-non_index">Дельные советы по уходу за волосами</h2>
+				<time class="article-time" datetime="2018-11-22">22 ноября</time>
+				<section class="article-list">
+					<p>Пожалуйста, забудьте о том, что уход за волосами — издержки метросексуалов или забобоны, занимающие дорогое время. То, как вы выглядите, непосредственно ведь влияет на то, как вас воспринимают и как вы себя в своем статусе чувствуете. Прическа для мужчины давно стала показателем его самооценки. Самодостаточный и уверенный в себе никогда не махнет рукой на правильно подобранную интересную стрижку и хорошее средство для укладки волос.
+					</p>
+					<p> Самое простое, но особенно важное, правило по уходу за волосами для мужчины — расчесывание. Да, все те же банальные правила, как для ухода за бородой. Все те же волосяные луковицы, которым требуется постоянные приток крови для лучшего роста. Даже если у вас короткий волос, мягкая расческа должна быть в арсенале. Важно — избегать острых гребешков, которые царапают кожу, стимулируя более быстрое выделение кожного сала. Оно закупоривает поры кожи головы, тормозит рост, влечет за собой секущиеся кончики и быстрое выпадение волос. Выработайте в себе привычку расчесывать два раза в день, после чистки зубов, например. Привычке нужен 21 день, чтобы она прижилась. Помните?
+					</p>
+					<p>«Лучший уход за волосами — это, в первую очередь, здоровое питание, нормальный режим и крепкий сон. При соблюдении вышеперечисленного абсолютно не важно, чем вы будете мыть голову. Также важно помнить, что при мытье головы вода должна быть теплой, полотенцем нельзя сильно тереть волосы, а феном пользоваться нужно на средней температуре. Еще я бы посоветовал не перебарщивать с укладочными средствами. Воски, бриолины и лаки не подходят для ежедневного использования, особенно в больших количествах.
+					</p>
+					<p>
+					Просто привыкните к тому, что ваши волосы на голове — не менее важная часть вас, чем борода, кожа лица или правильно подобранная обувь под классический костюм. Вы заметите в себе изменения. 
+					</p>
+				</section>
+				<button class="button button-article" onclick="updateSiteShow()">Записаться</button>
+			</section>
+			
+		</div>
+	</div>		
+	<footer class="footer-main">
+		<div class="container">
+			<div class="footer-content">
+				<p class="footer-contact footer-text">Барбершоп «бородинский»<br>адрес: г. Бородино, ул. Кутузова, д. 19/8<br><a href="contacts.html"><span class="footer-find">Как нас найти?</span></a><br>Телефон: +1 (555) 777-02-77
+				</p>
+				<div class="footer-social">
+					<p class="footer-text">Давайте дружить!</p>
+					<div class="social-link">
+						<a onclick="socialMessageShow()" class="social-link-net" href="#">
+							<img src="../img/vk.png" alt="Vkontakte">
+						</a>
+						<a onclick="socialMessageShow()" class="social-link-net" href="#">
+							<img src="../img/fb.png" alt="Facebook">
+						</a>
+						<a onclick="socialMessageShow()" class="social-link-net" href="#">
+							<img src="../img/inst.png" alt="Instagram">
+						</a>
+					</div>
+				</div>
+				<div class="footer-copyright">
+					<p class="footer-text">Разработано:</p>
+					<button class="button footer-button"><a target="_blank" href="https://htmlacademy.ru/">Html Academy</a></button>
+				</div>
+			</div>	
+		</div>
+	</footer>
+	<div id="overlay_start" class="pup_up-overlay">
+		<div id="js-popup" class="pop_up-personal_account" >
+			<button id="js-close" class="button_close button_close_popup" title="Закрыть" onclick="popUpClose()"></button>
+			<h2 class="subheader">Личный кабинет</h2>
+			<p class="info-text info-text-pop_up">Введите пожалуйста свой логин и пароль</p>
+			<form class="pop_up-form-data" method="POST" action="#">
+				<span class="pop_up-form-data">
+					<input class="pop_up-form-login" type="text" name="login" placeholder="логин" required>
+				</span>
+				<span class="pop_up-form-data">
+					<input class="pop_up-form-password" type="password" name="password" placeholder="пароль" required>
+				</span>
+				<div class="pop_up-sub_form">
+					<label class="pop_up-sub_form-remember">
+						<span class="pop_up-sub_form-text">Запомнить меня</span>
+						<input class="visually_hidden" type="checkbox" name="remember_me">
+						<span class="icon-check_box"></span>
+					</label>
+					<p class="pop_up-forget" onclick="updateSiteShow()">Я забыл пароль!</p>
+					<button class="button button-form pop_up-button" onclick="updateSiteShow()">Войти</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div id="js-updating_site" class="updating_site-overlay">
+		<div class="message-updating_site">
+			<p>Сайт сейчас на "стрижке". Попробуйте позже</p>
+			<p class="message-ps">P.S. Он тоже хочет быть красивым</p>
+			<button class="button_close" title="Закрыть" onclick="updateSiteClose()"></button>
+			<button class="button button-message" onclick="updateSiteClose()">Хорошо</button>
+		</div>
+	</div>
+	<div id="js-socialUpdate" class="social_update-overlay">
+		<div class="message-updating_social">
+			<p>Наши группы засияют по новому. Чуть-чуть потерпите</p>
+			<p class="message-ps">P.S. Красота требует жертв</p>
+			<button class="button_close" title="Закрыть" onclick="socialMessageClose()"></button>
+			<button class="button button-message" onclick="socialMessageClose()">Хорошо</button>
+		</div>
+	</div>	
+</body>
+</html>
