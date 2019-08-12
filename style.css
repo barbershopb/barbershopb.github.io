@@ -1137,6 +1137,7 @@ a h2:hover {
 		border: 0;
 		border-top: 4px solid #ffffff;
 		border-bottom: 4px solid #ffffff;
+		outline: none;
 		background-color: #000000;
 	}
 	.hamburger_button::before {
