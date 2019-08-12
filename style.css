@@ -1137,7 +1137,6 @@ a h2:hover {
 		border: 0;
 		border-top: 4px solid #ffffff;
 		border-bottom: 4px solid #ffffff;
-		outline: none;
 		background-color: #000000;
 	}
 	.hamburger_button::before {
@@ -1185,7 +1184,7 @@ a h2:hover {
 	}
 	.button {
 		margin-top: 15px;
-		margin-bottom: 25px;
+		margin-bottom: 20px;
 	}
 	.main_form-text {
 		padding-left: 0;
@@ -1202,5 +1201,53 @@ a h2:hover {
 	}
 	.footer-copyright {
 		margin-top: 35px;
+	}
+	.pop_up-personal_account {
+		max-width: 300px;
+		left: 3%;
+		padding: 15px 8px 5px 8px;
+	}
+	.button_close::after,
+	.button_close::before,
+	.button_close {
+		display: none;
+	}
+	.message-updating_site {
+		max-width: 300px;
+		left: 3%;
+		padding: 20px 60px;
+	}
+	.message-updating_site>button {
+		margin-top: 25px;
+		margin-bottom: 10px;
+	}
+	.pop_up-feedback,
+	.message-updating_social {
+		max-width: 300px;
+		top: 5%;
+		left: 3%;
+		padding: 30px 20px;
+	}
+	.message-updating_social {
+		padding: 25px 35px 15px 35px;
+	}
+	.message-updating_social::before {
+		top: 10px;
+		left: 5px;
+	}
+	.feedback-text {
+		text-align: center;
+	}
+	.pop_up-sub_form-text {
+		padding-left: 0;
+	}
+	.pop_up-sub_form-text__small {
+		padding-left: 30px;
+	}
+	.pop_up-text_area {
+		margin-left: 0;
+	}
+	.button-feedback {
+		margin: 15px auto 0 auto;
 	}
 }
