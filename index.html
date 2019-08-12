@@ -12,6 +12,28 @@
 	<header class="main-header">
 		<div class="container">	
 			<nav class="main_nav">
+				<div class="hamburger">
+					<button class="hamburger_button" onclick="openMainmenu()"></button>
+					<ul id="js-hamburger_main" class="hamburger_main-list visually_hidden">
+						<li class="hamburger_main_nav-list">
+							<a>Информация</a>
+						</li>
+						<li class="hamburger_main_nav-list">
+							<a href="news.html">Новости</a>
+						</li>
+						<li class="hamburger_main_nav-list">
+							<a href="price-list.html">Прайс-лист</a>
+						</li>
+						<li class="hamburger_main_nav-list">
+							<a href="shop.html">Магазин</a>
+						</li>
+						<li class="hamburger_main_nav-list">
+							<a href="contacts.html">Контакты</a>
+						</li>
+						<li class="hamburger_main_nav-list" onclick="popUpShow()">Вход
+						</li>
+					</ul>
+				</div>
 				<div class="main_nav-site">
 					<ul>
 						<li class="main_nav-list selected">

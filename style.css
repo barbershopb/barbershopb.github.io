@@ -468,6 +468,7 @@ a h2:hover {
 .contacts-content {
 	padding-left: 0;
 	padding-right: 0;
+	margin-bottom: 122px;
 }
 .map {
 	max-width: 360px;
@@ -532,6 +533,7 @@ a h2:hover {
 	position: absolute;
 	content: "";
 	left: 0;
+	top: 2px;
 	width: 15px;
 	height: 15px;
 	border: 2px solid #000101;
@@ -754,7 +756,7 @@ a h2:hover {
 	justify-content: space-between;
 }
 .footer-contact {
-	flex-basis: 25%;
+	flex-basis: 30%;
 }
 .footer-find:hover {
 	background-color: #ec601f;
@@ -831,8 +833,8 @@ a h2:hover {
 	margin: 0;
 	padding: 0;
 	visibility: hidden;
+	cursor: pointer;
 }
-
 .button_close::before {
 	position: absolute;
 	content: "";
@@ -1109,4 +1111,95 @@ a h2:hover {
 }
 .button-feedback {
 	margin: 0 0 0 30px;
+}
+
+@media (max-width: 375px) {
+	header, 
+	footer {
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+	.main-header {
+		margin-bottom: 10px;
+	}
+
+	.main_nav-site,
+	.main_nav-user {
+		display: none;
+	}
+	.hamburger-main_open {
+		display: block;
+	}
+	.hamburger_button {
+		position: relative;
+		width: 25px;
+		height: 20px;
+		border: 0;
+		border-top: 4px solid #ffffff;
+		border-bottom: 4px solid #ffffff;
+		background-color: #000000;
+	}
+	.hamburger_button::before {
+		position: absolute;
+		content: "";
+		top: 4px;
+		left: 0px;
+		width: 25px;
+		height: 4px;
+		background-color: #ffffff;
+	}
+	.hamburger_main_nav-list {
+		padding-top: 10px;
+	}
+	.hamburger_main-list {
+		margin-bottom: -100px;
+		padding-bottom: 120px;
+	}
+	.features-list-text {
+		margin-bottom: 40px; 
+	}
+	.content {
+		margin-bottom: 15px;
+		padding: 15px 10px;
+		text-align: center;
+	}
+	.subheader {
+		text-align: center;
+	}
+	.link_button {
+		margin: 15px auto 40px auto;
+	}
+	.info-photo-carousel_hall {
+		margin-top: 15px;
+	}
+	.carousel-forward,
+	.carousel-back {
+		margin: 15px 0;
+	}
+	.info-photo-carousel_main_hall {
+    top: 21px;
+}
+	.info-text {
+		padding-top: 15px;
+	}
+	.button {
+		margin-top: 15px;
+		margin-bottom: 25px;
+	}
+	.main_form-text {
+		padding-left: 0;
+	}
+	.footer-content {
+		display: block;
+		text-align: center;
+	}
+	.footer-contact {
+		margin-bottom: 30px;
+	}
+	.footer-social {
+		margin-top: 0;
+	}
+	.footer-copyright {
+		margin-top: 35px;
+	}
 }

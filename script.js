@@ -50,3 +50,8 @@ function makeOverLay() {
     var overlay = document.getElementById("overlay_start");
     overlay.classList.add("pup_up-overlay-show");
 }
+function openMainmenu() {
+    var menu_main = document.getElementById("js-hamburger_main");
+    menu_main.classList.toggle("hamburger-main_open"); 
+}
+
