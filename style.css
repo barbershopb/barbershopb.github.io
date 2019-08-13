@@ -1112,8 +1112,44 @@ a h2:hover {
 .button-feedback {
 	margin: 0 0 0 30px;
 }
+@media (max-width: 767px) {
+	body {
+		background-position: 50% 15%;
+	}
+	.features-list_block {
+    	max-width: 245px;
+	}
+		.content::before {
+		display: none;
+	}
+	.content {
+		max-width: 740px;
+		margin: 0 auto;
+		padding: 45px 15px;
+		margin-bottom: 15px;
+		text-align: center;
+	}
+	.link_button {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.main_form-text {
+		padding-left: 0;
+	} 
+	.footer-content {
+		margin-left: 15px;
+	}
+	.pop_up-personal_account,
+	.pop_up-feedback,
+	.message-updating_social {
+		left: 22%;
+	}
+	.message-updating_site {
+		left: 26%;
+	}
+}
 
-@media (max-width: 375px) {
+@media (max-width: 480px) {
 	header, 
 	footer {
 		padding-right: 5px;
@@ -1122,7 +1158,9 @@ a h2:hover {
 	.main-header {
 		margin-bottom: 10px;
 	}
-
+	.main_nav-logo {
+		margin-top: -40px;
+	}
 	.main_nav-site,
 	.main_nav-user {
 		display: none;
@@ -1131,6 +1169,7 @@ a h2:hover {
 		display: block;
 	}
 	.hamburger_button {
+		display: block;
 		position: relative;
 		width: 25px;
 		height: 20px;
@@ -1159,9 +1198,17 @@ a h2:hover {
 		margin-bottom: 40px; 
 	}
 	.content {
+		max-width: 450px;
+		margin: 0 auto;
 		margin-bottom: 15px;
-		padding: 15px 10px;
+		padding: 15px 10px 15px 10px;
 		text-align: center;
+	}
+	.info-news,
+	.info-photo, 
+	.contacts, 
+	.booking {
+		margin: 0 auto;
 	}
 	.subheader {
 		text-align: center;
@@ -1186,6 +1233,9 @@ a h2:hover {
 		margin-top: 15px;
 		margin-bottom: 20px;
 	}
+	.booking {
+		margin-top: 15px;
+	}
 	.main_form-text {
 		padding-left: 0;
 	}
@@ -1202,15 +1252,63 @@ a h2:hover {
 	.footer-copyright {
 		margin-top: 35px;
 	}
+	.pop_up-personal_account,
+	.pop_up-feedback {
+		left: 3%;
+		top: 5%;
+	}
+	.message-updating_site {
+		left: 8%;
+	}
+	.message-updating_social {
+		left: 1.5%;
+	}
+	.button_close {
+		left: 92%;
+		top: 3%;
+	}
+	.button_close::after, 
+	.button_close::before {
+    background-color: #515151;
+	}
+	.button_close:hover::after, 
+	.button_close:hover::before {
+    background-color: #000000;
+	}
+	.message-updating_site .button_close,
+	.message-updating_social .button_close {
+		display: none;
+	}
+
+}
+@media (max-width: 375px) {
+	.main_nav-logo {
+		margin-top: -65px;
+	}
 	.pop_up-personal_account {
 		max-width: 300px;
 		left: 3%;
 		padding: 15px 8px 5px 8px;
 	}
-	.button_close::after,
-	.button_close::before,
-	.button_close {
-		display: none;
+		.message-updating_site {
+		max-width: 300px;
+		left: 3%;
+		padding: 20px 60px;
+	}
+	.pop_up-feedback,
+	.message-updating_social {
+		max-width: 300px;
+		top: 5%;
+		left: 3%;
+		padding: 30px 20px;
+	}
+	.message-updating_social {
+		padding: 25px 35px 15px 35px;
+	}
+		.pop_up-personal_account {
+		max-width: 300px;
+		left: 3%;
+		padding: 15px 8px 5px 8px;
 	}
 	.message-updating_site {
 		max-width: 300px;
@@ -1249,5 +1347,10 @@ a h2:hover {
 	}
 	.button-feedback {
 		margin: 15px auto 0 auto;
+	}
+		.button_close {
+		left: 85%;
+		top: 3%;
+		width: 20px;
 	}
 }
