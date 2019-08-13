@@ -12,6 +12,28 @@
 	<header class="main-header main-header-non_index">
 		<div class="container">	
 			<nav class="main_nav">
+				<div class="hamburger">
+					<button class="hamburger_button visually_hidden" onclick="openMainmenu()"></button>
+					<ul id="js-hamburger_main" class="hamburger_main-list visually_hidden">
+						<li class="hamburger_main_nav-list">
+							<a>Информация</a>
+						</li>
+						<li class="hamburger_main_nav-list">
+							<a href="news.html">Новости</a>
+						</li>
+						<li class="hamburger_main_nav-list visually_hidden">
+							<a href="price-list.html">Прайс-лист</a>
+						</li>
+						<li class="hamburger_main_nav-list">
+							<a href="shop.html">Магазин</a>
+						</li>
+						<li class="hamburger_main_nav-list">
+							<a href="contacts.html">Контакты</a>
+						</li>
+						<li class="hamburger_main_nav-list" onclick="popUpShow()">Вход
+						</li>
+					</ul>
+				</div>
 				<a href="index.html">
 					<img class="nav-logo-non_index" src="img/logo-non_index.png" alt="Барбершоп Бородинский">
 				</a>
@@ -54,7 +76,9 @@
 			<p class="adv-classic">Истинно мужская классика</p>
 			<section class="offers price_list-content">
 				<div class="offer-item">
-					<h2 class="subheader-non_index">Мы используем только<br> лучшие средства:
+					<h2 class="subheader-non_index subheader-non_index__big">Мы используем только<br> лучшие средства:
+					</h2>
+					<h2 class="subheader-non_index subheader-non_index__small visually_hidden">Мы используем только лучшие средства:
 					</h2>
 					<ul class="list-non-index">
 						<li class="item-non_index">Baxter of California</li>
@@ -64,26 +88,28 @@
 					</ul>
 				</div>
 				<div class="offer-price">
-					<h2 class="subheader-non_index">Цены на услуги<br> наших мастеров:
+					<h2 class="subheader-non_index subheader-non_index__big">Цены на услуги<br> наших мастеров:
+					</h2>
+					<h2 class="subheader-non_index subheader-non_index__small">Цены на услуги наших мастеров:
 					</h2>
 					<table class="table_price">
 						<tr>
 							<td class="table_price-service">стрижка</td>
-							<td class="table_price-price">1500 &euro;</td>
+							<td class="table_price-price">150 &euro;</td>
 						</tr>
 						<tr>
 							<td class="table_price-service">Стрижка бороды</td>
-							<td class="table_price-price">500 &euro;</td>
+							<td class="table_price-price">50 &euro;</td>
 						</tr>
 						<tr>
 							<td class="table_price-service">Накрутка усов</td>
-							<td class="table_price-price">350 &euro;</td>
+							<td class="table_price-price">35 &euro;</td>
 						</tr>
 					</table>
 				</div>
 			</section>
 			<section class="about_us price_list-content">
-				<h2 class="subheader-non_index header-about_us">Несколько слов о нас:
+				<h2 class="subheader-non_index header-about_us subheader-non_index__small">Несколько слов о нас:
 				</h2>
 				<div class="about_us-col_1">
 					<p class="about_us-text">Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.

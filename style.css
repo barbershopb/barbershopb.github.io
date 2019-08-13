@@ -1147,6 +1147,75 @@ a h2:hover {
 	.message-updating_site {
 		left: 26%;
 	}
+	.footer-contact {
+    flex-basis: 32%;
+	}
+	.main_nav-list {
+		margin-right: 30px;
+	}
+	.aricle {
+		margin: 20px auto;
+	}
+	.header-content,
+	.crumbs {
+		padding-left: 20px;
+	}
+	.crumbs {
+		padding-bottom: 20px;
+	}
+	.subheader-non_index {
+		padding-bottom: 10px;
+	}
+	.button-article {
+		margin-top: 15px;
+	}
+	.adv-classic {
+		display: none;
+	}
+	.adv-classic::after,
+	.adv-classic::before {
+		display: none;
+	}
+	.adv-classic {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		font-size: 32px;
+	}
+	.offers {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+	.subheader-non_index__big {
+		display: none;
+	}
+	.subheader-non_index__small {
+		display: block;
+		padding-bottom: 20px;
+		text-align: center;
+	}
+	.offer-price {
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.price_list-content {
+		display: block;
+		margin-bottom: 20px;
+	}
+	.header-about_us {
+		padding-bottom: 0;
+	}
+	.about_us-text {
+    	max-width: 670px;
+    	margin-right: auto;
+    	margin-left: auto;
+	}	
+	.price_list-content p {
+		padding: 10px 10px 0 10px;
+		text-align: justify;
+	}
+	.about_us {
+    	padding-bottom: 0;
+	}
 }
 
 @media (max-width: 480px) {
@@ -1239,6 +1308,9 @@ a h2:hover {
 	.main_form-text {
 		padding-left: 0;
 	}
+	.footer-main {
+		padding-bottom: 10px;
+	}
 	.footer-content {
 		display: block;
 		text-align: center;
@@ -1279,9 +1351,31 @@ a h2:hover {
 	.message-updating_social .button_close {
 		display: none;
 	}
-
+	.crumbs {
+		display: none;
+	}
+	.header-content {
+		margin-top: -10px;
+		margin-bottom: 20px;
+		padding-top: 20px;
+		text-align: center;
+	}
+	.aricle {
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	.article-list {
+		padding: 0 15px;
+		text-align: justify;
+	}
+	.button-aricle {
+		margin: 15px auto;
+	}
+	.subheader-non_index {
+		padding-bottom: 10px;
+	}
 }
-@media (max-width: 375px) {
+@media (max-width: 320px) {
 	.main_nav-logo {
 		margin-top: -65px;
 	}
@@ -1305,7 +1399,7 @@ a h2:hover {
 	.message-updating_social {
 		padding: 25px 35px 15px 35px;
 	}
-		.pop_up-personal_account {
+	.pop_up-personal_account {
 		max-width: 300px;
 		left: 3%;
 		padding: 15px 8px 5px 8px;
@@ -1336,9 +1430,6 @@ a h2:hover {
 	.feedback-text {
 		text-align: center;
 	}
-	.pop_up-sub_form-text {
-		padding-left: 0;
-	}
 	.pop_up-sub_form-text__small {
 		padding-left: 30px;
 	}
@@ -1352,5 +1443,17 @@ a h2:hover {
 		left: 85%;
 		top: 3%;
 		width: 20px;
+	}
+	.article-list {
+    padding: 0 10px;
+	}
+	.adv-classic {
+		font-size: 20px;
+	}
+	.subheader-non_index__small {
+		padding-bottom: 10px;
+	}
+	.price_list-content p {
+		padding: 0 7px;
 	}
 }
