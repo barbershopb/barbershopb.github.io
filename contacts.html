@@ -12,6 +12,28 @@
 	<header class="main-header main-header-non_index">
 		<div class="container">	
 			<nav class="main_nav">
+				<div class="hamburger">
+					<button class="hamburger_button visually_hidden" onclick="openMainmenu()"></button>
+					<ul id="js-hamburger_main" class="hamburger_main-list visually_hidden">
+						<li class="hamburger_main_nav-list">
+							<a href="index.html">Информация</a>
+						</li>
+						<li class="hamburger_main_nav-list">
+							<a href="news.html">Новости</a>
+						</li>
+						<li class="hamburger_main_nav-list">
+							<a href="price-list.html">Прайс-лист</a>
+						</li>
+						<li class="hamburger_main_nav-list">
+							<a href="shop.html">Магазин</a>
+						</li>
+						<li class="hamburger_main_nav-list visually_hidden">
+							<a href="contacts.html">Контакты</a>
+						</li>
+						<li class="hamburger_main_nav-list" onclick="popUpShow()">Вход
+						</li>
+					</ul>
+				</div>
 				<a href="index.html">
 					<img class="nav-logo-non_index" src="img/logo-non_index.png" alt="Барбершоп Бородинский">
 				</a>	
@@ -60,7 +82,7 @@
 							<p class="info-text">Время работы:<br>пн—пт: с 10:00 до 22:00<br>сб—вс: с 10:00 до 19:00
 							</p>
 							<div class="button-wrap">
-								<button class="button" onclick="feedBackShow()">Обратная связь</button>
+								<button class="button button-contacts" onclick="feedBackShow()">Обратная связь</button>
 							</div>
 						</div>
 						<div class="map-info">
@@ -139,7 +161,7 @@
 	</div>!-->
 	<div id="js-socialUpdate" class="social_update-overlay">
 		<div class="message-updating_social">
-			<p>Наши группы засияют по новому. Чуть-чуть потерпите</p>
+			<p>Наши группы засияют по-новому. Чуть-чуть потерпите</p>
 			<p class="message-ps">P.S. Красота требует жертв</p>
 			<button class="button_close" title="Закрыть" onclick="socialMessageClose()"></button>
 			<button class="button button-message" onclick="socialMessageClose()">Хорошо</button>

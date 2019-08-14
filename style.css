@@ -62,9 +62,6 @@ img {
 a h2:hover {
 	color:  #ec601f;
 }
-.subheader-contacts {
-	padding-bottom: 0;
-}
 .main_nav {
 	display: flex;
 	flex-wrap: wrap;
@@ -1216,6 +1213,50 @@ a h2:hover {
 	.about_us {
     	padding-bottom: 0;
 	}
+	.goods-desc {
+		margin: 30px 15px 15px 15px;
+	}
+	.goods {
+		margin-top: 15px;
+		padding-left: 20px;
+	}
+	.goods-list {
+		max-width: 485px;
+	}
+	.goods-img_main {
+	    max-width: 350px;
+	    margin-bottom: 15px;
+	}
+	.goods-img_small__mob {
+		display: none;
+	}
+	.goods-desc_text {
+	    max-width: 330px;
+	    margin-top: 5px;
+	}
+	.goods-desc-info {
+		text-align: justify;
+	}
+	.goods-img_small {
+		justify-content: space-between;
+		max-width: 300px;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 15px;
+	}
+	.item-non_index {
+		padding-bottom: 7px;
+	}
+	.goods-desc-button {
+		margin-bottom: 30px;
+	}
+	.contacts-content {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	.button-contacts {
+		margin: 30px auto 0 auto;
+	}
 }
 
 @media (max-width: 480px) {
@@ -1356,7 +1397,7 @@ a h2:hover {
 	}
 	.header-content {
 		margin-top: -10px;
-		margin-bottom: 20px;
+		margin-bottom: 15px;
 		padding-top: 20px;
 		text-align: center;
 	}
@@ -1373,6 +1414,67 @@ a h2:hover {
 	}
 	.subheader-non_index {
 		padding-bottom: 10px;
+	}
+	.goods {
+		padding-bottom: 15px;
+		padding-left: 0;
+	}
+	.goods-search {
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.goods-serch-list {
+		margin-bottom: 15px;
+	}
+	.goods-serch-list {
+		margin-bottom: 0;
+	}
+	.goods-list {
+		max-width: 450px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.goods-list-product {
+		margin-bottom: 15px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.goods-list-button {
+		margin-bottom: 10px;
+	}
+	.button-search {
+		margin-left: 30px;
+	}
+	.header-content {
+		font-size: 26px;
+	}
+	.goods-list-button_switch {
+		justify-content: center;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.goods-desc_img,
+	.goods-desc_text,
+	.goods-desc-button {
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.goods-desc_text {
+		max-width: 345px;
+	}
+	.goods-availability, 
+	.goods-desc-info {
+		margin-bottom: 10px;
+	}
+	.subheader-contacts {
+		padding-bottom: 0;
+	}
+	.map-info {
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.map {
+   		padding-top: 15px;
 	}
 }
 @media (max-width: 320px) {
@@ -1429,6 +1531,7 @@ a h2:hover {
 	}
 	.feedback-text {
 		text-align: center;
+		padding-left: 0;
 	}
 	.pop_up-sub_form-text__small {
 		padding-left: 30px;
@@ -1455,5 +1558,8 @@ a h2:hover {
 	}
 	.price_list-content p {
 		padding: 0 7px;
+	}
+	.map {
+	    max-width: 300px;
 	}
 }
