@@ -12,6 +12,28 @@
 	<header class="main-header main-header-non_index">
 		<div class="container">	
 			<nav class="main_nav">
+				<div class="hamburger">
+					<button class="hamburger_button visually_hidden" onclick="openMainmenu()"></button>
+					<ul id="js-hamburger_main" class="hamburger_main-list visually_hidden">
+						<li class="hamburger_main_nav-list">
+							<a href="index.html">Информация</a>
+						</li>
+						<li class="hamburger_main_nav-list">
+							<a href="../news.html">Новости</a>
+						</li>
+						<li class="hamburger_main_nav-list">
+							<a href="../price-list.html">Прайс-лист</a>
+						</li>
+						<li class="hamburger_main_nav-list">
+							<a href="../shop.html">Магазин</a>
+						</li>
+						<li class="hamburger_main_nav-list">
+							<a href="../contacts.html">Контакты</a>
+						</li>
+						<li class="hamburger_main_nav-list" onclick="popUpShow()">Вход
+						</li>
+					</ul>
+				</div>
 				<a href="../index.html">
 					<img class="nav-logo-non_index" src="../img/logo-non_index.png" alt="Барбершоп Бородинский">
 				</a>
@@ -71,7 +93,7 @@
 					<a href="#">
 						<img src="../img/goods_item/hel_suavecito/hel_suavecito_photo2.jpg" alt="Гель для волос «Suavecito»">
 					</a>
-					<a href="#">
+					<a class="goods-img_small__mob" href="#">
 						<img src="../img/goods_item/hel_suavecito/hel_suavecito_photo3.jpg" alt="Гель для волос «Suavecito»">
 					</a>
 					</div>
@@ -157,7 +179,7 @@
 	</div>
 	<div id="js-socialUpdate" class="social_update-overlay">
 		<div class="message-updating_social">
-			<p>Наши группы засияют по новому. Чуть-чуть потерпите</p>
+			<p>Наши группы засияют по-новому. Чуть-чуть потерпите</p>
 			<p class="message-ps">P.S. Красота требует жертв</p>
 			<button class="button_close" title="Закрыть" onclick="socialMessageClose()"></button>
 			<button class="button button-message" onclick="socialMessageClose()">Хорошо</button>
