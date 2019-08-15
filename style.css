@@ -1563,3 +1563,22 @@ a h2:hover {
 	    max-width: 300px;
 	}
 }
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   .main_form {
+   	max-width: 370px;
+   }
+   .content {
+   	padding: 55px 70px 50px;
+   }
+   .content::before {
+   	right: 460px;
+   }
+   .button_close {
+   	left: 95%;
+   	top:4%;
+   	width: 10px;
+   	height: 10px;
+   	background-color: #000000;
+   	visibility: visible;
+   }
+}
