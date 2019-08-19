@@ -1366,9 +1366,16 @@ a h2:hover {
 		margin-top: 35px;
 	}
 	.pop_up-personal_account,
-	.pop_up-feedback {
+	.pop_up-feedback 	 {
+		max-width: 310px;
+		padding-left: 20px;
+		padding-right: 20px;
 		left: 3%;
 		top: 5%;
+	}
+	.pop_up-feedback {
+		padding-left: 0;
+		padding-right: 55px;
 	}
 	.message-updating_site {
 		left: 8%;
@@ -1377,7 +1384,7 @@ a h2:hover {
 		left: 1.5%;
 	}
 	.button_close {
-		left: 92%;
+		left: 90%;
 		top: 3%;
 	}
 	.button_close::after, 
@@ -1485,11 +1492,6 @@ a h2:hover {
 		max-width: 300px;
 		left: 3%;
 		padding: 15px 8px 5px 8px;
-	}
-		.message-updating_site {
-		max-width: 300px;
-		left: 3%;
-		padding: 20px 60px;
 	}
 	.pop_up-feedback,
 	.message-updating_social {
