@@ -13,29 +13,31 @@
 <body>
 	<header id="home-link" class="header-main">
 		<div class="container">
-			<div class="header-main_wrap">
+			<div class="header-main-wrap">
 				<span class="header-main__logo">Wooder</span>
-				<nav class="header-main__nav main-nav">
-					<ul class="main-nav__list">
-						<li class="main-nav__item main-nav__item_selected">
-							<a>home</a>
-						</li>
-						<li class="main-nav__item">
-							<a href="#products-link" class="main-nav__link">products</a>
-						</li>
-						<li class="main-nav__item">
-							<a href="#about-link" class="main-nav__link">about</a>
-						</li>
-						<li class="main-nav__item main-nav__info">
-							<a href="#footer-link" class="main-nav__link main-nav__link_hidden" title="Copywrite">Info</a>
-						</li>
-					</ul>
+				<nav class="main-nav">
+					<div class="main-nav-wrap">
+						<ul class="main-nav__list">
+							<li class="main-nav__item main-nav__item_selected">
+								<a>home</a>
+							</li>
+							<li class="main-nav__item">
+								<a href="#products-link" class="main-nav__link">products</a>
+							</li>
+							<li class="main-nav__item">
+								<a href="#about-link" class="main-nav__link">about</a>
+							</li>
+						</ul>
+					</div>
 					<div class="main-nav__lang nav-lang">
 						<ul class="nav-lang__list">
-							<li class="nav-lang__item" onclick="chooseLang()">en
-								<div id="nav-lang_choose" class="nav-lang_hidden hidden">
+							<li class="nav-lang__link">
+								<a href="#footer-link" class="main-nav__link main-nav__link_hidden" title="Copywrite">Info</a>
+							</li>
+							<li class="nav-lang__item">en
+								<div class="nav-lang_hidden hidden">
 									<ul class="nav-lang__list">
-										<li class="nav-lang__item" onclick="updateSite()">ru</li>
+										<li class="nav-lang__item"><a href="index-ru.html">ru</a></li>
 									</ul>
 								</div>
 							</li>
@@ -80,7 +82,7 @@
 						<h2 class="main-title products__title_left">Furniture</h2>
 						<p class="main-text furniture__text">Wooder utilizes materials otherwise left behind, rendered useless in their original intent. By creating new pieces made of reclaimed barnwood
 						</p>
-						<a class="products__link" onclick="updateSite()">Learn more</a>
+						<a target="_blank" href="https://wooder.by/catalog/wooden_windows/wood/" class="products__link" onclick="updateSite()">Learn more</a>
 					</div>
 					<img class="furniture__img" src="img/furniture_item.jpg" alt="Wooder furniture">
 				</div>
@@ -91,7 +93,7 @@
 						<h2 class="main-title products__title_right">Decor</h2>
 						<p class="main-text decor__text">We make all types of wooden decor as per design given by Architect,Interior designer, contractor which is suitable your premises. 
 						</p>
-						<a class="products__link products__link_center" onclick="updateSite()">Learn more</a>
+						<a target="_blank" href="https://wooder.by/catalog/wooden_windows/finish" class="products__link products__link_center" onclick="updateSite()">Learn more</a>
 					</div>
 					<span class="products__order products__order_right">02<span class="products__order_brown">.</span></span>
 				</div>
@@ -103,21 +105,24 @@
 						<div class="video-box__content video-design">
 							<span class="video-box__img video-design__bg">
 								<img src="img/video_design.jpg" alt="Innovative Design">
-								<button class="video-box__bn" onclick="videoUnavailable()"></button>
+								<span id="js-unavailable__design" class="video-box__img_unavailable">Video<br>is<br>unavailable</span>
+								<button class="video-box__bn" onclick="videoUnavailableDesign()"></button>
 							</span>
 							<h3 class="video-box__title">Innovative Design</h3>
 						</div>
 						<div class="video-box__content video-skills">
 							<span class="video-box__img video-skills__bg">
 								<img src="img/video_skills.jpg" alt="High-level Skills">
-								<button class="video-box__bn" onclick="videoUnavailable()"></button>
+								<span id="js-unavailable__skills" class="video-box__img_unavailable">Video<br>is<br>unavailable</span>
+								<button class="video-box__bn" onclick="videoUnavailableSkills()"></button>
 							</span>
 							<h3 class="video-box__title">High-level Skills</h3>
 						</div>
 						<div class="video-box__content video-quality">
 							<span class="video-box__img video-quality__bg">
 								<img src="img/video-quality.jpg" alt="Quality design">
-								<button class="video-box__bn" onclick="videoUnavailable()"></button>
+								<span id="js-unavailable__quality" class="video-box__img_unavailable">Video<br>is<br>unavailable</span>
+								<button class="video-box__bn" onclick="videoUnavailableQuality()"></button>
 							</span>
 							<h3 class="video-box__title">Quality design</h3>
 						</div>	
@@ -127,34 +132,36 @@
 		</section>
 		<section class="skills">
 			<div class="container skills_container">
+				<iframe id="js-skills__video" class="skills__video" src="https://www.youtube.com/embed/2OmSyWnAJMI" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				<div class="skills__box">	
 					<h2 class="main-subtitle skills__title">We do the design of any complexity</h2>
 					<p class="main-text skills__text">This is a team of professionals that make the furniture and wood décor high standard. Creating modern designs. Adhering to the global quality standards. And we are doing work with love.
 					</p>
-					<button class="button skills__bn">Watch video</button>
+					<button class="button skills__bn" onclick="videoSkills()">Watch video</button>
+					<div>
 				</div>
 			</div>
 		</section>
 		<section id="about-link" class="about-us">
 			<div class="container">
-				<div class="about-us__wrap">
+				<div class="about-us-wrap">
 					<img class="about-us__img" src="img/about_us.jpg" alt="About us">
-					<div class="about-us__content about">
+					<div class="about">
 						<h2 class="main-subtitle about__title">About us</h2>
 						<p class="main-text about__text">We are a team of professionals in the wood processing and the creation of wooden furniture of the highest class
 						</p>
-						<a class="products__link" onclick="updateSite()">Learn more</a>	
+						<a target="_blank" href="https://wooder.by/about/company/" class="products__link" onclick="updateSite()">Learn more</a>
 					</div>
 				</div>
 			</div>
 		</section>
 	</main>
-	<footer id="footer-link" class="footer_main">
+	<footer id="footer-link" class="footer-main">
 		<div class="container">
-			<div class="footer__wrap">
-				<span class="footer__copywriting">2016 Wooder</span>
-				<span class="footer__logo"><a href="#home-link">Wooder</a></span>
-				<span class="footer__copywriting footer__design">Designed by <span class="footer__design_light">Viacheslav Olianishyn</span></span>
+			<div class="footer-wrap">
+				<span class="footer-main__copywriting">2016 Wooder</span>
+				<span class="footer-main__logo"><a href="#home-link">Wooder</a></span>
+				<span class="footer-main__copywriting footer__design">Designed by <span class="footer-main__design_light">Viacheslav Olianishyn</span></span>
 			</div>
 		</div>
 	</footer>
