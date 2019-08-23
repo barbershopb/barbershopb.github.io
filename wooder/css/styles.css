@@ -45,20 +45,17 @@ button {
 	padding-bottom: 31px;
 	font-weight: 700;
 	text-transform: uppercase;
-	background-color: #000;
-	background-image: url(../img/header-bg.jpg);
-	background-position: top;
+	background: #000 url(../img/header-bg.jpg) 100% 0% no-repeat;
 }
-.header-main_wrap {
+.header-main-wrap {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	margin-left: auto;
 	color: #fff;
 }
 .header-main__logo {
 	position: relative;
-	max-width: 18%;
-	height: 2%;
 	font-size: 2.25rem;
 	letter-spacing: 0.68rem;
 }
@@ -74,8 +71,8 @@ button {
 .main-nav {
 	display: flex;
 	justify-content: space-between;
-	max-width: 883px;
-	margin-left: 100px;
+	width: 750px;
+	margin-left: 40px;
 	padding-top: 12px;
 	letter-spacing: 0.38px;
 }
@@ -84,13 +81,13 @@ button {
 	margin-right: 96px;
 	cursor: pointer;
 }
-.main-nav__item:nth-child(3) {
-	margin-right: 0;
-}
 .main-nav__item_selected {
 	margin-right: 119px;
 	cursor: default;
 	opacity: 0.5;
+}
+.main-nav__item:last-child {
+	margin-right: auto;
 }
 .main-nav__link {
 	position: relative;
@@ -115,16 +112,21 @@ button {
 }
 .nav-lang {
 	position: relative;
+	width: 105px;
 	margin-right: 50px;
+	margin-left: auto;
 	letter-spacing: 0.75px;
 	cursor: pointer;
 }
-.main-nav__info {
+.nav-lang__link {
 	position: relative;
+	display: inline-block;
 	margin-right: 30px;
-	margin-left: 250px;
 }
-.main-nav__info::before {
+.nav-lang__item {
+	display: inline-block;
+}
+.nav-lang__link::before {
 	position: absolute;
 	content: "";
 	top: -2px;
@@ -137,7 +139,7 @@ button {
 .nav-lang:hover {
 	color: #bea67c;
 }
-.nav-lang::after {
+.nav-lang__item::after {
 	position: absolute;
 	content: "";
 	top: 7px;
@@ -146,12 +148,15 @@ button {
 	border-top: 6px solid #fff;
 	cursor: pointer;
 }
-.nav-lang:hover::after {
+.nav-lang__item:hover::after {
 	border: 4px solid transparent; 
 	border-top: 6px solid #bea67c;
 }
 .nav-lang_hidden {
 	padding-top: 12px;
+}
+.nav-lang__item:hover .nav-lang_hidden {
+	display: block;
 }
 .home {
 	position: relative;
@@ -174,6 +179,7 @@ button {
 	position: absolute;
 	top: 50px;
 	left: -200px;
+	margin-left: 50px;
 	transform: rotate(90deg);
 }
 .home-nav__title {
@@ -220,7 +226,7 @@ button {
 }
 .home-baner {
 	position: relative;
-	margin-left: 150px;
+	margin-left: 242px;
 }
 .main-subtitle {
 	color: #bea67c;
@@ -229,7 +235,8 @@ button {
 	text-transform: uppercase;
 }
 .home__main-title {
-	margin-bottom: 61px
+	max-width: 535px;
+	margin-bottom: 61px;
 }
 .button {
 	border: 2px solid #fff;
@@ -246,10 +253,10 @@ button {
 }
 .home-baner__button {
 	display: block;
-	max-width: 310px;
+	width: 310px;
 	position: relative;
 	margin-bottom: 460px;
-	padding: 24px 86px 24px 24px;
+	padding: 24px 70px 24px 24px;
 }
 .home-baner__button::after {
 	position: absolute;
@@ -326,11 +333,12 @@ main {
 .furniture {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-between;
 }
 .furniture-content {
 	max-width: 340px;
 	margin-right: 48px;
+	margin-bottom: 125px;
 }
 .main-title {
 	color: #010101;
@@ -425,7 +433,6 @@ main {
 .products__order_left {
 	position: absolute;
 	top: 500px;
-	left: 70px;
 }
 .products__order_brown {
 	color: #bea67c;
@@ -434,15 +441,15 @@ main {
 	position: relative;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-between;
 	padding-bottom: 152px;
 	text-align: right;
 }
 .decor::before {
 	position: absolute;
-	content: "Decore";
+	content: "Decor";
 	top: 142px;
-	left: -55px;
+	left: -12px;
 	opacity: 0.2;
 	color: #d0d0d0;
 	font-size: 5.6rem;
@@ -452,13 +459,14 @@ main {
 }
 .decor__img {
 	margin-right: auto;
+	margin-left: 55px;
 	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.25);
 	background-color: #000000;
 }
 .decor-content {
-	max-width: 267px;
-	margin-right: auto;
-	margin-left: 122px;
+	width: 267px;
+	margin-left: auto;
+	margin-right: 110px;
 	padding-top: 118px;
 }
 .products__title_right::before  {
@@ -498,7 +506,8 @@ main {
 }
 .quality__title {
 	position: relative;	
-	margin-bottom: 58px;
+	max-width: 610px;
+	margin: 0 auto 58px auto;
 	color: #000;
 }
 .quality__title::after {
@@ -507,7 +516,7 @@ main {
 	width: 44px;
 	height: 4px;
 	bottom: -27px;
-	left: 533px;
+	left: 260px;
 	background-color: #bea67c;
 }
 .quality__text {
@@ -523,12 +532,37 @@ main {
 .video-box__content {
 	margin-right: 111px;
 }
-.video-box__content:last-child {
-	margin-right: 0;
-}
 .video-box__img {
 	position: relative;
 	border-radius: 50%;
+}
+.video-box__img_unavailable {
+	position: absolute;
+	z-index: -1;
+	top: -230px;
+	right: 0px;
+	max-width: 100%;
+	height: 248px;
+	width: 248px;
+	padding-top: 85px;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 1.2rem;
+	line-height: 1.56rem;
+	letter-spacing: 0.1rem;
+	background-color: #777;
+	opacity: 0.9;
+	border-radius: 50%;
+	cursor: default;
+}
+.video-show__design {
+	z-index: 1;
+}
+.video-show__skills {
+	z-index: 1;
+}
+.video-show__quality {
+	z-index: 1;
 }
 .video-box__img::after {
 	position: absolute;
@@ -568,7 +602,8 @@ main {
 	border-left: 17px solid #fff;
 }
 .video-box__title {
-	margin-top: 138px;
+	margin-top: 113px;
+	margin-bottom: 22px;
 	color: #000;
 	letter-spacing: 0.03rem;
 }
@@ -635,6 +670,17 @@ main {
 	background-repeat: no-repeat;
 	background-position: 50px 20px;
 }
+.skills__video {
+	display: none;
+	position: absolute;
+	z-index: 1;
+	max-width: 100%;
+	width: 1170px; 
+	height: 730px;
+}
+.skills__video-open {
+	display: block;
+}
 .about-us {
 	position: relative;
 	padding-top: 138px;
@@ -664,7 +710,7 @@ main {
 	font-weight: 700;
 	text-transform: uppercase;
 }
-.about-us__wrap {
+.about-us-wrap {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -710,15 +756,15 @@ main {
 	left: -70px;
 	background-color: #bea67c;
 }
-.footer_main {
+.footer-main {
 	background-color: #000;
 	background: url(../img/footer_bg.jpg);
 }
-.footer__wrap {
+.footer-wrap {
 	display: flex;
 	justify-content: space-between;
 }
-.footer__copywriting {
+.footer-main__copywriting {
 	padding-top: 27px;
 	padding-bottom: 19px;
 	color: #464646;
@@ -726,13 +772,13 @@ main {
 	letter-spacing: 0.02rem;
 	text-transform: uppercase;
 }
-.footer__design {
+.footer-main__design {
 	text-transform: none;
 }
-.footer__design_light {
+.footer-main__design_light {
 	color: #7d7d7d;
 }
-.footer__logo {
+.footer-main__logo {
 	position: relative;
 	padding-top: 19px;
 	padding-bottom: 19px;
@@ -741,7 +787,7 @@ main {
 	letter-spacing: 0.68rem;
 	text-transform: uppercase;
 }
-.footer__logo::before {
+.footer-main__logo::before {
 	position: absolute;
 	content: "";
 	top: 34px;
