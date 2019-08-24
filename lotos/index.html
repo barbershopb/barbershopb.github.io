@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title lang="en">Lotos</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<script src="script.js"></script>
+</head>
+<body>
+	<main>
+		<section id="home-page" class="section-home section_logo">
+			<div class="container">
+				<header class="header-main">
+					<nav class="nav-main">
+						<span class="nav-main__title">Меню</span>
+						<ul class="nav-main__list hidden">
+							<li class="nav-main__list nav-main__list_selected">
+								<a class="nav-main__link">Добро пожаловать</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Направления и классы</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Пробное занятие</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Преподаватели</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Абонементы</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Расписание</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Отзывы</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<h2 class="header-main__title">Добро пожаловать</h2>
+					<a href="tel: +7 (812) 345-56-97" class="header-main__tel">+7 (812) 345-56-97
+					</a>
+				</header>
+				<div class="home-content">
+					<div class="home">	
+						<h1 class="home__title">Lotos</h1>
+						<span class="home__subtitle">Центр йоги</span>
+						<p class="text_main home__text">Приглашаем вас и ваших друзей на бесплатное пробное занятие</p>
+						<button class="button-sign home__button_add"></button>
+					</div>
+					<img class="home__img" src="img/home_main.jpg" alt="Центр йоги Lotos">	
+				</div>
+				<span class="page-number"><span class="page-number_big">01</span><br>&ndash; 09</span>
+				<footer class="footer-main">
+					<div class="footer-social">
+						<ul class="footer-social__list">
+							<li class="footer-social__item">
+								<a class="footer-social__link" href="">vk</a>
+							</li>
+							<li class="footer-social__item">
+								<a class="footer-social__link" href="">fb</a>
+							</li>
+							<li class="footer-social__item">
+								<a class="footer-social__link" href="">inst</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-nextpage">
+						<a class="footer-nextpage__link" href="#classes-page">Направления и классы</a>
+					</div>
+				</footer>
+			</div>
+		</section>
+		<section id="classes-page" class="section-classes section_logo">
+			<div class="container">
+				<header class="header-main">
+					<nav class="nav-main">
+						<span class="nav-main__title">Меню</span>
+						<ul class="nav-main__list hidden">
+							<li class="nav-main__list">
+								<a class="nav-main__link">Добро пожаловать</a>
+							</li>
+							<li class="nav-main__list nav-main__list_selected">
+								<a class="nav-main__link" href="#">Направления и классы</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Пробное занятие</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Преподаватели</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Абонементы</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Расписание</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Отзывы</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<h2 class="header-main__title">Направления и классы</h2>
+					<a href="tel: +7 (812) 345-56-97" class="header-main__tel">+7 (812) 345-56-97
+					</a>
+				</header>
+				<div class="classes-content">
+					<nav class="classes-nav">
+						<ul class="classes-nav__list">
+							<li class="classes-nav__item classes-nav__item_selected" onclick="beginnerContent()">Для начинающих</li>
+							<li class="classes-nav__item" onclick="ashtangaContent()">Аштанга Виньяса</li>
+							<li class="classes-nav__item" onclick="universalContent()">Универсальная</li>
+							<li class="classes-nav__item" onclick="kundaliniContent()">Кундалини</li>
+							<li class="classes-nav__item" onclick="ayengaraContent()">Айенгара</li>
+							<li class="classes-nav__item" onclick="terapyContent()">Терапия</li>	
+						</ul>
+					</nav>
+					<div class="classes">	
+						<h3 class="classes__title">Yoga &mdash;</h3>
+						<div id="js-stream_first" class="stream">
+							<h4 class="stream__subtitle">Для начинающих</h4>
+							<p class="text_main stream__text">Йога для начинающих рассчитана на тех, кто до этого никогда ей не занимался и требует обучения. Такой программный комплекс существует и в нашем центре.
+							</p>
+							<p class="text_main stream__text">Мы предлагаем посетить бесплатное вводное занятие, чтобы узнать, почему так много людей занимаются йогой и придерживаются здорового образа жизни.
+							</p>
+						</div>
+						<div id="js-stream_second" class="stream hidden">
+							<h4 class="stream__subtitle">Аштанга Виньяса</h4>
+							<p class="text_main stream__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure reiciendis, odio ullam consequatur minima magnam aperiam impedit quis hic earum iusto quo fugit amet. Atque doloribus harum cupiditate quibusdam, omnis!
+							</p>
+							<p class="text_main stream__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, facilis totam aliquam cumque sit labore vero atque, quae quos qui quo sunt aliquid laudantium! Deleniti, laborum, omnis! Eaque, nisi, quisquam!
+							</p>
+						</div>
+						<div id="js-stream_third" class="stream hidden">
+							<h4 class="stream__subtitle">Универсальная</h4>
+							<p class="text_main stream__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus totam id, necessitatibus aspernatur quos placeat illo praesentium excepturi debitis recusandae! Facere, animi. Voluptates harum, quae sapiente, quasi minima odio eligendi.
+							</p>
+							<p class="text_main stream__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque ab consequatur doloribus. Rerum quae quia quisquam maiores reiciendis. Minus, commodi sit architecto laudantium, iste iusto vero aut rerum odio tempora.
+							</p>
+						</div>
+						<div id="js-stream_forth" class="stream hidden">
+							<h4 class="stream__subtitle">Кундалини</h4>
+							<p class="text_main stream__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum officia excepturi ea voluptatum debitis repellendus facilis amet voluptate nam, eius nobis laborum iure officiis, quia quis culpa dignissimos deserunt! Nesciunt.
+							</p>
+							<p class="text_main stream__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo nostrum cum perspiciatis! Voluptates, ut, magni dolores ipsum debitis obcaecati autem error, odio iste nam optio nihil. Eius rem, nemo incidunt.
+							</p>
+						</div>
+						<div id="js-stream_fifth" class="stream hidden">
+							<h4 class="stream__subtitle">Айенгара</h4>
+							<p class="text_main stream__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum cupiditate rerum, sequi quas perspiciatis illo? Sed qui corporis, distinctio ullam rerum, impedit non perferendis facere ducimus obcaecati nulla. Inventore, ratione.
+							</p>
+							<p class="text_main stream__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit aliquam ut alias nulla illum eius eaque, amet explicabo, incidunt eveniet quos quam qui, fuga obcaecati quas assumenda ab quo sint.
+							</p>
+						</div>
+						<div id="js-stream_sixth" class="stream hidden">
+							<h4 class="stream__subtitle">Терапия</h4>
+							<p class="text_main stream__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias obcaecati cumque voluptatem deserunt dicta cupiditate natus quaerat, est maxime consequuntur animi enim delectus nesciunt amet. Cumque ullam nemo dicta. Eveniet.
+							</p>
+							<p class="text_main stream__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime aut quis libero voluptate, id velit consequuntur aperiam fugiat totam magnam ad ipsum dolore! Placeat ad reprehenderit molestias. Distinctio, libero, veritatis?
+							</p>
+						</div>
+						<button class="button classes__button">Записаться онлайн</button>
+						<button class="button-sign classes__button_add"></button>
+					</div>
+					<img class="classes__img" src="img/classes_main.jpg" alt="Направления и классы">	
+				</div>
+				<span class="page-number"><span class="page-number_big">02</span><br>&ndash; 09</span>
+				<footer class="footer-main">
+					<div class="footer-social">
+						<ul class="footer-social__list">
+							<li class="footer-social__item">
+								<a class="footer-social__link" href="">vk</a>
+							</li>
+							<li class="footer-social__item">
+								<a class="footer-social__link" href="">fb</a>
+							</li>
+							<li class="footer-social__item">
+								<a class="footer-social__link" href="">inst</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-nextpage">
+						<a class="footer-nextpage__link" href="#firstlesson-page">Пробное занятие</a>
+					</div>
+				</footer>
+			</div>	
+		</section>
+		<section id="firstlesson-page" class="section-firstlesson section_logo">
+			<div class="container">
+				<header class="header-main">
+					<nav class="nav-main">
+						<span class="nav-main__title">Меню</span>
+						<ul class="nav-main__list hidden">
+							<li class="nav-main__list">
+								<a class="nav-main__link">Добро пожаловать</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Направления и классы</a>
+							</li>
+							<li class="nav-main__list nav-main__list_selected">
+								<a class="nav-main__link" href="#">Пробное занятие</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Преподаватели</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Абонементы</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Расписание</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Отзывы</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<h2 class="header-main__title">Пробное занятие</h2>
+					<a href="tel: +7 (812) 345-56-97" class="header-main__tel">+7 (812) 345-56-97
+					</a>
+				</header>
+				<div class="firstlesson-content">
+					<div class="firstlesson">	
+						<img class="firstlesson__img" src="img/firstlesson_main.jpg" alt="Пробное занятие">
+						<p class="firstlesson__discount"><span class="firstlesson__discount_big">10%</span> на абонемент скидка</p>
+						<p class="text_main firstlesson__text">Мы сделаем для вас 10% скидку на абонемент, купленный в день посещения вводного занятия.
+						</p>
+						<form class="firstlesson-form" method="POST">
+							<input class="firstlesson-form__text" type="text" name="name" placeholder="Ваше имя">
+							<input class="firstlesson-form__tel" type="tel" name="tel" placeholder="Ваш телефон">
+							<button type="submit" class="button firstlesson__button">Отправить заявку</button>
+							<button class="button-sign firstlesson__button_envelope"></button>
+						</form>
+						<p class=" text-main firstlesson__politics">Нажимая «Отправить заявку», вы даете согласие на обработку своих персональных данных</p>
+					</div>	
+				</div>
+				<span class="page-number"><span class="page-number_big">03</span><br>&ndash; 09</span>
+				<footer class="footer-main">
+					<div class="footer-social">
+						<ul class="footer-social__list">
+							<li class="footer-social__item">
+								<a class="footer-social__link" href="">vk</a>
+							</li>
+							<li class="footer-social__item">
+								<a class="footer-social__link" href="">fb</a>
+							</li>
+							<li class="footer-social__item">
+								<a class="footer-social__link" href="">inst</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-nextpage">
+						<a class="footer-nextpage__link" href="#trainers-page">Преподаватели</a>
+					</div>
+				</footer>
+			</div>	
+		</section>
+		<section id="trainers-page" class="section-trainers section_logo">
+			<div class="container">
+				<header class="header-main">
+					<nav class="nav-main">
+						<span class="nav-main__title">Меню</span>
+						<ul class="nav-main__list hidden">
+							<li class="nav-main__list">
+								<a class="nav-main__link">Добро пожаловать</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Направления и классы</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Пробное занятие</a>
+							</li>
+							<li class="nav-main__list nav-main__list_selected">
+								<a class="nav-main__link" href="#">Преподаватели</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Абонементы</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Расписание</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Отзывы</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<h2 class="header-main__title">Преподаватели</h2>
+					<a href="tel: +7 (812) 345-56-97" class="header-main__tel">+7 (812) 345-56-97
+					</a>
+				</header>
+				<div class="trainers-content">
+					<nav class="trainers-nav">
+						<ul class="trainers-nav__list">
+							<li class="trainers-nav__item trainers-nav__item_selected" onclick="trainerFirst()">Максим Казаков</li>
+							<li class="trainers-nav__item" onclick="trainerSecond()">Юлия Зырянова</li>
+						</ul>
+					</nav>
+					<div id="js-trainers-first" class="trainers">
+						<img class="trainers__img" src="img/trainer_first.jpg" alt="Максим Казаков">
+						<h3 class="trainers__title">Максим Казаков</h3>
+						<p class="trainers__subtitle">Преподаватель йоги с 1997 года</p>
+						<p class="text_main trainers__text">Занимается йогой Айенгара с 1990 года. Является преподавателем йоги Айенгара с 1997 года. Имеет международный сертификат Junior I. Проводит семинары, занятия разных уровней сложностей.
+						</p>
+						<p class="text_main trainers__text">В йогу привел интерес. Является одним из самых опытных преподавателей и опорой нашего центра. Все студенты любят Максима за отзывчивость и индивидуальный подход к каждому.
+						</p>
+						<button type="submit" class="button classes__button">Записаться к тренеру</button>
+						<button class="button-sign classes__button_add"></button>
+					</div>
+					<div id="js-trainers-second" class="trainers hidden">
+						<img class="trainers__img" src="img/trainer_second.jpg" alt="Юлия Зырянова">
+						<h3 class="trainers__title">Юлия Зырянова</h3>
+						<p class="trainers__subtitle">Lorem</p>
+						<p class="text_main trainers__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci officiis doloribus, perferendis consequatur in quia fuga totam, fugiat dolor quae alias, pariatur possimus mollitia aut ad quas, natus quam unde?
+						</p>
+						<p class="text_main trainers__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae fuga minus, esse rem quos laborum error dicta fugiat itaque earum hic laboriosam perspiciatis optio laudantium deserunt amet natus quaerat ducimus!
+						</p>
+						<button type="submit" class="button classes__button">Записаться к тренеру</button>
+						<button class="button-sign classes__button_add"></button>
+					</div>	
+				<span class="page-number"><span class="page-number_big">04</span><br>&ndash; 09</span>
+				<footer class="footer-main">
+					<div class="footer-social">
+						<ul class="footer-social__list">
+							<li class="footer-social__item">
+								<a class="footer-social__link" href="">vk</a>
+							</li>
+							<li class="footer-social__item">
+								<a class="footer-social__link" href="">fb</a>
+							</li>
+							<li class="footer-social__item">
+								<a class="footer-social__link" href="">inst</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-nextpage">
+						<a class="footer-nextpage__link" href="#tickets-page">Абонементы</a>
+					</div>
+				</footer>
+			</div>	
+		</section>	
+		<section id="tickets-page" class="section-tickets section_logo">
+			<div class="container">
+				<header class="header-main">
+					<nav class="nav-main">
+						<span class="nav-main__title">Меню</span>
+						<ul class="nav-main__list hidden">
+							<li class="nav-main__list">
+								<a class="nav-main__link">Добро пожаловать</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Направления и классы</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Пробное занятие</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Преподаватели</a>
+							</li>
+							<li class="nav-main__list nav-main__list_selected">
+								<a class="nav-main__link" href="#">Абонементы</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Расписание</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Отзывы</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<h2 class="header-main__title">Абонементы</h2>
+					<a href="tel: +7 (812) 345-56-97" class="header-main__tel">+7 (812) 345-56-97
+					</a>
+				</header>
+				<div class="tickets-content">
+					<div class="tickets">	
+						<img class="tickets__img" src="img/tickets_main.jpg" alt="Абонементы">
+						<div class="tickets-box">
+							<div class="tickets-type">
+								<h3 class="tickets-type__title">Разовое занятие</h3>
+								<span class="tickets-type__cost"><span class="tickets-type__cost_red">300</span> руб.</span>
+								<button class="button-sign tickets__button_add tickets-sign_grey"></button>
+							</div>
+							<div class="tickets-type">
+								<h3 class="tickets-type__title">Месяц занятий</h3>
+								<span class="tickets-type__cost"><span class="tickets-type__cost_red">2 000</span> руб.</span>
+								<button class="button-sign tickets__button_add tickets-sign_grey"></button>
+							</div>
+							<div class="tickets-type">
+								<h3 class="tickets-type__title">2 месяца занятий</h3>
+								<span class="tickets-type__cost"><span class="tickets-type__cost_red">3 500</span> руб.</span>
+								<button class="button-sign tickets__button_add tickets-sign_grey"></button>
+							</div>
+							<div class="tickets-type">
+								<h3 class="tickets-type__title">3 месяца занятий</h3>
+								<span class="tickets-type__cost"><span class="tickets-type__cost_red">4 500</span> руб.</span>
+								<button class="button-sign tickets__button_add tickets-sign_grey"></button>
+							</div>
+							<div class="tickets-type">
+								<h3 class="tickets-type__title">Пол года занятий</h3>
+								<span class="tickets-type__cost"><span class="tickets-type__cost_red">8 000</span> руб.</span>
+								<button class="button-sign tickets__button_add tickets-sign_grey"></button>
+							</div>
+							<div class="tickets-type">
+								<h3 class="tickets-type__title">Год занятий</h3>
+								<span class="tickets-type__cost"><span class="tickets-type__cost_red">14 000</span> руб.</span>
+								<button class="button-sign tickets__button_add tickets-sign_grey"></button>
+							</div>
+							<button type="submit" class="button classes__button">Заказать абонемент</button>
+							<button class="button-sign classes__button_add"></button>
+				</div>
+				<span class="page-number"><span class="page-number_big">05</span><br>&ndash; 09</span>
+				<footer class="footer-main">
+					<div class="footer-social">
+						<ul class="footer-social__list">
+							<li class="footer-social__item">
+								<a class="footer-social__link" href="">vk</a>
+							</li>
+							<li class="footer-social__item">
+								<a class="footer-social__link" href="">fb</a>
+							</li>
+							<li class="footer-social__item">
+								<a class="footer-social__link" href="">inst</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-nextpage">
+						<a class="footer-nextpage__link" href="#schedule-page">Расписание</a>
+					</div>
+				</footer>
+			</div>	
+		</section>
+		<section id="schedule-page" class="section-schedule section_logo">
+			<div class="container">
+				<header class="header-main">
+					<nav class="nav-main">
+						<span class="nav-main__title">Меню</span>
+						<ul class="nav-main__list hidden">
+							<li class="nav-main__list">
+								<a class="nav-main__link">Добро пожаловать</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Направления и классы</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Пробное занятие</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Преподаватели</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Абонементы</a>
+							</li>
+							<li class="nav-main__list nav-main__list_selected">
+								<a class="nav-main__link" href="#">Расписание</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Отзывы</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<h2 class="header-main__title">Расписание</h2>
+					<a href="tel: +7 (812) 345-56-97" class="header-main__tel">+7 (812) 345-56-97
+					</a>
+				</header>
+				<div class="schedule-content">
+					<table schedule-table>
+						<tr class="schedule-table__row">
+							<td class="schedule-table__download"></td>
+							<td class="schedule-table__time">08:00 − 09:25</td>
+							<td class="schedule-table__time">09:30 − 10:55</td>
+							<td class="schedule-table__time">11:00 − 12:25</td>
+							<td class="schedule-table__time">13:30 − 14:55</td>
+							<td class="schedule-table__time">15:00 − 16:25</td>
+							<td class="schedule-table__time">17:00 − 18:25</td>
+						</tr>
+						<tr class="schedule-table__row">
+							<td class="schedule-table__day">Понедельник</td>
+							<td class="schedule-table__lesson">Йога для начинающих</td>
+							<td class="schedule-table__lesson">Универсальная йога</td>
+							<td class="schedule-table__lesson">Йога Айенгара</td>
+							<td class="schedule-table__lesson">Аштанга Виньяса йога</td>
+							<td class="schedule-table__lesson">Йогатерапия</td>
+							<td class="schedule-table__lesson">Кундалини йога</td>
+						</tr>
+						<tr class="schedule-table__row">
+							<td class="schedule-table__day">Вторник</td>
+							<td class="schedule-table__lesson">Кундалини йога</td>
+							<td class="schedule-table__lesson">Йогатерапия</td>
+							<td class="schedule-table__lesson">Аштанга Виньяса йога</td>
+							<td class="schedule-table__lesson">Йога Айенгара</td>
+							<td class="schedule-table__lesson">Универсальная йога/td>
+							<td class="schedule-table__lesson">Йога для начинающих</td>
+						</tr>
+						<tr class="schedule-table__row">
+							<td class="schedule-table__day">Среда</td>
+							<td class="schedule-table__lesson">Йога для начинающих</td>
+							<td class="schedule-table__lesson">Универсальная йога</td>
+							<td class="schedule-table__lesson">Йога Айенгара</td>
+							<td class="schedule-table__lesson">Аштанга Виньяса йога</td>
+							<td class="schedule-table__lesson">Йогатерапия</td>
+							<td class="schedule-table__lesson">Кундалини йога</td>
+						</tr>
+						<tr class="schedule-table__row">
+							<td class="schedule-table__day">Четверг</td>
+							<td class="schedule-table__lesson">Универсальная йога</td>
+							<td class="schedule-table__lesson">Йога для начинающих</td>
+							<td class="schedule-table__lesson">Аштанга Виньяса йога</td>
+							<td class="schedule-table__lesson">Йога Айенгара</td>
+							<td class="schedule-table__lesson">Кундалини йога</td>
+							<td class="schedule-table__lesson">Йогатерапия</td>
+						</tr>
+						<tr class="schedule-table__row">
+							<td class="schedule-table__day">Пятница</td>
+							<td class="schedule-table__lesson">Кундалини йога</td>
+							<td class="schedule-table__lesson">Йогатерапия</td>
+							<td class="schedule-table__lesson">Йога Айенгара</td>
+							<td class="schedule-table__lesson">Аштанга Виньяса йога</td>
+							<td class="schedule-table__lesson">Универсальная йога</td>
+							<td class="schedule-table__lesson">Йога для начинающих</td>
+						</tr>
+						<tr class="schedule-table__row">
+							<td class="schedule-table__day">Суббота</td>
+							<td class="schedule-table__lesson">Универсальная йога</td>
+							<td class="schedule-table__lesson">Йога для начинающих</td>
+							<td class="schedule-table__lesson">Аштанга Виньяса йога</td>
+							<td class="schedule-table__lesson">Йога Айенгара</td>
+							<td class="schedule-table__lesson">Кундалини йога</td>
+							<td class="schedule-table__lesson">Йогатерапия</td>
+						</tr>
+						<tr class="schedule-table__row">
+							<td class="schedule-table__day">Воскресенье</td>
+							<td class="schedule-table__lesson">Йога для начинающих</td>
+							<td class="schedule-table__lesson">Универсальная йога</td>
+							<td class="schedule-table__lesson">Йога Айенгара</td>
+							<td class="schedule-table__lesson">Аштанга Виньяса йога</td>
+							<td class="schedule-table__lesson">Йогатерапия</td>
+							<td class="schedule-table__lesson">Кундалини йога</td>
+						</tr>
+					</table>	
+				</div>
+				<span class="page-number"><span class="page-number_big">06</span><br>&ndash; 09</span>
+				<footer class="footer-main">
+					<div class="footer-social">
+						<ul class="footer-social__list">
+							<li class="footer-social__item">
+								<a class="footer-social__link" href="">vk</a>
+							</li>
+							<li class="footer-social__item">
+								<a class="footer-social__link" href="">fb</a>
+							</li>
+							<li class="footer-social__item">
+								<a class="footer-social__link" href="">inst</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-nextpage">
+						<a class="footer-nextpage__link" href="#feedback-page">Отзывы</a>
+					</div>
+				</footer>
+			</div>	
+		</section>
+		<section id="feedback-page" class="section-feedback section_logo">
+			<div class="container">
+				<header class="header-main">
+					<nav class="nav-main">
+						<span class="nav-main__title">Меню</span>
+						<ul class="nav-main__list hidden">
+							<li class="nav-main__list">
+								<a class="nav-main__link">Добро пожаловать</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Направления и классы</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Пробное занятие</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Преподаватели</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Абонементы</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Расписание</a>
+							</li>
+							<li class="nav-main__list nav-main__list_selected">
+								<a class="nav-main__link" href="#">Отзывы</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<h2 class="header-main__title">Отзывы</h2>
+					<a href="tel: +7 (812) 345-56-97" class="header-main__tel">+7 (812) 345-56-97
+					</a>
+				</header>
+				<div class="feedback-content">
+					<nav class="feedback-nav">
+						<ul class="feedback-nav__list">
+							<li class="feedback-nav__item trainers-nav__item_selected" onclick="feedbackFirst()">Арина Наумова</li>
+							<li class="feedback-nav__item" onclick="feedbackSecond()">Бред Питт</li>
+						</ul>
+					</nav>
+					<div id="js-feedback-first" class="feedback">
+						<img class="feedback__img" src="img/feedback_first.jpg" alt="Арина Наумова">
+						<h3 class="feedback__title">Арина Наумова</h3>
+						<p class="feedback__age">34 года</p>
+						<p class="text_main feedback__text">Не знаю, как остальные, но после занятий йогой хочется начать новую здоровую жизнь, хочется поесть овощей и фруктов и поднять свой иммунитет. Теперь для меня день занятий йогой — это день здоровья.
+						</p>
+						<p class="text_main feedback__text">После упорных занятий я стала меньше болеть, и поняла, в чем смысл всех упражнений. Позы получаются элегантно,  и не больно только тогда, когда не прилагаешь усилия, а остаёшься расслабленным на протяжении всего урока.
+						</p>
+						<button type="submit" class="button classes__button">Попробовать тоже</button>
+						<button class="button-sign classes__button_add"></button>
+					</div>
+					<div id="js-feedback-second" class="feedback">
+						<img class="feedback__img" src="img/feedback_first.jpg" alt="Бред Питт">
+						<h3 class="feedback__title">Бред Питт</h3>
+						<p class="feedback__age">53 года</p>
+						<p class="text_main feedback__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, tenetur ducimus quod numquam expedita nisi, accusantium excepturi? Vero exercitationem velit neque temporibus eaque, debitis numquam, dolore placeat alias, molestias ab.
+						</p>
+						<p class="text_main feedback__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque neque voluptatibus quaerat, tenetur consequatur repellendus nostrum velit laboriosam quas sunt nemo modi corporis dicta, aspernatur ducimus, quae quam ratione! Suscipit!
+						</p>
+						<button type="submit" class="button classes__button">Попробовать тоже</button>
+						<button class="button-sign classes__button_add"></button>
+					</div>
+				<span class="page-number"><span class="page-number_big">07</span><br>&ndash; 09</span>
+				<footer class="footer-main">
+					<div class="footer-social">
+						<ul class="footer-social__list">
+							<li class="footer-social__item">
+								<a class="footer-social__link" href="">vk</a>
+							</li>
+							<li class="footer-social__item">
+								<a class="footer-social__link" href="">fb</a>
+							</li>
+							<li class="footer-social__item">
+								<a class="footer-social__link" href="">inst</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-nextpage">
+						<a class="footer-nextpage__link" href="#contacts-page">Контакты</a>
+					</div>
+				</footer>
+			</div>	
+		</section>
+		<section id="contacts-page" class="section-contacts section_logo">
+			<div class="container">
+				<header class="header-main">
+					<nav class="nav-main">
+						<span class="nav-main__title">Меню</span>
+						<ul class="nav-main__list hidden">
+							<li class="nav-main__list">
+								<a class="nav-main__link">Добро пожаловать</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Направления и классы</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Пробное занятие</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Преподаватели</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Абонементы</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Расписание</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link" href="#">Отзывы</a>
+							</li>
+							<li class="nav-main__list">
+								<a class="nav-main__link nav-main__list_selected" href="#">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<h2 class="header-main__title">Контакты</h2>
+					<a href="tel: +7 (812) 345-56-97" class="header-main__tel">+7 (812) 345-56-97
+					</a>
+				</header>
+				<div class="feedback-content">
+					<nav class="feedback-nav">
+						<ul class="feedback-nav__list">
+							<li class="feedback-nav__item trainers-nav__item_selected" onclick="feedbackFirst()">Арина Наумова</li>
+							<li class="feedback-nav__item" onclick="feedbackSecond()">Бред Питт</li>
+						</ul>
+					</nav>
+					<div class="contacts">
+						<img class="contacts__img" src="img/feedback_first.jpg" alt="Невский проспект 108">
+						<div class="contacts-box">
+							<p class="text_main contacts__text"><span class="contacts__text_small">Адрес: </span><br>Невский проспект 108</p>
+							<p class="text_main contacts__text"><span class="contacts__text_small" lang="en">Email: </span><br>Lotos-yoga@gmail.com</p>
+							<button class="contacts__map" onclick="mapOpen()">Смотреть на карте</button>
+							<button class="contacts__feedback" onclick="FeedbackOpen()">Оставить отзыв</button>
+							<p class="text_main contacts__copyright">&copy; 2018 — ООО “Центр йоги Лотос”</p>
+						</div>
+						<button type="submit" class="button contacts__button">Записаться онлайн</button>
+						<button class="button-sign contacts__button_add"></button>
+					</div>
+				<span class="page-number"><span class="page-number_big">08</span><br>&ndash; 09</span>
+				<footer class="footer-main">
+					<div class="footer-social">
+						<ul class="footer-social__list">
+							<li class="footer-social__item">
+								<a class="footer-social__link" href="">vk</a>
+							</li>
+							<li class="footer-social__item">
+								<a class="footer-social__link" href="">fb</a>
+							</li>
+							<li class="footer-social__item">
+								<a class="footer-social__link" href="">inst</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-nextpage">
+						<a class="footer-nextpage__link" href="#home-page">Вернуться</a>
+					</div>
+				</footer>
+			</div>	
+		</section>	
+	</main>
+</body>
+</html>
