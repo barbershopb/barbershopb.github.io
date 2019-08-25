@@ -1,0 +1,329 @@
+@font-face {
+	font-family: "Geometria Light";
+	src: url("fonts/geometria_light.woff2") format('woff2');
+	font-weight: 300;
+}
+@font-face {
+	font-family: "Geometria";
+	src: url("fonts/proxima_regular.woff2") format('woff2');
+	font-weight: 400;
+}
+@font-face {
+	font-family: "Geometria Bold";
+	src: url("fonts/proxima_bold.woff2") format('woff2');
+	font-weight: 700;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	color: #000;
+	font: 400 16px Geometria, Arial,Helvetica,sans-serif;
+	background-color: #282828;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+ul li {
+	list-style-type: none;
+}
+img {
+	max-width: 100%;
+}
+button {
+	border: 0;
+	cursor: pointer;
+}
+*:hover {
+	transition: 0.3s;
+}
+.hidden {
+	display: none;
+}
+.container {
+	position: relative;
+	max-width: 1400px;
+	margin: 0 auto;
+	padding-right: 10px;
+	padding-left: 10px;
+	background: url(../img/logo.png) no-repeat 0% 50%;
+}
+.page-number {
+	position: absolute;
+	top: 300px;
+	right: 1px;
+	background-image: linear-gradient(to right, #f78e6a 0%, #fc66a2 100%);
+	background-clip: text;
+	color: #f88d6c;
+	font-size: 30px;
+	font-weight: 300;
+}
+.page-number_big {
+	font-size: 72px;
+	line-height: 24px;
+}
+.section {
+	margin-bottom: 120px;
+	background: #fbf5f4;	
+}
+.header-main {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-top: 30px;
+	font-size: 18px;
+}
+.nav-main__title {
+	position: relative;
+	padding-left: 50px;
+	cursor: pointer;
+}
+.nav-main__title::before {
+	position: absolute;
+	content: "";
+	width: 24px;
+	height: 16px;
+	background: url(../img/menu.svg) no-repeat;	
+	top: 5px;
+	left: 5px;
+}	
+.nav-main__hidden {
+	visibility: hidden;
+	position: absolute;
+}
+@keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+.nav-main:hover .nav-main__hidden {
+	visibility: visible;
+	animation-name: fadeIn;
+	animation-duration: 1.5s;
+}
+.nav-main__list {
+	margin-top: 10px;
+}
+.nav-main__link {
+	display: block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 100px;
+	cursor: pointer;
+}
+.nav-main__link:hover {
+	color: #f78e6a;
+}
+.nav-main__item_selected {
+	color: #f78e6a;
+	font-family: "Geometria Bold", Arial, Helvetica,sans-serif;
+	font-weight: 700;
+	cursor: default;
+}
+.header-main__title {
+	position: relative;
+}
+.header-main__title::before {
+	position: absolute;
+	content: "";
+	width: 6px;
+	height: 6px;
+	top: 10px;
+	left: -20px;
+	border-radius: 50%;
+	background-color: #f78e6a;
+}
+.header-main__tel {
+	font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+.header-main__tel:hover {
+	color: #f78e6a;
+}
+.home-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: 1237px;
+}
+.home__title {
+	position: relative;
+	margin-bottom: 4px;
+	background-image: linear-gradient(to top, rgba(247, 142, 106, 0) 0%, #fc66a2 100%);
+	background-clip: text;
+	color: #f78e6a;
+	font-size: 200px;
+	font-weight: 500;
+}
+.home__subtitle {
+	position: absolute;
+	top: 105px;
+	left: -70px;
+	background-image: linear-gradient(to top, rgba(247, 142, 106, 0) 0%, #fc66a2 100%);
+	background-clip: text;
+	color: #f78e6a;
+	font-size: 24px;
+	transform: rotate(-90deg);
+}
+.home-text-box {
+	position: relative;
+}
+.text_main {
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 35px;
+}
+.home__text {
+	max-width: 322px;
+	margin-left: 85px;
+	font-size: 20px;
+}
+.button-sign {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: #f78e6a;
+	background-image: linear-gradient(to top, rgba(247, 142, 106, 0) 0%, #fc66a2 100%);
+	color: #fff;
+	font-size: 30px;
+}
+.button-sign:hover {
+	opacity: 0.7;
+} 
+.home__button_add {
+	position: absolute;
+	top: 0px;
+	left: -12px;
+}
+.home__img {
+	margin-top: 0px;
+	margin-right: 110px;
+	max-width: 55vh;
+}
+.footer-main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-top: 30px;
+	padding-bottom: 60px;
+}
+.footer-social__item {
+	display: inline-block;
+	padding-right: 30px;
+	font-family: Montserrat;
+	font-size: 10px;
+	text-transform: uppercase;
+}
+.footer-social__item:hover {
+	color: #f78e6a;
+}
+.footer-nextpage__link {
+	position: relative;
+	padding-right: 45px;
+}
+.footer-nextpage__link::before  {
+	position: absolute;
+	content: "";
+	top: -5px;
+	right: 2px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #f78e6a;
+	background-image: linear-gradient(to top, rgba(247, 142, 106, 0) 0%, #fc66a2 100%);
+}
+.footer-nextpage__link::after  {
+	position: absolute;
+	content: "";
+	top: 8px;
+	right: 12px;
+	width: 1px;
+	border: 4px solid transparent; 
+	border-top: 6px solid #fff;
+}
+.footer-nextpage__link:hover {
+	color: #f78e6a;
+}
+.footer-nextpage__link:hover::before {
+	box-shadow: 1px 1px 5px #f78e6a;
+}
+.classes-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 22px;
+}
+.classes-nav {
+	margin-top: 130px;
+	margin-left: 200px;
+}
+.classes-nav__item {
+	position: relative;
+	opacity: 0.5;
+	font-size: 18px;
+	line-height: 30px;
+	cursor: pointer;
+}
+.classes-nav__item_selected {
+	position: relative;
+	opacity: 1;
+}
+.classes-nav__item:hover {
+	opacity: 1;
+}
+.classes-nav__item_selected::before,
+.classes-nav__item:hover::before {
+	position: absolute;
+	content: "Yoga -";
+	top: -2px;
+	left: -58px;
+	background-image: linear-gradient(to top, #fc66a2 0%, #f78e6a 100%);
+	background-clip: text;
+	color: #f78e6a;
+	font-size: 18px;
+}
+.classes__img {
+	max-width: 35vh;
+}
+.classes {
+	max-width: 490px;
+	margin-top: 130px;
+	margin-right: 100px;
+}
+.classes__title {
+	background-image: linear-gradient(to top, #fc66a2 0%, #f78e6a 100%);
+	background-clip: text;
+	color: #f78e6a;
+	font-size: 48px;
+}
+.stream__subtitle {
+	font-size: 24px;
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+.stream__text {
+	margin-bottom: 36px;
+}
+.button {
+	width: 284px;
+	height: 60px;
+	box-shadow: 11px 11px 50px rgba(0, 0, 0, 0.1);
+	border-radius: 29px;
+	color: #fff;
+	background-color: #f78e6a;
+}
+.button:hover {
+	box-shadow: 6px 6px 20px #f78e6a;
+	transition: 0.7s;
+}
+.button-wrap {
+	position: relative;
+}
+.button-sign {
+	position: absolute;
+	top: -22px;
+	left: 0px;
+}
+
