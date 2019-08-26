@@ -178,8 +178,7 @@
 							</p>
 						</div>
 						<span class="button-wrap">
-							<button class="button classes__button">Записаться онлайн</button>
-							<button class="button-sign classes__button_add">+</button>
+							<button class="button button_plus">Записаться онлайн</button>
 					</span>
 					</div>	
 				</div>
@@ -203,58 +202,59 @@
 				</footer>
 			</div>	
 		</section>
-		<section id="firstlesson-page" class="section section_logo section-firstlesson">
+		<section id="firstlesson-page" class="section section-firstlesson">
 			<div class="container">
+				<span class="page-number"><span class="page-number_big">03</span><br>&ndash; 09</span>
 				<header class="header-main">
 					<nav class="nav-main">
 						<span class="nav-main__title">Меню</span>
-						<ul class="nav-main__list hidden">
-							<li class="nav-main__list">
-								<a class="nav-main__link">Добро пожаловать</a>
-							</li>
-							<li class="nav-main__list">
-								<a class="nav-main__link" href="#">Направления и классы</a>
-							</li>
-							<li class="nav-main__list nav-main__list_selected">
-								<a class="nav-main__link" href="#">Пробное занятие</a>
-							</li>
-							<li class="nav-main__list">
-								<a class="nav-main__link" href="#">Преподаватели</a>
-							</li>
-							<li class="nav-main__list">
-								<a class="nav-main__link" href="#">Абонементы</a>
-							</li>
-							<li class="nav-main__list">
-								<a class="nav-main__link" href="#">Расписание</a>
-							</li>
-							<li class="nav-main__list">
-								<a class="nav-main__link" href="#">Отзывы</a>
-							</li>
-							<li class="nav-main__list">
-								<a class="nav-main__link" href="#">Контакты</a>
-							</li>
-						</ul>
+						<div class="nav-main__hidden">
+							<ul class="nav-main__list">
+								<li class="nav-main__item">
+									<a class="nav-main__link" href="#home-page">Добро пожаловать</a>
+								</li>
+								<li class="nav-main__item">
+									<a class="nav-main__link" href="#classes-page">Направления и классы</a>
+								</li>
+								<li class="nav-main__item">
+									<a class="nav-main__link nav-main__item_selected">Пробное занятие</a>
+								</li>
+								<li class="nav-main__item">
+									<a class="nav-main__link" href="#trainers-page">Преподаватели</a>
+								</li>
+								<li class="nav-main__item">
+									<a class="nav-main__link" href="#tickets-page">Абонементы</a>
+								</li>
+								<li class="nav-main__item">
+									<a class="nav-main__link" href="#schedule-page">Расписание</a>
+								</li>
+								<li class="nav-main__item">
+									<a class="nav-main__link" href="#feedback-page">Отзывы</a>
+								</li>
+								<li class="nav-main__item">
+									<a class="nav-main__link" href="#contacts-page">Контакты</a>
+								</li>
+							</ul>
+						</div>	
 					</nav>
 					<h2 class="header-main__title">Пробное занятие</h2>
-					<a href="tel: +7 (812) 345-56-97" class="header-main__tel">+7 (812) 345-56-97
+					<a href="tel: +0 (000) 000-00-00" class="header-main__tel">+0 (123) 456-78-90
 					</a>
-				</header>
-				<div class="firstlesson-content">
+				</header>	
 					<div class="firstlesson">	
-						<img class="firstlesson__img" src="img/firstlesson_main.jpg" alt="Пробное занятие">
-						<p class="firstlesson__discount"><span class="firstlesson__discount_big">10%</span> на абонемент скидка</p>
-						<p class="text_main firstlesson__text">Мы сделаем для вас 10% скидку на абонемент, купленный в день посещения вводного занятия.
-						</p>
-						<form class="firstlesson-form" method="POST">
-							<input class="firstlesson-form__text" type="text" name="name" placeholder="Ваше имя">
-							<input class="firstlesson-form__tel" type="tel" name="tel" placeholder="Ваш телефон">
-							<button type="submit" class="button firstlesson__button">Отправить заявку</button>
-							<button class="button-sign firstlesson__button_envelope"></button>
-						</form>
-						<p class=" text-main firstlesson__politics">Нажимая «Отправить заявку», вы даете согласие на обработку своих персональных данных</p>
-					</div>	
-				</div>
-				<span class="page-number"><span class="page-number_big">03</span><br>&ndash; 09</span>
+						<img class="firstlesson__img" src="img/firstlesson_main.png" alt="Пробное занятие">
+						<div class="firstlesson-box">	
+							<p class="firstlesson__discount"><span class="firstlesson__discount_big">10%</span> скидка<br> на абонемент</p>
+							<p class="text_main firstlesson__text">Мы сделаем для вас 10% скидку на абонемент, купленный в день посещения вводного занятия.
+							</p>
+							<form class="firstlesson-form" method="POST">
+								<input class="firstlesson-form__text" type="text" name="name" placeholder="Ваше имя">
+								<input class="firstlesson-form__tel" type="tel" name="tel" placeholder="Ваш телефон">
+								<button type="submit" class="button firstlesson__button button_envelope">Отправить заявку</button>
+							</form>
+							<p class=" text-main firstlesson__politics">Нажимая «Отправить заявку», вы даете согласие на обработку своих персональных данных</p>
+						</div>
+					</div>		
 				<footer class="footer-main">
 					<div class="footer-social">
 						<ul class="footer-social__list">
@@ -275,40 +275,43 @@
 				</footer>
 			</div>	
 		</section>
-		<section id="trainers-page" class="section section_logo section-trainers">
+		<section id="trainers-page" class="section section-trainers">
 			<div class="container">
+				<span class="page-number"><span class="page-number_big">04</span><br>&ndash; 09</span>
 				<header class="header-main">
 					<nav class="nav-main">
 						<span class="nav-main__title">Меню</span>
-						<ul class="nav-main__list hidden">
-							<li class="nav-main__list">
-								<a class="nav-main__link">Добро пожаловать</a>
-							</li>
-							<li class="nav-main__list">
-								<a class="nav-main__link" href="#">Направления и классы</a>
-							</li>
-							<li class="nav-main__list">
-								<a class="nav-main__link" href="#">Пробное занятие</a>
-							</li>
-							<li class="nav-main__list nav-main__list_selected">
-								<a class="nav-main__link" href="#">Преподаватели</a>
-							</li>
-							<li class="nav-main__list">
-								<a class="nav-main__link" href="#">Абонементы</a>
-							</li>
-							<li class="nav-main__list">
-								<a class="nav-main__link" href="#">Расписание</a>
-							</li>
-							<li class="nav-main__list">
-								<a class="nav-main__link" href="#">Отзывы</a>
-							</li>
-							<li class="nav-main__list">
-								<a class="nav-main__link" href="#">Контакты</a>
-							</li>
-						</ul>
+						<div class="nav-main__hidden">
+							<ul class="nav-main__list">
+								<li class="nav-main__item">
+									<a class="nav-main__link" href="#home-page">Добро пожаловать</a>
+								</li>
+								<li class="nav-main__item">
+									<a class="nav-main__link" href="#classes-page">Направления и классы</a>
+								</li>
+								<li class="nav-main__item">
+									<a class="nav-main__link" href="#firstlesson-page">Пробное занятие</a>
+								</li>
+								<li class="nav-main__item nav-main__item_selected">
+									<a class="nav-main__link">Преподаватели</a>
+								</li>
+								<li class="nav-main__item">
+									<a class="nav-main__link" href="#tickets-page">Абонементы</a>
+								</li>
+								<li class="nav-main__item">
+									<a class="nav-main__link" href="#schedule-page">Расписание</a>
+								</li>
+								<li class="nav-main__item">
+									<a class="nav-main__link" href="#feedback-page">Отзывы</a>
+								</li>
+								<li class="nav-main__item">
+									<a class="nav-main__link" href="#contacts-page">Контакты</a>
+								</li>
+							</ul>
+						</div>	
 					</nav>
 					<h2 class="header-main__title">Преподаватели</h2>
-					<a href="tel: +7 (812) 345-56-97" class="header-main__tel">+7 (812) 345-56-97
+					<a href="tel: +0 (000) 000-00-00" class="header-main__tel">+0 (123) 456-78-90
 					</a>
 				</header>
 				<div class="trainers-content">
@@ -319,28 +322,30 @@
 						</ul>
 					</nav>
 					<div id="js-trainers-first" class="trainers">
-						<img class="trainers__img" src="img/trainer_first.jpg" alt="Максим Казаков">
-						<h3 class="trainers__title">Максим Казаков</h3>
-						<p class="trainers__subtitle">Преподаватель йоги с 1997 года</p>
-						<p class="text_main trainers__text">Занимается йогой Айенгара с 1990 года. Является преподавателем йоги Айенгара с 1997 года. Имеет международный сертификат Junior I. Проводит семинары, занятия разных уровней сложностей.
-						</p>
-						<p class="text_main trainers__text">В йогу привел интерес. Является одним из самых опытных преподавателей и опорой нашего центра. Все студенты любят Максима за отзывчивость и индивидуальный подход к каждому.
-						</p>
-						<button type="submit" class="button classes__button">Записаться к тренеру</button>
-						<button class="button-sign classes__button_add"></button>
+						<img class="trainers__img" src="img/trainer_first.png" alt="Максим Казаков">
+						<div class="trainers__desc">
+							<h3 class="trainers__title">Максим Казаков</h3>
+							<p class="trainers__subtitle">Преподаватель йоги с 1997 года</p>
+							<p class="text_main trainers__text">Занимается йогой Айенгара с 1990 года. Является преподавателем йоги Айенгара с 1997 года. Имеет международный сертификат Junior I. Проводит семинары, занятия разных уровней сложностей.
+							</p>
+							<p class="text_main trainers__text">В йогу привел интерес. Является одним из самых опытных преподавателей и опорой нашего центра. Все студенты любят Максима за отзывчивость и индивидуальный подход к каждому.
+							</p>
+							<button type="submit" class="button classes__button button button_plus">Записаться к тренеру</button>
+						</div>	
 					</div>
 					<div id="js-trainers-second" class="trainers hidden">
-						<img class="trainers__img" src="img/trainer_second.jpg" alt="Юлия Зырянова">
-						<h3 class="trainers__title">Юлия Зырянова</h3>
-						<p class="trainers__subtitle">Lorem</p>
-						<p class="text_main trainers__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci officiis doloribus, perferendis consequatur in quia fuga totam, fugiat dolor quae alias, pariatur possimus mollitia aut ad quas, natus quam unde?
-						</p>
-						<p class="text_main trainers__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae fuga minus, esse rem quos laborum error dicta fugiat itaque earum hic laboriosam perspiciatis optio laudantium deserunt amet natus quaerat ducimus!
-						</p>
-						<button type="submit" class="button classes__button">Записаться к тренеру</button>
-						<button class="button-sign classes__button_add"></button>
-					</div>	
-				<span class="page-number"><span class="page-number_big">04</span><br>&ndash; 09</span>
+						<img class="trainers__img hidden" src="img/trainer_second.jpg" alt="Юлия Зырянова">
+						<div class="trainers__desc hidden">
+							<h3 class="trainers__title">Юлия Зырянова</h3>
+							<p class="trainers__subtitle">Lorem</p>
+							<p class="text_main trainers__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci officiis doloribus, perferendis consequatur in quia fuga totam, fugiat dolor quae alias, pariatur possimus mollitia aut ad quas, natus quam unde?
+							</p>
+							<p class="text_main trainers__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae fuga minus, esse rem quos laborum error dicta fugiat itaque earum hic laboriosam perspiciatis optio laudantium deserunt amet natus quaerat ducimus!
+							</p>
+							<button type="submit" class="button classes__button button button_plus">Записаться к тренеру</button>
+						</div>	
+					</div>
+				</div>		
 				<footer class="footer-main">
 					<div class="footer-social">
 						<ul class="footer-social__list">
@@ -361,80 +366,83 @@
 				</footer>
 			</div>	
 		</section>	
-		<section id="tickets-page" class="section section_logo section-tickets">
+		<section id="tickets-page" class="section section-tickets">
 			<div class="container">
+				<span class="page-number"><span class="page-number_big">05</span><br>&ndash; 09</span>
 				<header class="header-main">
 					<nav class="nav-main">
 						<span class="nav-main__title">Меню</span>
-						<ul class="nav-main__list hidden">
-							<li class="nav-main__list">
-								<a class="nav-main__link">Добро пожаловать</a>
-							</li>
-							<li class="nav-main__list">
-								<a class="nav-main__link" href="#">Направления и классы</a>
-							</li>
-							<li class="nav-main__list">
-								<a class="nav-main__link" href="#">Пробное занятие</a>
-							</li>
-							<li class="nav-main__list">
-								<a class="nav-main__link" href="#">Преподаватели</a>
-							</li>
-							<li class="nav-main__list nav-main__list_selected">
-								<a class="nav-main__link" href="#">Абонементы</a>
-							</li>
-							<li class="nav-main__list">
-								<a class="nav-main__link" href="#">Расписание</a>
-							</li>
-							<li class="nav-main__list">
-								<a class="nav-main__link" href="#">Отзывы</a>
-							</li>
-							<li class="nav-main__list">
-								<a class="nav-main__link" href="#">Контакты</a>
-							</li>
-						</ul>
+						<div class="nav-main__hidden">
+							<ul class="nav-main__list">
+								<li class="nav-main__item">
+									<a class="nav-main__link" href="#home-page">Добро пожаловать</a>
+								</li>
+								<li class="nav-main__item">
+									<a class="nav-main__link" href="#classes-page">Направления и классы</a>
+								</li>
+								<li class="nav-main__item">
+									<a class="nav-main__link" href="#firstlesson-page">Пробное занятие</a>
+								</li>
+								<li class="nav-main__item">
+									<a class="nav-main__link" href="#trainers-page">Преподаватели</a>
+								</li>
+								<li class="nav-main__item nav-main__item_selected">
+									<a class="nav-main__link">Абонементы</a>
+								</li>
+								<li class="nav-main__item">
+									<a class="nav-main__link" href="#schedule-page">Расписание</a>
+								</li>
+								<li class="nav-main__item">
+									<a class="nav-main__link" href="#feedback-page">Отзывы</a>
+								</li>
+								<li class="nav-main__item">
+									<a class="nav-main__link" href="#contacts-page">Контакты</a>
+								</li>
+							</ul>
+						</div>	
 					</nav>
 					<h2 class="header-main__title">Абонементы</h2>
-					<a href="tel: +7 (812) 345-56-97" class="header-main__tel">+7 (812) 345-56-97
+					<a href="tel: +0 (000) 000-00-00" class="header-main__tel">+0 (123) 456-78-90
 					</a>
 				</header>
 				<div class="tickets-content">
 					<div class="tickets">	
-						<img class="tickets__img" src="img/tickets_main.jpg" alt="Абонементы">
+						<img class="tickets__img" src="img/tickets_main.png" alt="Абонементы">
 						<div class="tickets-box">
 							<div class="tickets-type">
 								<h3 class="tickets-type__title">Разовое занятие</h3>
 								<span class="tickets-type__cost"><span class="tickets-type__cost_red">300</span> руб.</span>
-								<button class="button-sign tickets__button_add tickets-sign_grey"></button>
+								<button class="button-sign button-sign_small">+</button>
 							</div>
 							<div class="tickets-type">
 								<h3 class="tickets-type__title">Месяц занятий</h3>
 								<span class="tickets-type__cost"><span class="tickets-type__cost_red">2 000</span> руб.</span>
-								<button class="button-sign tickets__button_add tickets-sign_grey"></button>
+								<button class="button-sign button-sign_small button-sign_grey">+</button>
 							</div>
 							<div class="tickets-type">
 								<h3 class="tickets-type__title">2 месяца занятий</h3>
 								<span class="tickets-type__cost"><span class="tickets-type__cost_red">3 500</span> руб.</span>
-								<button class="button-sign tickets__button_add tickets-sign_grey"></button>
+								<button class="button-sign button-sign_small button-sign_grey">+</button>
 							</div>
 							<div class="tickets-type">
 								<h3 class="tickets-type__title">3 месяца занятий</h3>
 								<span class="tickets-type__cost"><span class="tickets-type__cost_red">4 500</span> руб.</span>
-								<button class="button-sign tickets__button_add tickets-sign_grey"></button>
+								<button class="button-sign button-sign_small button-sign_grey">+</button>
 							</div>
 							<div class="tickets-type">
 								<h3 class="tickets-type__title">Пол года занятий</h3>
 								<span class="tickets-type__cost"><span class="tickets-type__cost_red">8 000</span> руб.</span>
-								<button class="button-sign tickets__button_add tickets-sign_grey"></button>
+								<button class="button-sign button-sign_small button-sign_grey">+</button>
 							</div>
 							<div class="tickets-type">
 								<h3 class="tickets-type__title">Год занятий</h3>
 								<span class="tickets-type__cost"><span class="tickets-type__cost_red">14 000</span> руб.</span>
-								<button class="button-sign tickets__button_add tickets-sign_grey"></button>
+								<button class="button-sign button-sign_small button-sign_grey">+</button>
 							</div>
-							<button type="submit" class="button classes__button">Заказать абонемент</button>
-							<button class="button-sign classes__button_add"></button>
+							<button type="submit" class="button tickets__button button_mark">Заказать абонемент</button>
+						</div>
+					</div>	
 				</div>
-				<span class="page-number"><span class="page-number_big">05</span><br>&ndash; 09</span>
 				<footer class="footer-main">
 					<div class="footer-social">
 						<ul class="footer-social__list">
@@ -455,46 +463,49 @@
 				</footer>
 			</div>	
 		</section>
-		<section id="schedule-page" class="section section_logo section-schedule">
+		<section id="schedule-page" class="section section-schedule">
 			<div class="container">
+				<span class="page-number"><span class="page-number_big">06</span><br>&ndash; 09</span>
 				<header class="header-main">
 					<nav class="nav-main">
 						<span class="nav-main__title">Меню</span>
-						<ul class="nav-main__list hidden">
-							<li class="nav-main__list">
-								<a class="nav-main__link">Добро пожаловать</a>
-							</li>
-							<li class="nav-main__list">
-								<a class="nav-main__link" href="#">Направления и классы</a>
-							</li>
-							<li class="nav-main__list">
-								<a class="nav-main__link" href="#">Пробное занятие</a>
-							</li>
-							<li class="nav-main__list">
-								<a class="nav-main__link" href="#">Преподаватели</a>
-							</li>
-							<li class="nav-main__list">
-								<a class="nav-main__link" href="#">Абонементы</a>
-							</li>
-							<li class="nav-main__list nav-main__list_selected">
-								<a class="nav-main__link" href="#">Расписание</a>
-							</li>
-							<li class="nav-main__list">
-								<a class="nav-main__link" href="#">Отзывы</a>
-							</li>
-							<li class="nav-main__list">
-								<a class="nav-main__link" href="#">Контакты</a>
-							</li>
-						</ul>
+						<div class="nav-main__hidden">
+							<ul class="nav-main__list">
+								<li class="nav-main__item">
+									<a class="nav-main__link" href="#home-page">Добро пожаловать</a>
+								</li>
+								<li class="nav-main__item">
+									<a class="nav-main__link" href="#classes-page">Направления и классы</a>
+								</li>
+								<li class="nav-main__item">
+									<a class="nav-main__link" href="#firstlesson-page">Пробное занятие</a>
+								</li>
+								<li class="nav-main__item">
+									<a class="nav-main__link" href="#trainers-page">Преподаватели</a>
+								</li>
+								<li class="nav-main__item">
+									<a class="nav-main__link" href="#tickets-page">Абонементы</a>
+								</li>
+								<li class="nav-main__item nav-main__item_selected">
+									<a class="nav-main__link">Расписание</a>
+								</li>
+								<li class="nav-main__item">
+									<a class="nav-main__link" href="#feedback-page">Отзывы</a>
+								</li>
+								<li class="nav-main__item">
+									<a class="nav-main__link" href="#contacts-page">Контакты</a>
+								</li>
+							</ul>
+						</div>	
 					</nav>
 					<h2 class="header-main__title">Расписание</h2>
-					<a href="tel: +7 (812) 345-56-97" class="header-main__tel">+7 (812) 345-56-97
+					<a href="tel: +0 (000) 000-00-00" class="header-main__tel">+0 (123) 456-78-90
 					</a>
 				</header>
 				<div class="schedule-content">
-					<table schedule-table>
+					<table class="schedule-table">
 						<tr class="schedule-table__row">
-							<td class="schedule-table__download"></td>
+							<td class="schedule-table__download">Скачать<br>расписание</td>
 							<td class="schedule-table__time">08:00 − 09:25</td>
 							<td class="schedule-table__time">09:30 − 10:55</td>
 							<td class="schedule-table__time">11:00 − 12:25</td>
@@ -517,7 +528,7 @@
 							<td class="schedule-table__lesson">Йогатерапия</td>
 							<td class="schedule-table__lesson">Аштанга Виньяса йога</td>
 							<td class="schedule-table__lesson">Йога Айенгара</td>
-							<td class="schedule-table__lesson">Универсальная йога/td>
+							<td class="schedule-table__lesson">Универсальная йога</td>
 							<td class="schedule-table__lesson">Йога для начинающих</td>
 						</tr>
 						<tr class="schedule-table__row">
@@ -567,7 +578,6 @@
 						</tr>
 					</table>	
 				</div>
-				<span class="page-number"><span class="page-number_big">06</span><br>&ndash; 09</span>
 				<footer class="footer-main">
 					<div class="footer-social">
 						<ul class="footer-social__list">
@@ -590,70 +600,76 @@
 		</section>
 		<section id="feedback-page" class="section section_logo section-feedback">
 			<div class="container">
+				<span class="page-number"><span class="page-number_big">07</span><br>&ndash; 09</span>
 				<header class="header-main">
 					<nav class="nav-main">
 						<span class="nav-main__title">Меню</span>
-						<ul class="nav-main__list hidden">
-							<li class="nav-main__list">
-								<a class="nav-main__link">Добро пожаловать</a>
-							</li>
-							<li class="nav-main__list">
-								<a class="nav-main__link" href="#">Направления и классы</a>
-							</li>
-							<li class="nav-main__list">
-								<a class="nav-main__link" href="#">Пробное занятие</a>
-							</li>
-							<li class="nav-main__list">
-								<a class="nav-main__link" href="#">Преподаватели</a>
-							</li>
-							<li class="nav-main__list">
-								<a class="nav-main__link" href="#">Абонементы</a>
-							</li>
-							<li class="nav-main__list">
-								<a class="nav-main__link" href="#">Расписание</a>
-							</li>
-							<li class="nav-main__list nav-main__list_selected">
-								<a class="nav-main__link" href="#">Отзывы</a>
-							</li>
-							<li class="nav-main__list">
-								<a class="nav-main__link" href="#">Контакты</a>
-							</li>
-						</ul>
+						<div class="nav-main__hidden">
+							<ul class="nav-main__list">
+								<li class="nav-main__item">
+									<a class="nav-main__link" href="#home-page">Добро пожаловать</a>
+								</li>
+								<li class="nav-main__item">
+									<a class="nav-main__link" href="#classes-page">Направления и классы</a>
+								</li>
+								<li class="nav-main__item">
+									<a class="nav-main__link" href="#firstlesson-page">Пробное занятие</a>
+								</li>
+								<li class="nav-main__item">
+									<a class="nav-main__link" href="#trainers-page">Преподаватели</a>
+								</li>
+								<li class="nav-main__item">
+									<a class="nav-main__link" href="#tickets-page">Абонементы</a>
+								</li>
+								<li class="nav-main__item" href="#schedule-page">
+									<a class="nav-main__link">Расписание</a>
+								</li>
+								<li class="nav-main__item nav-main__item_selected">
+									<a class="nav-main__link">Отзывы</a>
+								</li>
+								<li class="nav-main__item">
+									<a class="nav-main__link" href="#contacts-page">Контакты</a>
+								</li>
+							</ul>
+						</div>	
 					</nav>
 					<h2 class="header-main__title">Отзывы</h2>
-					<a href="tel: +7 (812) 345-56-97" class="header-main__tel">+7 (812) 345-56-97
+					<a href="tel: +0 (000) 000-00-00" class="header-main__tel">+0 (123) 456-78-90
 					</a>
 				</header>
 				<div class="feedback-content">
 					<nav class="feedback-nav">
 						<ul class="feedback-nav__list">
-							<li class="feedback-nav__item trainers-nav__item_selected" onclick="feedbackFirst()">Арина Наумова</li>
-							<li class="feedback-nav__item" onclick="feedbackSecond()">Бред Питт</li>
+							<li class="feedback-nav__item feedback-nav__item_selected" onclick="feedbackFirst()">Арина Наумова</li>
+							<li class="feedback-nav__item" onclick="feedbackSecond()">Иван Иванов</li>
 						</ul>
 					</nav>
 					<div id="js-feedback-first" class="feedback">
-						<img class="feedback__img" src="img/feedback_first.jpg" alt="Арина Наумова">
-						<h3 class="feedback__title">Арина Наумова</h3>
-						<p class="feedback__age">34 года</p>
-						<p class="text_main feedback__text">Не знаю, как остальные, но после занятий йогой хочется начать новую здоровую жизнь, хочется поесть овощей и фруктов и поднять свой иммунитет. Теперь для меня день занятий йогой — это день здоровья.
-						</p>
-						<p class="text_main feedback__text">После упорных занятий я стала меньше болеть, и поняла, в чем смысл всех упражнений. Позы получаются элегантно,  и не больно только тогда, когда не прилагаешь усилия, а остаёшься расслабленным на протяжении всего урока.
-						</p>
-						<button type="submit" class="button classes__button">Попробовать тоже</button>
-						<button class="button-sign classes__button_add"></button>
+						<img class="feedback__img" src="img/feedback_main.png" alt="Арина Наумова">
+						<div class="feedback__desc">
+							<img class="feedback__img_first" src="img/feedback_first.png" alt="Арина Наумова">
+							<h3 class="feedback__title">Арина Наумова</h3>
+							<p class="feedback__age">34 года</p>
+							<p class="text_main feedback__text">Не знаю, как остальные, но после занятий йогой хочется начать новую здоровую жизнь, хочется поесть овощей и фруктов и поднять свой иммунитет. Теперь для меня день занятий йогой — это день здоровья.
+							</p>
+							<p class="text_main feedback__text">После упорных занятий я стала меньше болеть, и поняла, в чем смысл всех упражнений. Позы получаются элегантно,  и не больно только тогда, когда не прилагаешь усилия, а остаёшься расслабленным на протяжении всего урока.
+							</p>
+							<button type="submit" class="button button_plus">Попробовать тоже</button>
+						</div>	
 					</div>
-					<div id="js-feedback-second" class="feedback">
-						<img class="feedback__img" src="img/feedback_first.jpg" alt="Иван Иванов">
-						<h3 class="feedback__title">Иван Иванов</h3>
-						<p class="feedback__age">53 года</p>
-						<p class="text_main feedback__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, tenetur ducimus quod numquam expedita nisi, accusantium excepturi? Vero exercitationem velit neque temporibus eaque, debitis numquam, dolore placeat alias, molestias ab.
-						</p>
-						<p class="text_main feedback__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque neque voluptatibus quaerat, tenetur consequatur repellendus nostrum velit laboriosam quas sunt nemo modi corporis dicta, aspernatur ducimus, quae quam ratione! Suscipit!
-						</p>
-						<button type="submit" class="button classes__button">Попробовать тоже</button>
-						<button class="button-sign classes__button_add"></button>
+					<div id="js-feedback-second hidden" class="feedback">
+						<div class="feedback__desc hidden">
+							<img class="feedback__img hidden" src="img/feedback_second.png" alt="Иван Иванов">
+							<h3 class="feedback__title">Иван Иванов</h3>
+							<p class="feedback__age">53 года</p>
+							<p class="text_main feedback__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, tenetur ducimus quod numquam expedita nisi, accusantium excepturi? Vero exercitationem velit neque temporibus eaque, debitis numquam, dolore placeat alias, molestias ab.
+							</p>
+							<p class="text_main feedback__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque neque voluptatibus quaerat, tenetur consequatur repellendus nostrum velit laboriosam quas sunt nemo modi corporis dicta, aspernatur ducimus, quae quam ratione! Suscipit!
+							</p>
+							<button type="submit" class="button button_plus">Попробовать тоже</button>
+						</div>	
 					</div>
-				<span class="page-number"><span class="page-number_big">07</span><br>&ndash; 09</span>
+				</div>	
 				<footer class="footer-main">
 					<div class="footer-social">
 						<ul class="footer-social__list">
@@ -674,62 +690,57 @@
 				</footer>
 			</div>	
 		</section>
-		<section id="contacts-page" class="section section_logo section-contacts">
+		<section id="contacts-page" class="section section-contacts">
 			<div class="container">
+				<span class="page-number"><span class="page-number_big">08</span><br>&ndash; 09</span>
 				<header class="header-main">
 					<nav class="nav-main">
 						<span class="nav-main__title">Меню</span>
-						<ul class="nav-main__list hidden">
-							<li class="nav-main__list">
-								<a class="nav-main__link">Добро пожаловать</a>
-							</li>
-							<li class="nav-main__list">
-								<a class="nav-main__link" href="#">Направления и классы</a>
-							</li>
-							<li class="nav-main__list">
-								<a class="nav-main__link" href="#">Пробное занятие</a>
-							</li>
-							<li class="nav-main__list">
-								<a class="nav-main__link" href="#">Преподаватели</a>
-							</li>
-							<li class="nav-main__list">
-								<a class="nav-main__link" href="#">Абонементы</a>
-							</li>
-							<li class="nav-main__list">
-								<a class="nav-main__link" href="#">Расписание</a>
-							</li>
-							<li class="nav-main__list">
-								<a class="nav-main__link" href="#">Отзывы</a>
-							</li>
-							<li class="nav-main__list">
-								<a class="nav-main__link nav-main__list_selected" href="#">Контакты</a>
-							</li>
-						</ul>
+						<div class="nav-main__hidden">
+							<ul class="nav-main__list">
+								<li class="nav-main__item">
+									<a class="nav-main__link" href="#home-page">Добро пожаловать</a>
+								</li>
+								<li class="nav-main__item">
+									<a class="nav-main__link" href="#classes-page">Направления и классы</a>
+								</li>
+								<li class="nav-main__item">
+									<a class="nav-main__link" href="#firstlesson-page">Пробное занятие</a>
+								</li>
+								<li class="nav-main__item">
+									<a class="nav-main__link" href="#trainers-page">Преподаватели</a>
+								</li>
+								<li class="nav-main__item">
+									<a class="nav-main__link" href="#tickets-page">Абонементы</a>
+								</li>
+								<li class="nav-main__item" href="#schedule-page">
+									<a class="nav-main__link">Расписание</a>
+								</li>
+								<li class="nav-main__item">
+									<a class="nav-main__link" href="#feedback-page">Отзывы</a>
+								</li>
+								<li class="nav-main__item nav-main__item_selected">
+									<a class="nav-main__link">Контакты</a>
+								</li>
+							</ul>
+						</div>	
 					</nav>
 					<h2 class="header-main__title">Контакты</h2>
-					<a href="tel: +7 (812) 345-56-97" class="header-main__tel">+7 (812) 345-56-97
+					<a href="tel: +0 (000) 000-00-00" class="header-main__tel">+0 (123) 456-78-90
 					</a>
 				</header>
-				<div class="feedback-content">
-					<nav class="feedback-nav">
-						<ul class="feedback-nav__list">
-							<li class="feedback-nav__item trainers-nav__item_selected" onclick="feedbackFirst()">Арина Наумова</li>
-							<li class="feedback-nav__item" onclick="feedbackSecond()">Бред Питт</li>
-						</ul>
-					</nav>
+				<div class="contacts-content">
 					<div class="contacts">
-						<img class="contacts__img" src="img/feedback_first.jpg" alt="Невский проспект 108">
+						<span class="map"><img class="contacts__img" src="img/map.jpg" alt="Невский проспект 108"></span>
 						<div class="contacts-box">
 							<p class="text_main contacts__text"><span class="contacts__text_small">Адрес: </span><br>Невский проспект 108</p>
 							<p class="text_main contacts__text"><span class="contacts__text_small" lang="en">Email: </span><br>Lotos-yoga@gmail.com</p>
 							<button class="contacts__map" onclick="mapOpen()">Смотреть на карте</button>
 							<button class="contacts__feedback" onclick="FeedbackOpen()">Оставить отзыв</button>
 							<p class="text_main contacts__copyright">&copy; 2018 — ООО “Центр йоги Лотос”</p>
+							<button type="submit" class="button contacts__button button_plus">Записаться онлайн</button>
 						</div>
-						<button type="submit" class="button contacts__button">Записаться онлайн</button>
-						<button class="button-sign contacts__button_add"></button>
 					</div>
-				<span class="page-number"><span class="page-number_big">08</span><br>&ndash; 09</span>
 				<footer class="footer-main">
 					<div class="footer-social">
 						<ul class="footer-social__list">
@@ -745,7 +756,7 @@
 						</ul>
 					</div>
 					<div class="footer-nextpage">
-						<a class="footer-nextpage__link" href="#home-page">Вернуться</a>
+						<a class="footer-nextpage__link footer-nextpage_up" href="#home-page">Вернуться</a>
 					</div>
 				</footer>
 			</div>	
