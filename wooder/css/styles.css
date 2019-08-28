@@ -956,6 +956,7 @@ main {
 	.furniture__img,
 	.decor__img {
 		max-width: 80%;
+		height: auto;
 		margin: 20px auto;
 	}
 	.furniture__text::before,
