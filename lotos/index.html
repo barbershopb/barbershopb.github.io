@@ -5,9 +5,7 @@
 	<title lang="en">Lotos</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-	<script src="script.js"></script>
+	<link rel="stylesheet" href="css/style.css">	
 </head>
 <body>
 	<main>
@@ -47,8 +45,7 @@
 						</div>	
 					</nav>
 					<h2 class="header-main__title">Добро пожаловать</h2>
-					<a href="tel: +0 (000) 000-00-00" class="header-main__tel">+0 (123) 456-78-90
-					</a>
+					<a class="popup header-main__tel" href="javascript:void(0)">+0 (123) 456-78-90</a>
 				</header>
 				<div class="home-content">
 					<img class="home__img" src="img/home_main.png" alt="Центр йоги Lotos">
@@ -58,7 +55,7 @@
 						</h1>
 						<div class="home-text-box">
 							<p class="text_main home__text">Приглашаем вас и ваших друзей на бесплатное пробное занятие</p>
-							<button class="button-sign home__button_add">+</button>
+							<button class="button-sign home__button_add popup" href="javascript:void(0)">+</button>
 						</div>
 					</div>
 				</div>
@@ -66,13 +63,13 @@
 					<div class="footer-social">
 						<ul class="footer-social__list">
 							<li class="footer-social__item">
-								<a class="footer-social__link" href="">vk</a>
+								<a class="footer-social__link popup" href="javascript:void(0)">vk</a>
 							</li>
 							<li class="footer-social__item">
-								<a class="footer-social__link" href="">fb</a>
+								<a class="footer-social__link popup" href="javascript:void(0)">fb</a>
 							</li>
 							<li class="footer-social__item">
-								<a class="footer-social__link" href="">inst</a>
+								<a class="footer-social__link popup" href="javascript:void(0)">inst</a>
 							</li>
 						</ul>
 					</div>
@@ -118,18 +115,17 @@
 						</div>	
 					</nav>
 					<h2 class="header-main__title">Направления и классы</h2>
-					<a href="tel: +0 (000) 000-00-00" class="header-main__tel">+0 (123) 456-78-90
-					</a>
+					<a class="popup header-main__tel" href="javascript:void(0)">+0 (123) 456-78-90</a>
 				</header>
 				<div class="classes-content">
 					<nav class="classes-nav">
 						<ul class="classes-nav__list">
 							<li class="classes-nav__item classes-nav__item_selected" onclick="beginnerContent()">Для начинающих</li>
-							<li class="classes-nav__item" onclick="ashtangaContent()">Аштанга Виньяса</li>
-							<li class="classes-nav__item" onclick="universalContent()">Универсальная</li>
-							<li class="classes-nav__item" onclick="kundaliniContent()">Кундалини</li>
-							<li class="classes-nav__item" onclick="ayengaraContent()">Айенгара</li>
-							<li class="classes-nav__item" onclick="terapyContent()">Терапия</li>	
+							<li class="classes-nav__item popup" onclick="ashtangaContent()" href="javascript:void(0)">Аштанга Виньяса</li>
+							<li class="classes-nav__item popup" onclick="universalContent()" href="javascript:void(0)">Универсальная</li>
+							<li class="classes-nav__item popup" onclick="kundaliniContent()" href="javascript:void(0)">Кундалини</li>
+							<li class="classes-nav__item popup" onclick="ayengaraContent()" href="javascript:void(0)">Айенгара</li>
+							<li class="classes-nav__item popup" onclick="terapyContent()" href="javascript:void(0)">Терапия</li>	
 						</ul>
 					</nav>
 					<img class="classes__img" src="img/classes_main.png" alt="Направления и классы">
@@ -178,7 +174,7 @@
 							</p>
 						</div>
 						<span class="button-wrap">
-							<button class="button button_plus">Записаться онлайн</button>
+							<button class="button button_plus popup" href="javascript:void(0)">Записаться онлайн</button>
 					</span>
 					</div>	
 				</div>
@@ -186,13 +182,13 @@
 					<div class="footer-social">
 						<ul class="footer-social__list">
 							<li class="footer-social__item">
-								<a class="footer-social__link" href="">vk</a>
+								<a class="footer-social__link popup" href="javascript:void(0)">vk</a>
 							</li>
 							<li class="footer-social__item">
-								<a class="footer-social__link" href="">fb</a>
+								<a class="footer-social__link popup" href="javascript:void(0)">fb</a>
 							</li>
 							<li class="footer-social__item">
-								<a class="footer-social__link" href="">inst</a>
+								<a class="footer-social__link popup" href="javascript:void(0)">inst</a>
 							</li>
 						</ul>
 					</div>
@@ -238,8 +234,7 @@
 						</div>	
 					</nav>
 					<h2 class="header-main__title">Пробное занятие</h2>
-					<a href="tel: +0 (000) 000-00-00" class="header-main__tel">+0 (123) 456-78-90
-					</a>
+					<a class="popup header-main__tel" href="javascript:void(0)">+0 (123) 456-78-90</a>
 				</header>	
 					<div class="firstlesson">	
 						<img class="firstlesson__img" src="img/firstlesson_main.png" alt="Пробное занятие">
@@ -250,7 +245,7 @@
 							<form class="firstlesson-form" method="POST">
 								<input class="firstlesson-form__text" type="text" name="name" placeholder="Ваше имя">
 								<input class="firstlesson-form__tel" type="tel" name="tel" placeholder="Ваш телефон">
-								<button type="submit" class="button firstlesson__button button_envelope">Отправить заявку</button>
+								<button type="submit" class="button firstlesson__button button_envelope popup" href="javascript:void(0)">Отправить заявку</button>
 							</form>
 							<p class=" text-main firstlesson__politics">Нажимая «Отправить заявку», вы даете согласие на обработку своих персональных данных</p>
 						</div>
@@ -259,13 +254,13 @@
 					<div class="footer-social">
 						<ul class="footer-social__list">
 							<li class="footer-social__item">
-								<a class="footer-social__link" href="">vk</a>
+								<a class="footer-social__link popup" href="javascript:void(0)">vk</a>
 							</li>
 							<li class="footer-social__item">
-								<a class="footer-social__link" href="">fb</a>
+								<a class="footer-social__link popup" href="javascript:void(0)">fb</a>
 							</li>
 							<li class="footer-social__item">
-								<a class="footer-social__link" href="">inst</a>
+								<a class="footer-social__link popup" href="javascript:void(0)">inst</a>
 							</li>
 						</ul>
 					</div>
@@ -311,14 +306,13 @@
 						</div>	
 					</nav>
 					<h2 class="header-main__title">Преподаватели</h2>
-					<a href="tel: +0 (000) 000-00-00" class="header-main__tel">+0 (123) 456-78-90
-					</a>
+					<a class="popup header-main__tel" href="javascript:void(0)">+0 (123) 456-78-90</a>
 				</header>
 				<div class="trainers-content">
 					<nav class="trainers-nav">
 						<ul class="trainers-nav__list">
 							<li class="trainers-nav__item trainers-nav__item_selected" onclick="trainerFirst()">Максим Казаков</li>
-							<li class="trainers-nav__item" onclick="trainerSecond()">Юлия Зырянова</li>
+							<li class="trainers-nav__item popup" onclick="trainerSecond() href="javascript:void(0)">Юлия Зырянова</li>
 						</ul>
 					</nav>
 					<div id="js-trainers-first" class="trainers">
@@ -330,7 +324,7 @@
 							</p>
 							<p class="text_main trainers__text">В йогу привел интерес. Является одним из самых опытных преподавателей и опорой нашего центра. Все студенты любят Максима за отзывчивость и индивидуальный подход к каждому.
 							</p>
-							<button type="submit" class="button classes__button button button_plus">Записаться к тренеру</button>
+							<button type="submit" class="button classes__button button button_plus popup" href="javascript:void(0)">Записаться к тренеру</button>
 						</div>	
 					</div>
 					<div id="js-trainers-second" class="trainers hidden">
@@ -342,7 +336,7 @@
 							</p>
 							<p class="text_main trainers__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae fuga minus, esse rem quos laborum error dicta fugiat itaque earum hic laboriosam perspiciatis optio laudantium deserunt amet natus quaerat ducimus!
 							</p>
-							<button type="submit" class="button classes__button button button_plus">Записаться к тренеру</button>
+							<button type="submit" class="button classes__button button button_plus popup" href="javascript:void(0)">Записаться к тренеру</button>
 						</div>	
 					</div>
 				</div>		
@@ -350,13 +344,13 @@
 					<div class="footer-social">
 						<ul class="footer-social__list">
 							<li class="footer-social__item">
-								<a class="footer-social__link" href="">vk</a>
+								<a class="footer-social__link popup" href="javascript:void(0)">vk</a>
 							</li>
 							<li class="footer-social__item">
-								<a class="footer-social__link" href="">fb</a>
+								<a class="footer-social__link popup" href="javascript:void(0)">fb</a>
 							</li>
 							<li class="footer-social__item">
-								<a class="footer-social__link" href="">inst</a>
+								<a class="footer-social__link popup" href="javascript:void(0)">inst</a>
 							</li>
 						</ul>
 					</div>
@@ -402,8 +396,7 @@
 						</div>	
 					</nav>
 					<h2 class="header-main__title">Абонементы</h2>
-					<a href="tel: +0 (000) 000-00-00" class="header-main__tel">+0 (123) 456-78-90
-					</a>
+					<a class="popup header-main__tel" href="javascript:void(0)">+0 (123) 456-78-90</a>
 				</header>
 				<div class="tickets-content">
 					<div class="tickets">	
@@ -412,34 +405,34 @@
 							<div class="tickets-type">
 								<h3 class="tickets-type__title">Разовое занятие</h3>
 								<span class="tickets-type__cost"><span class="tickets-type__cost_red">300</span> руб.</span>
-								<button class="button-sign button-sign_small">+</button>
+								<button class="button-sign button-sign_small popup" href="javascript:void(0)">+</button>
 							</div>
 							<div class="tickets-type">
 								<h3 class="tickets-type__title">Месяц занятий</h3>
 								<span class="tickets-type__cost"><span class="tickets-type__cost_red">2 000</span> руб.</span>
-								<button class="button-sign button-sign_small button-sign_grey">+</button>
+								<button class="button-sign button-sign_small button-sign_grey popup" href="javascript:void(0)">+</button>
 							</div>
 							<div class="tickets-type">
 								<h3 class="tickets-type__title">2 месяца занятий</h3>
 								<span class="tickets-type__cost"><span class="tickets-type__cost_red">3 500</span> руб.</span>
-								<button class="button-sign button-sign_small button-sign_grey">+</button>
+								<button class="button-sign button-sign_small button-sign_grey popup" href="javascript:void(0)">+</button>
 							</div>
 							<div class="tickets-type">
 								<h3 class="tickets-type__title">3 месяца занятий</h3>
 								<span class="tickets-type__cost"><span class="tickets-type__cost_red">4 500</span> руб.</span>
-								<button class="button-sign button-sign_small button-sign_grey">+</button>
+								<button class="button-sign button-sign_small button-sign_grey popup" href="javascript:void(0)">+</button>
 							</div>
 							<div class="tickets-type">
 								<h3 class="tickets-type__title">Пол года занятий</h3>
 								<span class="tickets-type__cost"><span class="tickets-type__cost_red">8 000</span> руб.</span>
-								<button class="button-sign button-sign_small button-sign_grey">+</button>
+								<button class="button-sign button-sign_small button-sign_grey popup" href="javascript:void(0)">+</button>
 							</div>
 							<div class="tickets-type">
 								<h3 class="tickets-type__title">Год занятий</h3>
 								<span class="tickets-type__cost"><span class="tickets-type__cost_red">14 000</span> руб.</span>
-								<button class="button-sign button-sign_small button-sign_grey">+</button>
+								<button class="button-sign button-sign_small button-sign_grey popup" href="javascript:void(0)">+</button>
 							</div>
-							<button type="submit" class="button tickets__button button_mark">Заказать абонемент</button>
+							<button type="submit" class="button tickets__button button_mark popup" href="javascript:void(0)">Заказать абонемент</button>
 						</div>
 					</div>	
 				</div>
@@ -447,13 +440,13 @@
 					<div class="footer-social">
 						<ul class="footer-social__list">
 							<li class="footer-social__item">
-								<a class="footer-social__link" href="">vk</a>
+								<a class="footer-social__link popup" href="javascript:void(0)">vk</a>
 							</li>
 							<li class="footer-social__item">
-								<a class="footer-social__link" href="">fb</a>
+								<a class="footer-social__link popup" href="javascript:void(0)">fb</a>
 							</li>
 							<li class="footer-social__item">
-								<a class="footer-social__link" href="">inst</a>
+								<a class="footer-social__link popup" href="javascript:void(0)">inst</a>
 							</li>
 						</ul>
 					</div>
@@ -499,8 +492,7 @@
 						</div>	
 					</nav>
 					<h2 class="header-main__title">Расписание</h2>
-					<a href="tel: +0 (000) 000-00-00" class="header-main__tel">+0 (123) 456-78-90
-					</a>
+					<a class="popup header-main__tel" href="javascript:void(0)">+0 (123) 456-78-90</a>
 				</header>
 				<div class="schedule-content">
 					<table class="schedule-table">
@@ -582,13 +574,13 @@
 					<div class="footer-social">
 						<ul class="footer-social__list">
 							<li class="footer-social__item">
-								<a class="footer-social__link" href="">vk</a>
+								<a class="footer-social__link popup" href="javascript:void(0)">vk</a>
 							</li>
 							<li class="footer-social__item">
-								<a class="footer-social__link" href="">fb</a>
+								<a class="footer-social__link popup" href="javascript:void(0)">fb</a>
 							</li>
 							<li class="footer-social__item">
-								<a class="footer-social__link" href="">inst</a>
+								<a class="footer-social__link popup" href="javascript:void(0)">inst</a>
 							</li>
 						</ul>
 					</div>
@@ -634,14 +626,13 @@
 						</div>	
 					</nav>
 					<h2 class="header-main__title">Отзывы</h2>
-					<a href="tel: +0 (000) 000-00-00" class="header-main__tel">+0 (123) 456-78-90
-					</a>
+					<a class="popup header-main__tel" href="javascript:void(0)">+0 (123) 456-78-90</a>
 				</header>
 				<div class="feedback-content">
 					<nav class="feedback-nav">
 						<ul class="feedback-nav__list">
 							<li class="feedback-nav__item feedback-nav__item_selected" onclick="feedbackFirst()">Арина Наумова</li>
-							<li class="feedback-nav__item" onclick="feedbackSecond()">Иван Иванов</li>
+							<li class="feedback-nav__item popup" onclick="feedbackSecond()" href="javascript:void(0)">Иван Иванов</li>
 						</ul>
 					</nav>
 					<div id="js-feedback-first" class="feedback">
@@ -654,7 +645,7 @@
 							</p>
 							<p class="text_main feedback__text">После упорных занятий я стала меньше болеть, и поняла, в чем смысл всех упражнений. Позы получаются элегантно,  и не больно только тогда, когда не прилагаешь усилия, а остаёшься расслабленным на протяжении всего урока.
 							</p>
-							<button type="submit" class="button button_plus">Попробовать тоже</button>
+							<button type="submit" class="button button_plus popup" href="javascript:void(0)">Попробовать тоже</button>
 						</div>	
 					</div>
 					<div id="js-feedback-second hidden" class="feedback">
@@ -666,7 +657,7 @@
 							</p>
 							<p class="text_main feedback__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque neque voluptatibus quaerat, tenetur consequatur repellendus nostrum velit laboriosam quas sunt nemo modi corporis dicta, aspernatur ducimus, quae quam ratione! Suscipit!
 							</p>
-							<button type="submit" class="button button_plus">Попробовать тоже</button>
+							<button type="submit" class="button button_plus popup" href="javascript:void(0)">Попробовать тоже</button>
 						</div>	
 					</div>
 				</div>	
@@ -674,13 +665,13 @@
 					<div class="footer-social">
 						<ul class="footer-social__list">
 							<li class="footer-social__item">
-								<a class="footer-social__link" href="">vk</a>
+								<a class="footer-social__link popup" href="javascript:void(0)">vk</a>
 							</li>
 							<li class="footer-social__item">
-								<a class="footer-social__link" href="">fb</a>
+								<a class="footer-social__link popup" href="javascript:void(0)">fb</a>
 							</li>
 							<li class="footer-social__item">
-								<a class="footer-social__link" href="">inst</a>
+								<a class="footer-social__link popup" href="javascript:void(0)">inst</a>
 							</li>
 						</ul>
 					</div>
@@ -726,8 +717,7 @@
 						</div>	
 					</nav>
 					<h2 class="header-main__title">Контакты</h2>
-					<a href="tel: +0 (000) 000-00-00" class="header-main__tel">+0 (123) 456-78-90
-					</a>
+					<a class="popup header-main__tel" href="javascript:void(0)">+0 (123) 456-78-90</a>
 				</header>
 				<div class="contacts-content">
 					<div class="contacts">
@@ -735,23 +725,23 @@
 						<div class="contacts-box">
 							<p class="text_main contacts__text"><span class="contacts__text_small">Адрес: </span><br>Невский проспект 108</p>
 							<p class="text_main contacts__text"><span class="contacts__text_small" lang="en">Email: </span><br>Lotos-yoga@gmail.com</p>
-							<button class="contacts__map" onclick="mapOpen()">Смотреть на карте</button>
-							<button class="contacts__feedback" onclick="FeedbackOpen()">Оставить отзыв</button>
+							<button class="contacts__map popup" onclick="mapOpen()" href="javascript:void(0)">Смотреть на карте</button>
+							<button class="contacts__feedback popup" onclick="FeedbackOpen()" href="javascript:void(0)">Оставить отзыв</button>
 							<p class="text_main contacts__copyright">&copy; 2018 — ООО “Центр йоги Лотос”</p>
-							<button type="submit" class="button contacts__button button_plus">Записаться онлайн</button>
+							<button type="submit" class="button contacts__button button_plus popup" href="javascript:void(0)">Записаться онлайн</button>
 						</div>
 					</div>
 				<footer class="footer-main">
 					<div class="footer-social">
 						<ul class="footer-social__list">
 							<li class="footer-social__item">
-								<a class="footer-social__link" href="">vk</a>
+								<a class="footer-social__link popup" href="javascript:void(0)">vk</a>
 							</li>
 							<li class="footer-social__item">
-								<a class="footer-social__link" href="">fb</a>
+								<a class="footer-social__link popup" href="javascript:void(0)">fb</a>
 							</li>
 							<li class="footer-social__item">
-								<a class="footer-social__link" href="">inst</a>
+								<a class="footer-social__link popup" href="javascript:void(0)">inst</a>
 							</li>
 						</ul>
 					</div>
@@ -759,8 +749,18 @@
 						<a class="footer-nextpage__link footer-nextpage_up" href="#home-page">Вернуться</a>
 					</div>
 				</footer>
-			</div>	
+			</div>
 		</section>	
 	</main>
+	<div class="pop-overlay">
+	  <div id="popup-window" class="popup-window">
+	    <div class="inner">
+	      <p>Сайт на реконструкции<br> Попробуйте позже</p>
+	    </div>
+	    <a href="javascript:void(0);" class="button btn-close">Закрыть</a>
+	  </div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
