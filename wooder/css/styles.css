@@ -1145,7 +1145,7 @@ main {
 		}
 		.video-box__img img {
 			max-width: 80%;
-			height: auto;
+			max-height: 80%;
 		}
 		.video-box__bn {
 			top: -115px;
