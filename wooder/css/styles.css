@@ -1010,8 +1010,7 @@ main {
 	}
 	.furniture__img,
 	.decor__img {
-		width: 492px;
-		height: 317px;
+
 		margin: 20px auto;
 	}
 	.furniture__text::before,
