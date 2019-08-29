@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Wooder</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<header id="home-link" class="header-main">
+		<div id="js-hamburger" class="hamburger hidden">
+						<ul class="hamburger__list">
+							<li class="hamburger__item">
+								<a href="#products-link" class="hamburger__link">Продукция</a>
+							</li>
+							<li class="hamburger__item">
+								<a href="#about-link" class="hamburger__link">О нас</a>
+							</li>
+						</ul>
+					</div>
+		<div class="container">
+			<div class="header-main-wrap">
+				<button onclick="hamburgerOpen()" class="hamburger-btn hidden"></button>
+				<span class="header-main__logo">Wooder</span>
+				<nav class="main-nav">
+					<div class="main-nav-wrap">
+						<ul class="main-nav__list">
+							<li class="main-nav__item main-nav__item_selected">
+								<a>главная</a>
+							</li>
+							<li class="main-nav__item">
+								<a href="#products-link" class="main-nav__link">продукция</a>
+							</li>
+							<li class="main-nav__item">
+								<a href="#about-link" class="main-nav__link">о нас</a>
+							</li>
+						</ul>
+					</div>
+					<div class="nav-lang">
+						<ul class="nav-lang__list">
+							<li class="nav-lang__item" onclick="changeLanguage()">ru
+								<div id="js-change_lang" class="nav-lang_hidden">
+									<ul class="nav-lang__list">
+										<li class="nav-lang__item"><a href="index.html">en</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<section class="home">
+				<div class="home-wrap">
+					<nav class="home-nav">
+						<h2 class="home-nav__title">01</h2>
+						<ul class="home-nav__list">
+							<li class="home-nav__item home-nav__item_selected">
+								<a class="home-nav__link" title="Home">Главная</a>
+							</li>
+							<li class="home-nav__item">
+								<a class="home-nav__link" href="#products-link" title="Products">Продукция</a>
+							</li>
+							<li class="home-nav__item">
+								<a class="home-nav__link" href="#about-link" title="About">О нас</a>
+							</li>
+							<li class="home-nav__item">
+								<a class="home-nav__link" href="#footer-link" title="Copywrite">Дизайн сайта</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="home-baner">
+						<h1 class="main-subtitle home__main-title">Wooder</h1>
+						<a href="#products-link" class="button home-baner__button">Узнать больше</a>
+						<span class="home-baner__scroll">scroll</span>
+					</div>
+					<span class="home-text_right">Furniture&decor</span>
+				</div>
+			</section>
+			</div>
+	</header>
+	<main>
+		<section id="products-link" class="products">
+			<div class="container">
+				<div class="furniture">
+					<div class="furniture-content">	
+						<h2 class="main-title products__title_left">Мебель</h2>
+						<p class="main-text furniture__text">Wooder возвращает материалам первоначальный вид, таким образом старинная мебель становится новой и продолжает радовать еще многие годы. 
+						</p>
+						<a target="_blank" href="https://wooder.by/catalog/wooden_windows/wood/" class="products__link" onclick="updateSite()">Узнать больше</a>
+					</div>
+					<img class="furniture__img" src="img/furniture_item.jpg" alt="Wooder furniture">
+				</div>
+				<span class="products__order products__order_left">01<span class="products__order_brown">.</span></span>
+				<div class="decor">
+					<img class="decor__img" src="img/decor_item.jpg" alt="Wooder decor">
+					<div class="decor-content">	
+						<h2 class="main-title products__title_right">Декор</h2>
+						<p class="main-text decor__text">Мы работаем с любой сложностью деревянных конструкций. Наши специалисты помогут вам выбрать самый лучший дизайн мебели 
+						</p>
+						<a target="_blank" href="https://wooder.by/catalog/wooden_windows/finish" class="products__link products__link_center" onclick="updateSite()">Узнать&#160;больше</a>
+					</div>
+					<span class="products__order products__order_right">02<span class="products__order_brown">.</span></span>
+				</div>
+				<div class="product-quality quality">	
+						<h2 class="main-title quality__title">Wooder – это качество</h2>
+						<p class="main-text quality__text">Мы всегда создаем уникальный и самый неповторимый дизайн из обычных и редких пород дерева.<br>Взгляните на примеры наших работ. 
+						</p>
+					<div class="video-box">
+						<div class="video-box__content video-design">
+							<span class="video-box__img video-design__bg">
+								<img src="img/video_design.jpg" alt="Innovative Design">
+								<button class="video-box__bn" href="img/quality_design/garage-doors-wood-door.jpg" data-fancybox="images1">
+									<a class="video-box__carousel" href="img/quality_design/wooder-table.jpg" data-fancybox="images1"></a>
+									<a class="video-box__carousel" href="img/quality_design/living-room-floor.jpg" data-fancybox="images1"></a>
+								</button>
+							</span>
+							<h3 class="video-box__title">Инновационный дизайн</h3>
+						</div>
+						<div class="video-box__content video-skills">
+							<span class="video-box__img video-skills__bg">
+								<img src="img/video_skills.jpg" alt="High-level Skills">
+								<button href="img/innovation_design/front-door.jpg" data-fancybox="images2" class="video-box__bn">
+									<a class="video-box__carousel" href="img/innovation_design/samantha-bed.jpg" data-fancybox="images2"></a>
+									<a class="video-box__carousel" href="img/innovation_design/table-studio.jpg" data-fancybox="images2"></a>
+								</button>
+							</span>
+							<h3 class="video-box__title">Высокое мастерство</h3>
+						</div>
+						<div class="video-box__content video-quality">
+							<span class="video-box__img video-quality__bg">
+								<img src="img/video-quality.jpg" alt="Quality design">
+								<button href="img/high_skills/blocks.jpg" data-fancybox="images3"  class="video-box__bn">
+									<a class="video-box__carousel" href="img/high_skills/header_home.jpg" data-fancybox="images3"></a>
+									<a class="video-box__carousel" href="img/high_skills/manufactures.jpg" data-fancybox="images3"></a>
+								</button>
+							</span>
+							<h3 class="video-box__title">Качественная продукция</h3>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="skills">
+			<div class="container skills_container">
+				<div class="skills__box">	
+					<h2 class="main-subtitle skills__title">Мы создаем дизайн любой сложности</h2>
+					<p class="main-text skills__text">Это команда профессионалов, которые делают мебель и древесный декор на высоком уровне. Придерживаясь мировых стандартов качества мы всегда делаем работу с любовью и теплотой к нашим клиентам.
+					</p>
+					<button data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/2OmSyWnAJMI" href="javascript:;" class="button skills__bn">Посмотреть видео</button>
+					<div>
+				</div>
+			</div>
+		</section>
+		<section id="about-link" class="about-us">
+			<div class="container">
+				<div class="about-us-wrap">
+					<img class="about-us__img" src="img/about_us.jpg" alt="About us">
+					<div class="about">
+						<h2 class="main-subtitle about__title">О нас</h2>
+						<p class="main-text about__text">Мы команда профессионалов в области обработки древесины и создания деревянной мебели высшего класса
+						</p>
+						<a target="_blank" href="https://wooder.by/about/company/" class="products__link" onclick="updateSite()">Узнать больше</a>
+					</div>
+				</div>
+			</div>
+		</section>		
+</div>
+	</main>
+	<footer id="footer-link" class="footer-main">
+		<div class="container">
+			<div class="footer-wrap">
+				<span class="footer-main__copywriting">2016 Wooder</span>
+				<span class="footer-main__logo"><a href="#home-link">Wooder</a></span>
+				<span class="footer-main__copywriting footer__design">Designed by <span class="footer-main__design_light">Viacheslav Olianishyn</span></span>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
