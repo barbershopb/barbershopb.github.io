@@ -1011,7 +1011,7 @@ main {
 	.furniture__img,
 	.decor__img {
 		max-width: 80%;
-		height: auto;
+		height: 80%;
 		margin: 20px auto;
 	}
 	.furniture__text::before,
@@ -1203,7 +1203,7 @@ main {
 		}
 		.video-box__img img {
 			max-width: 80%;
-			max-height: 80%;
+			height: 80%;
 		}
 		.video-box__bn {
 			top: -115px;
