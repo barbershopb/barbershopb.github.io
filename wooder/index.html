@@ -7,12 +7,26 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/styles.css">
-	<script src="script.js"></script>
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/script.js"></script>
 </head>
 <body>
 	<header id="home-link" class="header-main">
+		<div id="js-hamburger" class="hamburger hidden">
+						<ul class="hamburger__list">
+							<li class="hamburger__item">
+								<a href="#products-link" class="hamburger__link">products</a>
+							</li>
+							<li class="hamburger__item">
+								<a href="#about-link" class="hamburger__link">about</a>
+							</li>
+						</ul>
+					</div>
 		<div class="container">
 			<div class="header-main-wrap">
+				<button onclick="hamburgerOpen()" class="hamburger-btn hidden"></button>
 				<span class="header-main__logo">Wooder</span>
 				<nav class="main-nav">
 					<div class="main-nav-wrap">
@@ -28,15 +42,12 @@
 							</li>
 						</ul>
 					</div>
-					<div class="main-nav__lang nav-lang">
+					<div class="nav-lang">
 						<ul class="nav-lang__list">
-							<li class="nav-lang__link">
-								<a href="#footer-link" class="main-nav__link main-nav__link_hidden" title="Copywrite">Info</a>
-							</li>
-							<li class="nav-lang__item">en
-								<div class="nav-lang_hidden hidden">
+							<li class="nav-lang__item" onclick="changeLanguage()">en
+								<div id="js-change_lang" class="nav-lang_hidden">
 									<ul class="nav-lang__list">
-										<li class="nav-lang__item_hidden"><a href="index-ru.html">ru</a></li>
+										<li class="nav-lang__item"><a href="index-ru.html">ru</a></li>
 									</ul>
 								</div>
 							</li>
@@ -79,7 +90,7 @@
 				<div class="furniture">
 					<div class="furniture-content">	
 						<h2 class="main-title products__title_left">Furniture</h2>
-						<p class="main-text furniture__text">Wooder utilizes materials otherwise left behind, rendered useless in their original intent. By creating new pieces made of reclaimed barnwood
+						<p class="main-text furniture__text">Wooder utilizes materials otherwise left behind, rendered useless in their original intent. By creating new pieces made of reclaimed barnwood 
 						</p>
 						<a target="_blank" href="https://wooder.by/catalog/wooden_windows/wood/" class="products__link" onclick="updateSite()">Learn more</a>
 					</div>
@@ -105,7 +116,10 @@
 							<span class="video-box__img video-design__bg">
 								<img src="img/video_design.jpg" alt="Innovative Design">
 								<span id="js-unavailable__design" class="video-box__img_unavailable">Video<br>is<br>unavailable</span>
-								<button class="video-box__bn" onclick="videoUnavailableDesign()"></button>
+								<button class="video-box__bn" href="img/quality_design/garage-doors-wood-door.jpg" data-fancybox="images1">
+									<a class="video-box__carousel" href="img/quality_design/wooder-table.jpg" data-fancybox="images1"></a>
+									<a class="video-box__carousel" href="img/quality_design/living-room-floor.jpg" data-fancybox="images1"></a>
+								</button>
 							</span>
 							<h3 class="video-box__title">Innovative Design</h3>
 						</div>
@@ -113,15 +127,20 @@
 							<span class="video-box__img video-skills__bg">
 								<img src="img/video_skills.jpg" alt="High-level Skills">
 								<span id="js-unavailable__skills" class="video-box__img_unavailable">Video<br>is<br>unavailable</span>
-								<button class="video-box__bn" onclick="videoUnavailableSkills()"></button>
+								<button href="img/innovation_design/front-door.jpg" data-fancybox="images2" class="video-box__bn">
+									<a class="video-box__carousel" href="img/innovation_design/samantha-bed.jpg" data-fancybox="images2"></a>
+									<a class="video-box__carousel" href="img/innovation_design/table-studio.jpg" data-fancybox="images2"></a>
+								</button>
 							</span>
 							<h3 class="video-box__title">High-level Skills</h3>
 						</div>
 						<div class="video-box__content video-quality">
 							<span class="video-box__img video-quality__bg">
 								<img src="img/video-quality.jpg" alt="Quality design">
-								<span id="js-unavailable__quality" class="video-box__img_unavailable">Video<br>is<br>unavailable</span>
-								<button class="video-box__bn" onclick="videoUnavailableQuality()"></button>
+								<button href="img/high_skills/blocks.jpg" data-fancybox="images3"  class="video-box__bn">
+									<a class="video-box__carousel" href="img/high_skills/header_home.jpg" data-fancybox="images3"></a>
+									<a class="video-box__carousel" href="img/high_skills/manufactures.jpg" data-fancybox="images3"></a>
+								</button>
 							</span>
 							<h3 class="video-box__title">Quality design</h3>
 						</div>	
@@ -131,12 +150,11 @@
 		</section>
 		<section class="skills">
 			<div class="container skills_container">
-				<iframe id="js-skills__video" class="skills__video" src="https://www.youtube.com/embed/2OmSyWnAJMI" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				<div class="skills__box">	
 					<h2 class="main-subtitle skills__title">We do the design of any complexity</h2>
 					<p class="main-text skills__text">This is a team of professionals that make the furniture and wood décor high standard. Creating modern designs. Adhering to the global quality standards. And we are doing work with love.
 					</p>
-					<button class="button skills__bn" onclick="videoSkills() ">Watch video</button>
+					<button data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/2OmSyWnAJMI" href="javascript:;" class="button skills__bn" >Watch video</button>
 					<div>
 				</div>
 			</div>
@@ -153,7 +171,8 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section>		
+</div>
 	</main>
 	<footer id="footer-link" class="footer-main">
 		<div class="container">
