@@ -1012,7 +1012,8 @@ main {
 	.decor__img {
 		max-width: 80%;
 		height: auto;
-		margin: 20px auto;
+		margin: 20px 0;
+		text-align: center;
 	}
 	.furniture__text::before,
 	.skills__text::before,
