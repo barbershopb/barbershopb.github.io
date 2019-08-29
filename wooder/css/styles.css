@@ -1011,7 +1011,7 @@ main {
 	.furniture__img,
 	.decor__img {
 		max-width: 80%;
-		height: 80%;
+		height: 317px;
 		margin: 20px auto;
 	}
 	.furniture__text::before,
@@ -1200,10 +1200,6 @@ main {
 		.video-skills,
 		.video-quality {
 		 	margin: 10px auto;
-		}
-		.video-box__img img {
-			max-width: 80%;
-			height: 80%;
 		}
 		.video-box__bn {
 			top: -115px;
