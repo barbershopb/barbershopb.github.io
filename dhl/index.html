@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>DHL logistics</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet"> 
+	<script src="script.js"></script>
+</head>
+<body>
+	<header class="header_main">
+		<div class="user_main-bg">
+			<div class="container">
+				<div class="user_main">
+					<div class="user_main-lang">
+						<ul class="user_main-lang-list">
+							<li class="user_main-lang-item"><label>English
+								<button class="button_lang" onclick="showLang()"></button></label>
+								<ul class="choose_lang-list display_none">
+									<li lang="ru" id="js-choose_lang" class="display_none choose_lang-item" onclick="updateSite()">Русский</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="user_main-contacts">
+						<ul class="user_contacts-list">	
+							<li class="user_contacts-ccenter" onclick="updateSite()">
+								<button class="button_ccenter" onclick="updateSite()"></button>
+								Contact Center			
+							</li>
+							<li class="user_contacts-country"><label>Country Profile
+								<button class="button_lang" onclick="showLocation()"></button></label>
+								<div id="js-user_contacts-country-list" class="display_none">
+									<ul  class="user_contacts-country-list">
+										<li  class="user_contacts-country-item" onclick="updateSite()">USA</li>
+										<li class="user_contacts-country-item" onclick="updateSite()">Беларусь</li>
+									</ul>
+								</div>	
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="nav_main">
+			<div class="container">
+				<div class="nav_main-menu">
+					<img class="img_logo" src="img/logo.jpg" alt="Logo DHL">
+					<ul class="nav_main-list">
+						<li class="nav_main-item nav_main-item__checked">
+							<a>Express</a>
+						</li>
+						<li class="nav_main-item">
+							<a href="#" onclick="updateSite()">Parcel & Ecommerce</a>
+						</li>
+						<li class="nav_main-item">
+							<a href="#" onclick="updateSite()">Logistics</a>
+						</li>
+						<li class="nav_main-item">
+							<a href="#" onclick="updateSite()">Mail</a>
+						</li>
+						<li class="nav_main-item">
+							<a href="#" onclick="updateSite()">Press</a>
+						</li>
+						<li class="nav_main-item">
+							<a href="#" onclick="updateSite()">About</a>
+						</li>
+					</ul>
+					<button class="button_search" onclick="updateSite()"></button>
+				</div>
+			</div>	
+		</nav>	
+	</header>
+	<main>
+		<section class="deliver_speed">
+			<div class="container">
+				<h1 class="display_none">DHL</h1>
+				<h2 class="deliver_speed-header">We Deliver With Speed</h2>
+				<p class="deliver_speed-paragraph">When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
+				</p>
+				<ul class="deliver_speed-features">
+					<li class="deliver_speed-item">Amazing</li>
+					<li class="deliver_speed-item speed-item__dotted">Quick </li>
+					<li class="deliver_speed-item">24/7 Supports</li>		
+				</ul>
+				<a href="#" class="button deliver_speed-button" onclick="updateSite()">Learn more</a>
+				<a href="#" class="button deliver_speed-button" onclick="updateSite()">DHL worldwide</a>
+			</div>
+		</section>
+		<section class="services">
+			<div class="container">
+				<h2 class="services-header">Awesome Services</h2>
+				<div class="services-article_wrap">
+					<article class="services-article">
+						<img class="services-article_img" src="img/express_services.jpg" alt="DHL Express Services">
+						<h3 class="subheader_main">Express Services</h3>
+						<p class="services-article_review">When an unknown printer took a galley of type and scrambled it to make a type specimen.
+						</p>
+						<a class="services-article_link" href="#" onclick="updateSite()">Read more</a>		
+					</article>
+					<article class="services-article">
+						<img class="services-article_img" src="img/parcel_ecommerce.jpg" alt="DHL Parcel & Ecommerce">
+						<h3 class="subheader_main">Parcel & Ecommerce</h3>
+						<p class="services-article_review">When an unknown printer took a galley of type and scrambled it to make a type specimen.
+						</p>
+						<a class="services-article_link" href="#" onclick="updateSite()">Read more</a>		
+					</article>
+					<article class="services-article">
+						<img class="services-article_img" src="img/frieght_transport.jpg" alt="DHL Frieght Transport">
+						<h3 class="subheader_main">Frieght transport</h3>
+						<p class="services-article_review">When an unknown printer took a galley of type and scrambled it to make a type specimen.
+						</p>
+						<a class="services-article_link" href="#" onclick="updateSite()">Read more</a>		
+					</article>
+					<div class="services-article_location">
+						<h3 class="subheader_main subheader_aricle">DHl Worldwide</h3>
+						<p class="location_review location_review__pointer">When an unknown prot printer type and scra</p>
+						<form class="location_form" method="GET">	
+							<select class="location_list">
+								<option disabled class="location_item">Location</option>
+								<option class="location_item">Seattle</option>
+								<option class="location_item">Minsk</option>
+								<input class="button location_button" type="submit" value="Explore" onclick="updateSite()">
+							</select>
+						</form>	
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="international_services">
+			<div class="container">
+				<h2 class="international_services-header">One of the best international service provider</h2>
+				<button class="international_services-button" onclick="showVideoAbout()"></button>
+				<iframe id="js-video_about" class="video_about display_none" src="https://www.youtube.com/embed/fsl8-MrXMBk"></iframe>
+				<div class="provider-wrap">
+					<div class="provider-type">
+						<img class="provider-img" src="img/aerospace_rovider.jpg" alt="DHL Aerospace Provider">
+						<div class="provider-type__text">
+							<h3 class="subheader_main provider-header">Aerospace Provider</h3>
+							<ul class="provider-list">
+								<li class="provider-item">When an unknown printer took.</li>
+								<li class="provider-item">Make a type specimen book.</li>
+								<li class="provider-item">It has survived.</li>
+								<li class="provider-item">Airlines unknown specimen.</li>
+							</ul>
+						</div>	
+					</div>
+					<div class="provider-type">
+						<img class="provider-img" src="img/poppins_proved.jpg" alt="DHL Poppins Proved">
+						<div class="provider-type__text">
+							<h3 class="subheader_main provider-header">Poppins Proved</h3>
+							<ul class="provider-list">
+								<li class="provider-item">When an unknown printer took.</li>
+								<li class="provider-item">Make a type specimen book.</li>
+								<li class="provider-item">It has survived.</li>
+								<li class="provider-item">Airlines unknown specimen.</li>
+							</ul>
+						</div>	
+					</div>
+					<div class="provider-type">
+						<img class="provider-img" src="img/airline_specimen.jpg" alt=" DHL Airline Specimen">
+						<div class="provider-type__text">
+							<h3 class="subheader_main provider-header">Airline Specimen</h3>
+							<ul class="provider-list">
+								<li class="provider-item">When an unknown printer took.</li>
+								<li class="provider-item">Make a type specimen book.</li>
+								<li class="provider-item">It has survived.</li>
+								<li class="provider-item">Airlines unknown specimen.</li>
+							</ul>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="calculate_cost">
+			<div class="container">
+				<div class="calculate_cost-content">
+					<div class="calculation">
+						<button class="button calculation-button" onclick="updateSite()">Express</button>
+						<button class="button calculation-button calculation-button__checked">Logistics</button>
+						<ul class="calculation-list">
+							<li class="calculation-item" onclick="updateSite()">Track your shipment<button class="calculation-item_button"></button>
+							</li>
+							<li class="calculation-item" onclick="updateSite()">New login<button class="calculation-item_button"></button>
+							</li>
+							<li class="calculation-item" onclick="updateSite()">Find Dhl point<button class="calculation-item_button"></button>
+							</li>
+							<li class="calculation-item" onclick="openService()">Find a service<button class="calculation-item_button" onclick="showcalCulation()" ></button>
+								<div id="js-find_service" class="find_service display_none">	
+									<h3 class="find_service-header">International Services to Another Country</h3>
+									<ul class="find_service-list">
+										<li class="find_service-item" onclick="updateSite()">Emergency</li>
+										<li class="find_service-item" onclick="updateSite()">Time Critical</li>
+										<li class="find_service-item" onclick="updateSite()">Less Urgent</li>
+									</ul>
+								</div>	
+							</li>
+						</ul>
+					</div>
+					<div class="calculation-banner"></div>
+				</div>
+			</div>
+		</section>
+		<section class="delivered_info">
+			<div class="container">
+				<h2 class="delivered_info-header">Excellence. Simply delivered.</h2>
+				<p class="delivered_info-text">International express deliveries; global freight forwarding by air, sea, road and rail; warehousing solutions from packaging, to repairs, to storage; mail deliveries worldwide;and other customized logistic services – with everything DHL does, we help connect people and improve their lives.
+				</p>
+				<button class="button delivered_info-button" onclick="updateSite()">Learn more</button>
+			</div>	
+		</section>
+	</main>
+	<footer class="footer_main">
+		<section class="partners">
+			<div class="container">
+				<div class="partners-banners">
+					<a class="partners-link" href="#" onclick="updateSite()">
+						<img src="img/themeforest.png" alt="Themeforest">
+					</a>
+					<a class="partners-link" href="#" onclick="updateSite()">
+						<img src="img/photodune.png" alt="Photodune">
+					</a>
+					<a class="partners-link" href="#" onclick="updateSite()">
+						<img src="img/graphicriver.png" alt="Graphicriver">
+					</a>
+					<a class="partners-link" href="#" onclick="updateSite()">
+						<img src="img/codecanyon.png" alt="Codecanyon">
+					</a>	
+				</div>
+			</div>
+		</section>
+		<nav class="footer-nav">
+			<div class="container">
+				<div class="footer-nav__wrap">
+					<div class="footer-nav_content">
+						<h3 class="subheader_main footer-nav-header">Aerospace Provider</h3>
+						<ul class="footer-nav-list">
+							<li class="provider-item footer-nav-item">
+								<a href="#" onclick="updateSite()">DHL Express</a>
+							</li>
+							<li class="provider-item footer-nav-item">
+								<a href="#" onclick="updateSite()">DHL Parcel & eCommerce</a>
+							</li>
+							<li class="provider-item footer-nav-item">
+								<a href="#" onclick="updateSite()">DHL Global Forwarding</a>
+							</li>
+							<li class="provider-item footer-nav-item">
+								<a href="#" onclick="updateSite()">DHL Freight</a>
+							</li>
+							<li class="provider-item footer-nav-item">
+								<a href="#" onclick="updateSite()">DHL Supply Chain</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-content">
+						<h3 class="subheader_main footer-nav-header">Contact Center</h3>
+						<ul class="footer-nav-list">
+							<li class="provider-item footer-nav-item">
+								<a href="#" onclick="updateSite()">DHL Express</a>
+							</li>
+							<li class="provider-item footer-nav-item">
+								<a href="#" onclick="updateSite()">DHL Parcel & eCommerce</a>
+							</li>
+							<li class="provider-item footer-nav-item">
+								<a href="#" onclick="updateSite()">DHL Global Forwarding</a>
+							</li>
+							<li class="provider-item footer-nav-item">
+								<a href="#" onclick="updateSite()">DHL Freight</a>
+							</li>
+							<li class="provider-item footer-nav-item">
+								<a href="#" onclick="updateSite()">DHL Supply Chain</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-content">
+						<h3 class="subheader_main footer-nav-header">Social Media</h3>
+						<ul class="footer-nav-list">
+							<li class="provider-item footer-nav-item footer-nav-item__social">
+								<a href="#" onclick="updateSite()">Facebook</a>
+							</li>
+							<li class="provider-item footer-nav-item footer-nav-item__social">
+								<a href="#" onclick="updateSite()">dribbble</a>
+							</li>
+							<li class="provider-item footer-nav-item footer-nav-item__social">
+								<a href="#" onclick="updateSite()">behance</a>
+							</li>
+							<li class="provider-item footer-nav-item footer-nav-item__social">
+								<a href="#" onclick="updateSite()">gmail</a>
+							</li>
+							<li class="provider-item footer-nav-item footer-nav-item__social">
+								<a href="#" onclick="updateSite()">twitter</a>
+							</li>
+						</ul>
+					</div>
+				</div>			
+			</div>
+		</nav>
+	</footer>
+	<div id="js-overlay" class="overlay">
+		<div class="popup">
+			<p>Currently the site is updating</p>
+			<p>Call us: 1-800-225-5345</p>
+			<button class="button popup-button" onclick="closeUpdateSite()">Close</button>
+		</div>
+	</div>
+</body>
+</html>

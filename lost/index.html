@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lets get lost</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,500,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nova+Mono&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet"> 
+	<script src="script.js"></script>
+</head>
+<body>
+	<header class="header_main">
+		<div class="intro_bg">
+			<div class="container">
+				<div class="header_main-wrap">
+					<span class="logo">YokNgalam</span>
+					<nav class="nav_main">
+						<ul class="nav_main-list">
+							<li class="nav_main-item nav_main-item__checked">
+								<a>Home</a>
+							</li>
+							<li class="nav_main-item">
+								<a href="#destination">Destination</a>
+							</li>
+							<li class="nav_main-item">
+								<a href="#itinerary">Itinary</a>
+							</li>
+							<li class="nav_main-item">
+								<a href="#review">Review</a>
+							</li>
+							<li class="nav_main-item">
+								<a href="#contacts">Contact</a>
+							</li>
+						</ul>
+						<div class="nav_main-user">
+							<div class="user_img-box" onclick="openUserMenu()">
+							<img class="user_img" src="img/user_photo.jpg" alt="user photo">
+							</div>
+							<div id="js-user_menu" class="user_menu hidden">
+								<ul class="user_menu-list">
+									<li class="user_menu-item" onclick="UpdateSite()">Log in</li>
+									<li class="user_menu-item" onclick="UpdateSite()">Sign in</li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</div>
+				<section class="banner">
+					<h1>Lets get <span class="header_one__green">lost</span></h1>
+					<p class="text-subtitle">Malang will never dissapointed you.<br> From every step you took you will be amazed and suddenly fallin love with Malang
+					</p>
+					<a href="#itinerary" class="button banner-button">Set itinerary now</a>
+				</section>
+				<div class="header_main-wrap__bottom"></div>
+			</div>
+		</div>
+	</header>			
+	<section class="about_city">
+		<div class="container">
+			<div class="about_city-wrap">
+				<img src="img/malang_logo.png" alt="Malang's logo">
+				<div class="about_city-content">	
+					<h2 class="header_landing">City of <span class="header_one__green">Love</span></h2>
+					<p class="text_landing about_city-text">Malang is the second largest city in East Java province, Indonesia. It has a history dating back to the ancient Mataram Kingdom. The city is famous for its cool temperature. People in East Java sometimes call it "Paris of East Java.
+					</p>
+				</div>
+			</div>
+		</div>		
+	</section>
+	<section id="destination" class="destination">
+		<div class="container">
+			<div class="destination-header__wrap">
+				<h2 class="header_landing destination-header">Des<span class="header_one__green">tination</span></h2>
+				<a class="regulation" onclick="UpdateSite()">see basic regulation</a>
+			</div>
+			<p class="text_landing destination-text">Being around by many mountain, Malang not only came with mountain vacation, but our beach, cultural spot and Human Interest is worth to experienced.
+			</p>
+			<div class="destination-search__wrap">
+				<form class="destination-form">
+					<input class="destination-search" type="search" name="search" placeholder="search destination" onclick="UpdateSite()">
+				</form>
+				<span class="destination-place">
+					<a class="destination-place__checked">All place&nbsp;/&nbsp;</a>
+					<a class="destination-place__link" onclick="UpdateSite()">recomended place</a>
+				</span>	
+			</div>
+			<section id="review" class="destination-desc">
+				<div class="desc_city-wrap">				
+					<div class="desc_city-img">
+						<img src="img/batu.jpg" alt="Batu">
+						<span class="desc_link">
+							<a class="" onclick="UpdateSite()">see more</a>
+						</span>
+					</div>
+					<div class="desc_city">
+						<h3 class="desc-header desc-header__icon">Batu</h3>
+						<p class="text_landing desc-text__city"> is a city located in East Java Province of Indonesia. It is situated about 20 km to the northwest of Malang. Formerly, it was a part of Malang Regency; but in 2001, Batu became an independent city. A population of 190,000 people, it lies on the southern slopes of Gunung Welirang. Its population largely consists of Javanese.
+						</p>
+					</div>	
+				</div>	
+				<div class="desc_mountain-wrap">
+					<div class="desc_mountain">
+						<h3 class="desc-header desc-header_mountain__icon">Bromo</h3>
+						<p class="text_landing desc-text desc-text_mountain"> <strong>Mount Bromo</strong> is an active volcano and part of the Tengger massif, in East Java, Indonesia. At 2,329 metres (7,641 ft) it is not the highest peak of the massif, but is the most well known.
+						</p>
+					</div>
+					<div class="desc_mountain-img">
+						<img src="img/bromo.jpg" alt="Bromo">
+						<span class="desc_link__mountain">
+							<a onclick="UpdateSite()">see more</a>
+						</span>
+					</div>
+					<div class="desc_beach-img">
+						<img src="img/beach.jpg" alt="Beach">
+						<span class="desc_link__beach">
+							<a onclick="UpdateSite()">see more</a>
+						</span>
+					</div>
+				</div>
+				<ul class="destination-links_list">
+					<li class="destination-links_item destination-links__checked"><a>1</a>
+					<li class="destination-links_item" onclick="UpdateSite()"><a>2</a>
+					<li class="destination-links_item" onclick="UpdateSite()"><a>3</a>
+					<li class="destination-links_item" onclick="UpdateSite()"><a>4</a>
+					<li class="destination-links_item" onclick="UpdateSite()"><a>5</a>
+					<li class="destination-links_item" onclick="UpdateSite()"><a>&#62;</a>
+					<li class="destination-links_item" onclick="UpdateSite()"><a>&#62;&#62;</a>
+				</ul>
+			</section>	
+		</div>	
+	</section>
+	<section id="itinerary" class="itinerary">
+		<div class="container">
+			<h2 class="header_landing">Set <span class="header_one__green">Ittinery</span></h2>
+			<p class="text_landing itinerary-text">Simply drag and drop what you want to visit, and voila we make a ittinery and schedule for your vacation.<br> Have a great trip !
+			</p>
+			<div class="itinerary-box">
+				<div class="itinerary-box_choice">
+					<h3 class="choice-header">Your Ittinery Title Here</h3>
+					<form class="choice-form">
+						<div class="choice-form_date">
+							<span class="choice-form_day">Day 1</span>
+							<ul class="choice-form-list">
+								<li class="choice-form-item choice-form-item__click" onclick="chooseDate()">
+								<time datetime="2019-05-29">05/29/2019</time>
+									<div id="js-choice_date" class="choice-date hidden">
+										<ul>
+											<li class="choice-form-item" onclick="unavailableDate()">
+												<time datetime="2019-06-10">06/10/2019</time>
+											</li>
+											<li class="choice-form-item" onclick="unavailableDate()">
+												<time datetime="2019-07-08">07/08/2019</time>
+											</li>
+										</ul>	
+									</div>
+								</li>
+							</ul>
+						</div>
+						<input class="choice-destination destination-icon__mt" type="text" name="first_destination" value="Mt. Bromo&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;03.30 - 09.00" readonly>
+						<span class="add_destination" onclick="UpdateSite()">add sub destination</span>
+						<input class="choice-destination destination-icon__city" type="text" name="first_destination" value="Batu City&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;03.30 - 09.00" readonly>
+						<span class="choice-destination_benifits benifits__music benifits-line">Enjoy Malang while Listening Music</span>
+						<span class="choice-destination_benifits benifits__food">Gonna Eat BAKSO</span>
+						<span class="add_destination add_destination__up" onclick="UpdateSite()">add sub destination</span>
+						<div class="choice-form_date">
+							<span class="choice-form_day">Day 2</span>
+							<ul class="choice-form-list">
+								<li class="choice-form-item choice-form-item__click" onclick="chooseDate2day()">
+								<time datetime="2019-05-29">05/29/2019</time>
+									<div id="js-choice_date__2day" class="choice-date hidden">
+										<ul>
+											<li class="choice-form-item" onclick="unavailableDate()">
+												<time datetime="2019-06-10">06/10/2019</time>
+											</li>
+											<li class="choice-form-item" onclick="unavailableDate()">
+												<time datetime="2019-07-08">07/08/2019</time>
+											</li>
+										</ul>	
+									</div>
+								</li>
+							</ul>
+						</div>
+						<input class="choice_download" type="download" name="choice-form_2day" placeholder="Drag Destination Here" disabled onclick="UpdateSite()">
+					</form>
+					<div class="choice-destination_btn">
+						<button class="button button-form button-form__pdf" onclick="UpdateSite()">save as pdf</button>
+						<button class="button button-form button-form__print" onclick="UpdateSite()">print</button>
+					</div>	
+				</div>
+				<div class="itinerary-box_list">
+					<h3 class="box_list-header">List of Destination</h3>
+					<div class="box_list-wrap">
+						<span class="box_list-search">sort by:&#160;</span>
+						<ul class="box_list__list">
+							<li class="box_list__item" onclick="boxList()">Mountain
+								<div id="js-box_list" class="box_list__alt hidden">
+									<ul class="box_list__list">
+										<li onclick="UpdateSite()">City</li>
+									</ul>
+								</div>	
+							</li>
+						</ul>
+					</div>	
+					<div class="box_list-content">
+						<span class="box_list-place">Mt. Bromo</span>
+						<p class="box_list-time">estimated time: &#160;<span class="box_list-hours"><b>5</b> Hours</span></p>
+					</div>
+					<div class="box_list-content" onclick="UpdateSite()">
+						<span class="box_list-place">Mt. Bromo</span>
+						<p class="box_list-time">estimated time: &#160;<span class="box_list-hours"><b>5</b> Hours</span></p>
+					</div>
+					<div class="box_list-content">
+						<span class="box_list-place">Mt. Bromo</span>
+						<p class="box_list-time">estimated time: &#160;<span class="box_list-hours"><b>5</b> Hours</span></p>
+					</div>
+					<div class="box_list-content">
+						<span class="box_list-place">Mt. Bromo</span>
+						<p class="box_list-time">estimated time: &#160;<span class="box_list-hours"><b>5</b> Hours</span></p>
+					</div>
+					<div class="box_list-content">
+						<span class="box_list-place">Mt. Bromo</span>
+						<p class="box_list-time">estimated time: <span class="box_list-hours"><b>5</b> Hours</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="contacts" class="contacts">
+		<div class="container">
+			<h2 class="header_landing contacts-header">Contact</h2>
+			<div class="contacts-wrap">
+				<div class="contacts-form_box">
+					<form class="contacts-form">
+						<input class="contacts-input contacts-input__email" type="email" name="email" placeholder="Your Email">
+						<input class="contacts-input contacts-input__text input__right" type="text" name="company" placeholder="Company">
+						<input class="contacts-input contacts-input__text" type="text" name="subject" placeholder="Subject">
+						<textarea class="contacts-form__textarea" placeholder="Your Messages"></textarea>
+						<input class="button button-form contacts-btn" type="submit" name="submit" value="send message" onclick="UpdateSite()">
+					</form>
+				</div>
+				<span class="contacts-form__extratext">or</span>
+				<div class="contacts-data">
+					<h3 class="contacts-data_header">You Can Find Us Here</h3>
+					<p class="contacts-data_adress">Jl.Danau Bratan sekian nomer sekian, Sawojajar Malang<br><span class="contacts-data_map" onclick="UpdateSite()">finds on map</span>
+					</p>
+					<span class="contacts-data_tel">(+62) 8816723812</span><br>
+					<span class="contacts-data_tel">(+62) 8512371632</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="subscribe">
+		<div class="container">
+			<div class="subscribe-wrap">
+				<div class="subscribe-content">
+					<h2 class="header_landing contacts-header subscribe-header">Keep in Touch</h2>
+					<p class="text_landing subscribe-text">We Will Give you latest information about Malang</p>
+				</div>
+				<div class="subscribe-email">
+					<form class="subscribe-form">
+						<input class="contacts-input contacts-input__email" type="email" name="email_subscribe" placeholder="Type Email Here for Subscribe">
+						<button class="subscribe-button" type="submit" onclick="UpdateSite()"></button>
+					</form>	
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer-main">
+		<div class="container">
+			<div class="footer-links">
+				<div class="links-terms">
+					<ul>
+						<li class="terms-item terms-item__marker">
+							<a onclick="UpdateSite()">Term & Condition</a>
+						</li>
+						<li class="terms-item terms-item__marker">
+							<a onclick="UpdateSite()">Policy</a>
+						</li>
+						<li class="terms-item">
+							<a onclick="UpdateSite()">Privacy</a>
+						</li>   
+					</ul>
+				</div>
+				<div class="links-social">
+					<ul class="social-list">
+						<li class="social-item" onclick="UpdateSite()">
+							<a class="social-item-link facebook_icon"></a>
+						</li>
+						<li class="social-item" onclick="UpdateSite()">
+							<a class="social-item-link twitter_icon"></a>
+						</li>
+						<li class="social-item" onclick="UpdateSite()">
+							<a class="social-item-link instagram_icon"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<p class="footer-copyright">copyright@YokMalang. Allright Reserved. 2015</p>
+		</div>
+	</footer>
+	<div id="js-overlay_update" class="overlay_update hidden">
+		<div class="popup_update">
+			<p class="popup-text">
+				The site is updating now<br>
+				Try later
+			</p>
+			<button class="button popup-btn" onclick="UpdateSiteClose()">Ok</button>
+		</div>
+	</div>
+	<div id="js-overlay_wronagdate" class="overlay_update hidden">
+		<div class="popup_update">
+			<p class="popup-text">
+				This date is unavailable now<br>
+				Try another one
+			</p>
+			<button class="button popup-btn" onclick="WrongDateClose()">Ok</button>
+		</div>
+	</div>
+</body>
+</html>
