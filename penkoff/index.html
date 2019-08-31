@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title><Банка Пеньков</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet"> 
+	<script src="script.js"></script>
+</head>
+<body>
+	<header class="main_header">
+		<div class="container">
+			<nav class="main_nav">
+				<span class="logo courser_default">Пенькоф</span>
+				<button class="menu__hamburger menu__hamburger_down" onclick="openHamburger()"></button>
+				<div id="js-menu__hamburger"  class="main_nav-menu">
+					<ul class="main_nav-list">
+						<li class="main_nav-item main_nav-item_checked">
+							<a class="courser_default">Банки</a>
+						</li>
+						<li class="main_nav-item">
+							<a href="#" onclick="update()">Чулки</a>
+						</li>
+						<li class="main_nav-item">
+							<a href="#" onclick="update()">Под подушкой</a>
+						</li>
+						<li class="main_nav-item">
+							<a href="#" onclick="update()">Страховка</a>
+						</li>
+						<li class="main_nav-item">
+							<a href="#" onclick="update()">Кэшбек</a>
+						</li>	
+					</ul>
+					<button class="main_nav-button">
+						<a href="#" onclick="update()">Войти
+						</a>
+					</button>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<header class="submenu_header">
+		<div class="container">	
+			<nav class="submenu_nav">
+				<h1 class="submenu_nav-title courser_default" lang="en">Penkoff Blank</h1>
+				<ul class="submenu_nav-list">
+					<li class="submenu_nav-item submenu_nav-item_checked">
+						<a class="courser_default"> Обзор</a>
+					</li>
+					<li class="submenu_nav-item">
+						<a href="#" onclick="update()">Примеры</a>
+					</li>
+					<li class="submenu_nav-item">
+						<a href="#" onclick="update()">Документы</a>
+					</li>
+					<li class="submenu_nav-item">
+						<a href="#" onclick="update()">Как пользоваться</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section class="review_general">
+		<div class="container review_general-bg">
+			<div class="review_general-main">
+				<h2 class="review_general-title">Храните деньги в банке.<br> Это надёжно и безопасно.</h2>
+				<p class="review_general-text">Вы можете быть уверены, что ваши деньги в надёжном месте, если они в трехлитровой банке.</p>
+				<a class="button" href="#log_in">Заказать банку</a>
+			</div>
+			<img class="review_general-img" src="img/review-jar.png" alt="Трёхлитровая банка">
+		</div>
+	</section>
+	<section class="benifits">
+		<div class="container">
+			<h2 class="section_header">Трехлитровая банка с двойным дном</h2>
+			<div class="benifits_outcome">
+				<h3 class="section_subheader">Часть денег проваливается на дно</h3>
+				<p class="outcome_text">К концу месяца у вас накапливается сумма равная 10% от всех пополнений. Можно смело тратить их на мечту!
+				</p>
+			</div>
+			<div class="benifits_content">
+				<div class="benifits_block">
+					<h3 class="section_subheader">Деньги дома</h3>
+					<p class="benifits_block-text">Когда деньги лежат дома, у вас просто нет возможности потратить их на всякую ерунду
+					</p>
+				</div>
+				<div class="benifits_block">
+					<h3 class="section_subheader">Без комиссии</h3>
+					<p class="benifits_block-text">Пополняйте банку без комиссии. Доставать деньги можно также без комиссий и штрафов
+					</p>
+				</div>
+				<div class="benifits_block">
+					<h3 class="section_subheader">Копейка рубль бережет</h3>
+					<p class="benifits_block-text">Вы можете бросать в банку даже мелочь, которая лежала в кармане после покупок
+					</p>
+				</div>
+			</div>
+		</div>	
+	</section>
+	<section class="features">
+		<div class="container">
+			<h2 class="section_header">Лучшая банка в мире</h2>
+			<p class="features-advice">По версии мамы, бабушки и тёти</p>
+			<div class="features-wrap">
+				<div class="features_block">
+					<div class="features_block-img features_tag">
+					</div>
+					<p class="features_block-text">Контролируйте доходы, на банке есть бумажка</p>
+				</div>
+				<div class="features_block">
+					<div class="features_block-img features_hummer">
+					</div>
+					<p class="features_block-text">Молоточек для самых важных случаев</p>
+				</div>
+				<div class="features_block">
+					<div class="features_block-img features_hand">	
+					</div>
+					<p class="features_block-text">Пополнение одним легким движением руки</p>
+				</div>
+				<div class="features_block">
+					<div class="features_block-img features_multicurrent">
+					</div>
+					<p class="features_block-text">Одна банка — сколько угодно валют</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="log_in" class="make_order">
+		<div class="container">
+			<h2 class="section_header">Получите банку, не выходя из дома</h2>
+			<form class="main_form" method="POST">
+				<input class="main_form-text" type="text" name="name" placeholder="Фамилия Имя Отчество">
+				<span class="main_form-contacts">
+					<input class="main_form-tel" type="tel" name="tel" placeholder="Номер телефона">
+					<input class="main_form-email" type="email" name="email" placeholder="Электронная почта">
+				</span>
+				<input class="main_form-text" type="text" name="birthday" placeholder="Дата рождения">
+				<a class="button button--right" onclick="update()">Заказать банку</a>
+			</form>		
+		</div>
+	</section>
+	<footer class="main_footer">
+		<div class="container">
+			<p class="main_footer-text">Название Penkoff вымышлено и все совпадения с реальностью случайны. Информация на данном сайте представлена исключительно в образовательных целях. Сайт не является офертой или рекламным предложением.
+			</p>	
+		</div>
+	</footer>
+	<div id="js-overlay_update" class="main_overlay-update">
+		<div class="popup">
+			<p>Сайт обновляется</p>
+			<p>Скоро он засияет как новая трёхлитровая банка</p>
+			<button class="button button--high" onclick="closePopup()">Хорошо</button>
+			<button class="button--position" onclick="closePopup()"></button>
+		</div>
+	</div>
+</body>
+</html>
