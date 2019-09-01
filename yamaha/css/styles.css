@@ -1,0 +1,285 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body {
+	padding-right: 10px;
+	padding-left: 10px;
+	color: #212327;
+	font-family: Oswald, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	text-transform: uppercase;
+	background-color: #ffffff;
+}
+img {
+	max-width: 100%;
+}
+ul li {
+	list-style-type: none;
+}
+a {
+	color: currentColor;
+	text-decoration: none;
+	cursor: pointer;
+}
+button {
+	border: 0;
+	cursor: pointer;
+}
+*:hover {
+	transition: 0.2s;
+}
+.hidden {
+	display: none;
+}
+.container {
+	max-width: 1230px;
+	margin: 0 auto;
+}
+.header-main-wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+.nav__item {
+	display: inline-block;
+	width: 157px;
+	font-size: 16px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.32px;
+	text-align: center;
+}
+.nav__link {
+	display: block;
+	padding-top: 44px;
+	padding-bottom: 41px;
+}
+.nav__link:hover {
+	border-bottom: 3px solid #ee3b33;
+}
+.nav__link_selected {
+	border-bottom: 3px solid #ee3b33;
+}
+.user-menu {
+	position: relative;
+	margin-left: auto;
+	padding-right: 40px;
+	font-size: 12px;
+	letter-spacing: 0.24px;
+	text-align: center;
+}
+.user-menu::after {
+	position: absolute;
+	content: "\e986";
+	bottom: 50px;
+	right: 10px;
+	font-family: 'icomoon'
+}
+.user-menu:hover::after {
+	color: red;
+}
+.user-menu__item {
+	display: inline-block;
+}
+.user-menu__item:nth-child(1n+2) {
+	margin-left: 25px;
+}
+.user-menu__link {
+	display: block;
+	padding-top: 44px;
+	padding-bottom: 41px;
+}
+.user-menu__link:hover {
+	color: #ee3b33;
+}
+.section-product-list {
+	border-top: 1px solid #dadfe6;
+	border-bottom: 1px solid #dadfe6;
+}
+.product-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 1095px;
+	margin-left: 100px;
+	text-align: center;
+}
+.product {
+	margin-right: 5px;
+	padding-bottom: 16px;
+	border-bottom: 3px solid transparent;
+}
+.product:hover {
+	border-bottom: 3px solid #ee3b33;
+	cursor: pointer;
+}
+.product_selected {
+	border-bottom: 3px solid #ee3b33;
+}
+.product__img {
+	padding-top: 23px;
+	padding-bottom: 20px;
+}
+.description {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 100px;
+	padding-top: 75px;
+	background-image: url(../img/desc_power.png);
+	background-size: 325px 100px;
+	background-position: 30px 50px;
+	background-repeat: no-repeat;
+}
+.description::before {
+	position: absolute;
+	content: "";
+	width: 32px;
+	height: 32px;
+	top: 100px;
+	left: 180px;
+	background-image: url(../img/desc_plus.png);
+	background-repeat: no-repeat;
+}
+.description__img {
+	position: relative;
+	width: 510px;
+}
+.description__img::before {
+	position: absolute;
+	content: "";
+	width: 32px;
+	height: 32px;
+	top: 210px;
+	right: 130px;
+	background-image: url(../img/desc_plus.png);
+	background-repeat: no-repeat;
+}
+.description__img::after {
+	position: absolute;
+	content: "";
+	width: 32px;
+	height: 32px;
+	top: 210px;
+	left: 20px;
+	background-image: url(../img/desc_plus.png);
+	background-repeat: no-repeat;
+}
+.decription__info {
+	width: 440px;
+}
+.description__title-wrap {
+	display: flex;
+	align-items: center;
+	margin-top: -50px;
+}
+.description__title {
+	margin-right: 45px;
+	font-size: 75px;
+	line-height: 0;
+}
+.description__item {
+	display: inline-block;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.description__item:hover {
+	color: #ee3b33;
+	cursor: pointer;
+}
+.description__item_selected {
+	color: #ee3b33;
+	cursor: default !important;
+}
+.description__item_border {
+	border-left: 2px solid #e5e7ed;
+}
+.description__cost {
+	display: block;
+	color: #81848a;
+	font-size: 13px;
+	margin-bottom: 30px;
+}
+.description__cost_price {
+	display: block;
+	margin-top: 5px;
+	color: #212327;
+	font-size: 25px;
+}
+.description-color {
+	margin-bottom: 41px;
+	margin-right: 26px;
+}
+.description__btn {
+	border: 1px solid #81848a;
+}
+.description__btn:hover {
+	border: 1px solid #ee3b33;
+}
+.description__btn_selected {
+	border: 1px solid #ee3b33;
+	cursor: default;
+}
+.description__btn_blue,
+.description__btn_grey,
+.description__btn_yellow {
+	position: relative;
+	width: 23.5px;
+	height: 23.5px;
+	margin-right: 26px;
+	border-radius: 50%;
+	background-color: transparent;
+}
+.description__btn_blue::after,
+.description__btn_grey::after,
+.description__btn_yellow::after {
+	position: absolute;
+	content: "";
+	width: 18px;
+	height: 18px;
+	top: 2px;
+	left: 2px;
+	background-repeat: no-repeat;
+}
+.description__btn_blue::after {
+	background-image: url(../img/2016_YZF-R1/btn_blue.png);
+}
+.description__btn_grey::after {
+	background-image: url(../img/2016_YZF-R1/btn_grey.png);
+}
+.description__btn_yellow::after {
+	background-image: url(../img/2016_YZF-R1/btn_yellow.png);
+}
+.main-text {
+	color: #212327;
+	font-family: "Source Sans Pro";
+	font-weight: 400;
+	text-transform: none;
+}
+.description__text {
+	margin-bottom: 30px;
+	font-size: 17px;
+	line-height: 28px;
+}
+.description__bnt {
+	width: 210px;
+	height: 60px;
+	border: 3px solid #ee3b33;
+	border-radius: 4px;
+	text-align: center;
+	font-weight: 500;
+}
+.description__bnt:hover {
+	box-shadow: 1px 1px 10px #ee3b33;
+}	
+.description__bnt_red {
+	color: #ffffff;
+	background-color: #ee3b33;
+}
+.description__bnt_white {
+	color: #ee3b33;
+	background-color: transparent;
+}
