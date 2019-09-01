@@ -283,3 +283,237 @@ button {
 	color: #ee3b33;
 	background-color: transparent;
 }
+.section-features {
+	padding-top: 123px;
+	padding-bottom: 121px;
+}
+.features-nav {
+	margin-bottom: 86px;
+	border-bottom: 1px solid rgba(200, 200, 200, 0.5);
+}
+.features__list {
+	display: flex;
+	justify-content: space-between;
+	width: 940px;
+	margin: 0 auto;
+}
+.features__item {
+	position: relative;
+	display: inline-block;
+	padding-bottom: 22px;
+	cursor: pointer;
+}
+.features__item_selected {
+	cursor: default;
+}
+.features__item::before,
+.features__item_selected::before,
+.features__item_list::before,
+.features__item_energy::before,
+.features__item_scale::before,
+.features__item_speed::before,
+.features__item_infinity::before {
+	position: absolute;
+	top: -25px;
+	left: 50%;
+	transform: translate(-50%);
+	font-family: 'icomoon'
+}
+.features__item_list::before {
+	content: "\e9ba";
+}
+.features__item_energy::before {
+	content: "\e9b5";
+}
+.features__item_scale::before {
+	content: "\e9ba";
+}
+.features__item_scale::before {
+	content: "\ea82";
+}
+.features__item_speed::before {
+	content: "\e9a6";
+}
+.features__item_infinity::before {
+	content: "\ea2f";
+}
+.features__item:hover::before {
+	color: #ee3b33;
+}
+.features__item::after,
+.features__item_selected::after {
+	position: absolute;
+	content: "";
+	bottom: -6px;
+	left: 50%;
+	transform: translate(-50%);
+	width: 14px;
+	height: 13px;
+	background-color: #c8c8c8;
+	border-radius: 50%;
+}
+.features__item:hover::after {
+	background-color: #ee3b33;
+}
+.features__item_selected::after {
+	background-color: #ee3b33;
+	cursor: default;
+}
+.features__item_selected::before {
+	color: #ee3b33;
+	cursor: default;
+}
+.features-desc {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.features-desc__info {
+	max-width: 445px;
+	margin-left: 115px;
+}
+.features-desc__title {
+	margin-bottom: 21px;
+}
+.features-desc__text {
+	font-size: 15px;
+	line-height: 25px;
+}
+.features-desc__text_first {
+	margin-bottom: 50px;
+}
+.section-accessory {
+	padding-top: 93px;
+	padding-bottom: 91px;
+}
+.accessory {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 792px;
+	margin: 0 auto;
+	text-align: center;	
+}
+.accessory__info {
+	margin-top: 23px;
+}
+.accessory__info_price {
+	display: block;
+	padding-top: 5px;
+	color: #8d9095;
+	font-size: 14px;
+}
+.footer-main {
+	background-color: #000000;
+}
+.footer-site-nav {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: #212327;
+}
+.site-nav {
+	display: flex;
+	color: #787e89;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 27px;
+}
+.footer-nav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 650px;
+	margin-left: 100px;
+}
+.site-nav__img {
+	margin-left: 136px;
+	align-self: center;
+}
+.footer-rights {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #787e89;
+	font-size: 10px;
+	background-color: #191a1e;
+}
+.footer-rights-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.rights-list {
+	margin-right: 110px;
+}
+.rights__item {
+	display: inline-block;
+}
+.rights__item:nth-child(1n+2) {
+	margin-left: 24px;
+}
+#animatedModal,
+#animatedModalLogin {
+	margin-top: -350px;
+	padding: 50px 60px;
+	border: 1px solid #ee3b33;
+	border-radius: 4px;
+	text-align: center;
+	line-height: 30px;
+}
+.sitelogin__input {
+	display: block;
+	width: 210px;
+	margin-bottom: 10px;
+	padding: 5px 0 5px 5px;
+	border: 1px solid #999999;
+	border-radius: 4px;
+}
+.sitelogin__input_last {
+	margin-bottom: 0;
+}
+.sitelogin__input:focus {
+	border: 1px solid #000000;
+}
+.sitelogin-remember {
+	display: block;
+	width: 120px;
+	margin-right: auto;
+}
+.sitelogin-remember__text {
+	font-size: 14px;
+	line-height: 0;
+	color: #777777;
+	text-transform: none;
+	cursor: pointer;
+}
+.sitelogin-remember__text:hover {
+	color: #555555;
+}
+.sitelogin-remember_checkbox + .sitelogin-remember_icon {
+	position: absolute;
+	content: "";
+	left: 62px;
+	top: 128px;
+	width: 14px;
+	height: 14px;
+	border: 1px solid #777777;
+}
+.sitelogin-remember_checkbox:checked + .sitelogin-remember_icon::before {
+	position: absolute;
+	content: "";
+	top: 3.5px;
+	left: 3.5px;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: #000000;
+}
+.sitelogin__btn {
+	display: block;
+	border-width: 2px;
+	height: 40px;
+	margin-top: 15px;
+}
+.sitelogin__btn:hover {
+	color: #ffffff;
+	background-color: #ee3b33;
+}
