@@ -16,7 +16,13 @@
 	<header class="header-main">
 		<div class="container">
 			<div class="header-main-wrap">
-				<img class="header-img" class="logo" src="img/yamaha_logo.jpg" alt="Yamaha Sport logo">
+				<span class="header-img">
+					<img class="logo" src="img/yamaha_logo.jpg" alt="Yamaha Sport logo">
+				</span>
+				<div class="hamburger hidden">
+					<button data-fancybox data-animation-duration="700" data-src="#animatedModalHamburger" href="javascript:;" class="hamburger__btn btn btn-primary">
+					</button>
+				</div>
 				<nav class="nav-main">
 					<ul class="nav__list">
 						<li class="nav__item">
@@ -100,7 +106,7 @@
 							<button data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;" class="description-color_btn description__btn_yellow btn btn-primary"></button>	
 						</div>
 						<p class="main-text description__text">
-							The YZF-R1 features a lightweight and compact crossplane-crankshaft, inline-four-cylinder, 998cc high output engine. The first ever for a production motorcycle—the motor delivers extremely high horsepower and a strong pulse of linear torque for outstanding performance.
+							The YZF-R1 features a lightweight and compact crossplane-crankshaft, inline-four-cylinder, 998cc high output engine. The first ever for a production motorcycle — the motor delivers extremely high horsepower and a strong pulse of linear torque for outstanding performance.
 						</p>
 						<span class="description-wrap-btn">
 							<button data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;" class="description__btn description__btn_red btn btn-primary">FIND A DEALER</button>
@@ -307,6 +313,33 @@
 			</label>
 			<button type="submit" data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;" class="sitelogin__btn description__btn description__btn_white btn btn-primary">LogIn</button>
 		</form>
+	</div>
+	<div style="display: none;" id="animatedModalHamburger" class="modal-hamburger animated-modal">
+		<ul>
+			<li class="modal-hamburger__item">
+				<a class="nav__link_selected modal-hamburger__link hamburger-nav">SUPERSPORT</a>
+			</li>
+			<li class="modal-hamburger__item">
+				<a data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;" class="modal-hamburger__link hamburger-nav btn btn-primary">SUPERSPORT&#160;TOURING</a>
+			</li>
+			<li class="modal-hamburger__item">
+				<a data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;" class=" modal-hamburger__link hamburger-nav btn btn-primary">SPORT</a>
+			</li>
+			<li class="modal-hamburger__item">
+				<a data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;" class=" modal-hamburger__link hamburger-nav btn btn-primary">DUAL SPORT</a>
+			</li>
+		</ul>
+		<ul class="modal-hamburger__list">
+			<li class="modal-hamburger__item">
+				<a data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;" class=" modal-hamburger__link hamburger-user btn btn-primary">FIND A DEALER</a>
+			</li>
+			<li class="modal-hamburger__item">
+				<a data-fancybox data-animation-duration="700" data-src="#animatedModalLogin" href="javascript:;" class="modal-hamburger__link hamburger-user btn btn-primary">MY YAMAHA LOGIN/SIGNUP</a>
+			</li>
+			<li class="modal-hamburger__item">
+				<a data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;" class="modal-hamburger__link hamburger-user btn btn-primary">EVENTS & DEMO</a>
+			</li>
+		</ul>	
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/jquery.fancybox.min.js"></script>
