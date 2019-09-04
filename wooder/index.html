@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>Wooder</title>
@@ -6,11 +6,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<!--[if lte IE 8]><link rel="stylesheet" href="css/style_ie.css" /><![endif]-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/script.js"></script>
+	<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
 </head>
 <body>
 	<header id="home-link" class="header-main">
@@ -27,27 +32,27 @@
 		<div class="container">
 			<div class="header-main-wrap">
 				<button onclick="hamburgerOpen()" class="hamburger-btn hidden"></button>
-				<span class="header-main__logo">Wooder</span>
+				<span class="header-main__logo">WOODER</span>
 				<nav class="main-nav">
 					<div class="main-nav-wrap">
 						<ul class="main-nav__list">
 							<li class="main-nav__item main-nav__item_selected">
-								<a>home</a>
+								<a>HOME</a>
 							</li>
 							<li class="main-nav__item">
-								<a href="#products-link" class="main-nav__link">products</a>
+								<a href="#products-link" class="main-nav__link">PRODUCTS</a>
 							</li>
 							<li class="main-nav__item">
-								<a href="#about-link" class="main-nav__link">about</a>
+								<a href="#about-link" class="main-nav__link">ABOUT</a>
 							</li>
 						</ul>
 					</div>
 					<div class="nav-lang">
 						<ul class="nav-lang__list">
-							<li class="nav-lang__item" onclick="changeLanguage()">en
+							<li class="nav-lang__item" onclick="changeLanguage()">EN
 								<div id="js-change_lang" class="nav-lang_hidden">
 									<ul class="nav-lang__list">
-										<li class="nav-lang__item"><a href="index-ru.html">ru</a></li>
+										<li class="nav-lang__item"><a href="index-ru.html">RU</a></li>
 									</ul>
 								</div>
 							</li>
@@ -179,7 +184,7 @@
 			<div class="footer-wrap">
 				<span class="footer-main__copywriting">2016 Wooder</span>
 				<span class="footer-main__logo"><a href="#home-link">Wooder</a></span>
-				<span class="footer-main__copywriting footer__design">Designed by <span class="footer-main__design_light">Viacheslav&nbsp;Olianishyn</span></span>
+				<span class="footer-main__copywriting footer__design">Designed by <span class="footer-main__design_light">Viacheslav Olianishyn</span></span>
 			</div>
 		</div>
 	</footer>
