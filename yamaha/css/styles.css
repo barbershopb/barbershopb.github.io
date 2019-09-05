@@ -774,6 +774,9 @@ button {
 	#animatedModalHamburger {
 	margin-top: -220px;
 	}
+	#animatedModalLogin {
+	margin-top: -50px;
+	}
 	.hamburger {
 		display: block;
 		margin-left: auto;	
