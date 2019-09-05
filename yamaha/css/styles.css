@@ -49,6 +49,7 @@ button {
 }
 .nav__link:hover {
 	border-bottom: 3px solid #ee3b33;
+	transition: 0.3s;
 }
 .nav__link_selected {
 	border-bottom: 3px solid #ee3b33;
@@ -71,6 +72,7 @@ button {
 }
 .user-menu:hover::after {
 	color: red;
+	transition: 0.3s;
 }
 .user-menu__item {
 	display: inline-block;
@@ -84,6 +86,7 @@ button {
 }
 .user-menu__link:hover {
 	color: #ee3b33;
+	transition: 0.3s;
 }
 .section-product-list {
 	border-top: 1px solid #dadfe6;
@@ -104,6 +107,7 @@ button {
 }
 .product:hover {
 	border-bottom: 3px solid #ee3b33;
+	transition: 0.3s;
 	cursor: pointer;
 }
 .product_selected {
@@ -179,6 +183,7 @@ button {
 }
 .description__item:hover {
 	color: #ee3b33;
+	transition: 0.3s;
 	cursor: pointer;
 }
 .description__item_selected {
@@ -209,6 +214,7 @@ button {
 }
 .description-color_btn:hover {
 	border: 1px solid #ee3b33;
+	transition: 0.3s;
 }
 .description-color_selected {
 	border: 1px solid #ee3b33;
@@ -265,6 +271,7 @@ button {
 }
 .description__btn:hover {
 	box-shadow: 1px 1px 10px #ee3b33;
+	transition: 0.3s;
 }	
 .description__btn_red {
 	margin-right: 10px;
@@ -285,7 +292,7 @@ button {
 }
 .features__list {
 	display: flex;
-	width: 1018px;
+	max-width: 1018px;
 	margin: 0 auto;
 }
 .features__item {
@@ -332,6 +339,7 @@ button {
 }
 .features__item:hover::before {
 	color: #ee3b33;
+	transition: 0.3s;
 }
 .features__item::after,
 .features__item_selected::after {
@@ -347,6 +355,7 @@ button {
 }
 .features__item:hover::after {
 	background-color: #ee3b33;
+	transition: 0.3s;
 }
 .features__item_selected::after {
 	background-color: #ee3b33;
@@ -424,6 +433,7 @@ button {
 }
 .footer-nav__item:hover {
 	color: #adb1b7;
+	transition: 0.3s;
 }
 .site-nav__img {
 	margin-left: 80px;
@@ -452,6 +462,7 @@ button {
 }
 .rights__item:hover {
 	color: #adb1b7;
+	transition: 0.3s;
 }
 #animatedModal,
 #animatedModalLogin {
@@ -490,6 +501,7 @@ button {
 }
 .sitelogin-remember__text:hover {
 	color: #555555;
+	transition: 0.3s;
 }
 .sitelogin-remember_checkbox + .sitelogin-remember_icon {
 	position: absolute;
@@ -519,6 +531,7 @@ button {
 .sitelogin__btn:hover {
 	color: #ffffff;
 	background-color: #ee3b33;
+	transition: 0.3s;
 }
 #animatedModalHamburger {
 	width: 100%;
@@ -547,9 +560,6 @@ button {
 .hamburger-user:active {
 	border-bottom: 3px solid #ee3b33;
 }
-
-
-
 @media (max-width: 1200px) {
 	.nav__item {
 		max-width: 120px;
@@ -700,7 +710,7 @@ button {
 		margin: 0 auto;
 	}
 	.section-features {
-		padding: 60px 0 0;
+		padding: 80px 0 0;
 	}
 	.features-nav {
 		margin: 5px auto;
@@ -756,6 +766,9 @@ button {
 	}
 }	
 @media (max-width: 480px) {
+	*:active {
+		outline: none;
+	}
 	.hamburger {
 		display: block;
 		margin-left: auto;	
