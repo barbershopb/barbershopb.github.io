@@ -770,10 +770,10 @@ button {
 		outline: none;
 	}
 	#animatedModal,
-	#animatedModalLogin, {
-	margin-top: 0px;
+	#animatedModalLogin,
+	#animatedModalHamburger {
+	margin-top: -220px;
 	}
-
 	.hamburger {
 		display: block;
 		margin-left: auto;	
