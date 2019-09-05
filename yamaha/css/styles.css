@@ -769,6 +769,11 @@ button {
 	*:active {
 		outline: none;
 	}
+	#animatedModal,
+	#animatedModalLogin, {
+	margin-top: -200px;
+	}
+
 	.hamburger {
 		display: block;
 		margin-left: auto;	
