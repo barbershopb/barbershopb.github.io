@@ -657,6 +657,17 @@ button {
 	}
 }
 @media (max-width: 767px) {
+	*:active {
+		outline: none;
+	}
+	#animatedModal,
+	#animatedModalLogin,
+	#animatedModalHamburger {
+	margin-top: -220px;
+	}
+	#animatedModalLogin {
+	margin-top: -50px;
+	}
 	.user-menu::after {
 		display: none;
 	}
@@ -766,17 +777,6 @@ button {
 	}
 }	
 @media (max-width: 480px) {
-	*:active {
-		outline: none;
-	}
-	#animatedModal,
-	#animatedModalLogin,
-	#animatedModalHamburger {
-	margin-top: -220px;
-	}
-	#animatedModalLogin {
-	margin-top: -50px;
-	}
 	.hamburger {
 		display: block;
 		margin-left: auto;	
