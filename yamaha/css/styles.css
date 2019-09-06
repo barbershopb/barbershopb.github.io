@@ -663,10 +663,10 @@ button {
 	#animatedModal,
 	#animatedModalLogin,
 	#animatedModalHamburger {
-	margin-top: 0;
+	margin-top: -50px;
 	}
 	#animatedModalLogin {
-	margin-top: 0;
+	margin-top: -50px;
 	}
 	.user-menu::after {
 		display: none;
