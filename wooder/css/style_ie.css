@@ -166,8 +166,7 @@ button {
 	top: -10px;
 	left: -50px;
 	margin-left: 50px;
-	-ms-transform: rotate(90deg);	
-	transform: rotate(90deg);
+
 }
 .home-nav__title {
 	display: block;
